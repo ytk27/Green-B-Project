@@ -1,5 +1,6 @@
 @import "./common";
 
+
 :root {
     --color-white: #F9F9F9;
     --color-gray: #F0F0F0;
@@ -13,6 +14,8 @@ body {
     background-color: var(--color-white);
 }
 
+// header
+
 header {
     position: absolute;
     left: 0;
@@ -22,29 +25,41 @@ header {
     z-index: 10;
 }
 
-.header-wrap {
-    width: 1400px;
+// header [PC]
+
+.header-wrap-pc {
+    width: 85.2vw; // 1636px
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
+.header-logo>h1 {
+    width: 150px;
+}
+
+.header-logo>h1>a>img {width: 100%;}
+
 .header-nav {
     display: flex;
     align-items: baseline;
 }
 
+.navigation {
+    display: flex;
+}
 
-.header-nav>h1>a {}
-
-.header-nav>h1>a>img {}
-
-.header-nav>nav {}
-
-.header-nav>nav>a {
-    color: #fff;
+.navigation>li>a {
+    color: var(--color-black);
+    font-family: 'money';
     font-weight: 500;
     padding: 0 25px;
     position: relative;
+}
+
+// header [MOBILE]
+
+.header-wrap-mobile {
+    display: none;
 }
