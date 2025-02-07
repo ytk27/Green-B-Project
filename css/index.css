@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "money";
+  src: url("../srcs/fonts/Moneygraphy-Rounded.ttf") format("truetype");
+}
+@font-face {
+  font-family: "nanum-regular";
+  src: url("../srcs/fonts/NanumGothic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "nanum-bold";
+  src: url("../srcs/fonts/NanumGothicBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "nanum-extrabold";
+  src: url("../srcs/fonts/NanumGothicExtraBold.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+body {
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  font-family: "";
+}
+
+h1, h2, h3, h4, h5, p, figure {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input, textarea {
+  border: 0;
+}
+
+::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #F9F9F9;
+  --color-gray: #F0F0F0;
+  --color-black: #3C3C3C;
+  --color-green1: #8CC63E;
+  --color-green2: #B7D47F;
+  --color-green3: #DCEFB7;
+}
+
+body {
+  background-color: var(--color-white);
+}
+
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 30px 0;
+  z-index: 10;
+}
+
+.header-wrap-pc {
+  width: 85.2vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.header-logo > h1 {
+  width: 150px;
+}
+
+.header-logo > h1 > a > img {
+  width: 100%;
+}
+
+.header-nav {
+  display: flex;
+  align-items: baseline;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation > li > a {
+  color: var(--color-black);
+  font-family: "money";
+  font-weight: 500;
+  padding: 0 25px;
+  position: relative;
+}
+
+.header-wrap-mobile {
+  display: none;
+}
