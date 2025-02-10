@@ -1,0 +1,38 @@
+.sustainability{
+    width: 1636px;
+    margin: 0 auto;
+
+    .tab-head{
+        text-align: center;
+        button{}
+    }
+
+    .tab-body{
+        h2{
+            text-align: center;
+            font-size: 40px;
+            padding-top: 60px;
+        }
+        span{color: #8DC63F;}
+    }
+    .sb-01{text-align: center;
+            padding-top: 90px;
+            padding-bottom: 60px;
+        b{font-size: 30px;}
+        p{font-size: 25px;}
+    }
+    ul{
+        li{
+            display: flex;
+            align-items: center;
+            padding: 40px 70px;
+            background-color: #F8F8F8;
+            width: 1140px;
+            margin: 10px;
+        }
+        .bc{
+            background-color: #f0f0f0;
+        }
+        .bc-1{background-color: #f0f0f0;}
+    }
+}
