@@ -130,8 +130,6 @@
         filter: brightness(70%);
     }
 
-    
-    
     .container:has(.img-wrap.active) .img-wrap:not(.active) {
         filter: grayscale(100%);
     }
