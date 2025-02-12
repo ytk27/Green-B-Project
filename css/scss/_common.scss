@@ -22,7 +22,9 @@ body{
     -webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;
     margin: 0; padding: 0;
-    font-family:"";
+    font-family: 'nanum-regular';
+    letter-spacing: -1px;
+    word-break: keep-all;
 }
 h1,h2,h3,h4,h5,p,figure{margin: 0; padding: 0;}
 ol,ul,li{list-style: none; margin: 0; padding:0;}
