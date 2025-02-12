@@ -28,12 +28,13 @@ html {
 
 body {
   -moz-user-select: none;
+   -ms-user-select: none;
        user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
-  font-family: "nanum-regular";
+  font-family: "";
 }
 
 h1, h2, h3, h4, h5, p, figure {
@@ -128,4 +129,4 @@ header {
 
 .header-wrap-mobile {
   display: none;
-}
+}/*# sourceMappingURL=index.css.map */
