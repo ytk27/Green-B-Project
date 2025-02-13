@@ -1,5 +1,6 @@
 @import "_common";
 
+
 :root {
     --color-white: #F9F9F9;
     --color-gray: #F0F0F0;
@@ -23,6 +24,7 @@
         padding-right:20px;
     }
 }
+.main-title-img{padding-top: 122px;}
 .main-title::after{
     content: '';
     width: 100%;
@@ -190,6 +192,8 @@
     .info-2{
         display: flex;
         gap: 150px;
+        padding-bottom: 100px;
+
 
         align-items: center;
         strong{
@@ -202,6 +206,8 @@
         flex-direction: row-reverse;
         gap: 150px;
         align-items: center;
+        padding-bottom: 100px;
+
         strong{
             font-size: 25px;
             display: block;
