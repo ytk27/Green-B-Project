@@ -4,6 +4,7 @@
   src: url("../srcs/fonts/Moneygraphy-Rounded.ttf") format("truetype");
 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 @font-face {
   font-family: "nanum-regular";
   src: url("../srcs/fonts/NanumGothic.ttf") format("truetype");
@@ -16,6 +17,8 @@
   font-family: "nanum-extrabold";
   src: url("../srcs/fonts/NanumGothicExtraBold.ttf") format("truetype");
 }
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 * {
@@ -38,7 +41,10 @@ body {
   margin: 0;
   padding: 0;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   font-family: "";
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 }
@@ -79,7 +85,10 @@ input, textarea {
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 :root {
   --color-white: #F9F9F9;
   --color-gray: #F0F0F0;
@@ -960,6 +969,9 @@ header {
     display: none;
   }
 }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 :root {
   --color-gray-food: #575757;
