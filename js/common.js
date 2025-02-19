@@ -24,7 +24,7 @@ function  inc() {
                 const submenu = $(this).find('> div');
                 hideTimer = setTimeout(function () {
                     submenu.stop(true, true).slideUp(200);
-                }, 400); // 0.5초 뒤에 숨김
+                }, 400); // 0.4초 뒤에 숨김
                 $(this).data('hideTimer', hideTimer);
             }
         );
