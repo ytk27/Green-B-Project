@@ -3,33 +3,6 @@
   font-family: "money";
   src: url("../srcs/fonts/Moneygraphy-Rounded.ttf") format("truetype");
 }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-@font-face {
-  font-family: "nanum-regular";
-  src: url("../srcs/fonts/NanumGothic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "nanum-bold";
-  src: url("../srcs/fonts/NanumGothicBold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "nanum-extrabold";
-  src: url("../srcs/fonts/NanumGothicExtraBold.ttf") format("truetype");
-}
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 * {
   box-sizing: border-box;
   padding: 0;
@@ -49,22 +22,6 @@ body {
   -webkit-tap-highlight-color: transparent;
   margin: 0;
   padding: 0;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  font-family: "";
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }
 
 h1, h2, h3, h4, h5, p, figure {
@@ -102,20 +59,6 @@ input, textarea {
   box-sizing: border-box;
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 :root {
   --color-white: #F9F9F9;
   --color-gray: #F0F0F0;
@@ -996,26 +939,11 @@ header {
     display: none;
   }
 }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 :root {
   --color-gray-food: #575757;
 }
 
 body {
-  width: 1920px;
-  margin: 0 auto;
   text-align: center;
   background-color: var(--color-white);
   color: var(--color-black);
@@ -1029,8 +957,7 @@ main {
 
 h2, h3, .tab-list, .food-safety-1,
 .line {
-  width: 1636px;
-  margin: 0 auto;
+  margin: 0 142px;
 }
 
 h2 {
@@ -1044,9 +971,6 @@ h3 {
   font-size: 2rem;
   font-family: "NanumGothicBold";
 }
-h3 > span {
-  color: var(--color-green1);
-}
 
 article {
   margin: 90px 0;
@@ -1057,6 +981,11 @@ article {
   border-top: 1px solid var(--color-black);
 }
 
+.highlight {
+  color: var(--color-green1);
+  font-weight: bold;
+}
+
 .button {
   font-family: "money";
   font-size: 1.1rem;
@@ -1065,7 +994,7 @@ article {
   border: 3px solid var(--color-green2);
   border-radius: 85px;
   display: inline-block;
-  padding: 35px 50px;
+  padding: 20px 50px;
   transition: 0.5s;
 }
 
@@ -1114,7 +1043,6 @@ article {
   gap: 20px;
   font-family: "money";
   font-size: 1.1rem;
-  line-height: 1;
 }
 .tab-list li {
   padding: 15px 40px;
@@ -1143,6 +1071,7 @@ article .food-main .food-main-bg p {
   line-height: 180%;
 }
 article .food-main .food-main-bg span {
+  width: 1020px;
   display: inline-block;
   padding: 50px 100px;
   background-color: var(--color-white);
@@ -1193,27 +1122,43 @@ article .food-rule > div figure > span {
   font-size: 0.75rem;
   color: var(--color-gray-food);
 }
+article .food-rule > div figure::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 46px;
+  background-color: rgba(249, 249, 249, 0.8);
+  border: 5px solid var(--color-green1);
+  opacity: 0;
+  transition: 0.3s;
+}
+article .food-rule > div figure::after {
+  content: "더보기 →";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(-30%, -30%);
+  font-family: "money";
+  font-size: 1.25rem;
+  color: var(--color-green1);
+  opacity: 0;
+  transition: 0.3s;
+}
+article .food-rule > div figure:hover::before, article .food-rule > div figure:hover::after {
+  opacity: 1;
+}
 article .food-rule > b {
   font-family: "money";
   font-size: 1.4rem;
   font-weight: bold;
   letter-spacing: 0.25rem;
-  text-align: right;
   display: block;
-  margin: 60px 100px 0;
-}
-article .food-record span {
-  font-size: 1.25rem;
-  font-family: "NanumGothicBold";
-}
-article .food-record p {
-  margin: 60px auto;
-}
-article .food-record p img {
-  width: 100%;
-}
-article .food-record div:nth-of-type(1) {
-  margin-bottom: 60px;
+  margin: 60px 0 0;
 }
 article .food-rule::before {
   content: "";
@@ -1233,38 +1178,23 @@ article .food-rule::after {
   position: absolute;
   right: 0;
   bottom: 0;
-  transform: translate(40%, 30%);
+  transform: translate(-20%, 30%);
 }
-article .food-rule figure::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  border-radius: 46px;
-  background-color: rgba(249, 249, 249, 0.8);
-  border: 5px solid var(--color-green1);
-  opacity: 0;
-  transition: 0.3s;
-}
-article .food-rule figure::after {
-  content: "더보기 →";
-  display: block;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  transform: translate(-30%, -30%);
-  font-family: "money";
+article .food-record span {
   font-size: 1.25rem;
-  color: var(--color-green1);
-  opacity: 0;
-  transition: 0.3s;
+  font-family: "NanumGothicBold";
 }
-article .food-rule figure:hover::before,
-article .food-rule figure:hover::after {
-  opacity: 1;
+article .food-record p {
+  margin: 60px auto;
+}
+article .food-record p img {
+  width: 100%;
+}
+article .food-record div:nth-of-type(1) {
+  margin-bottom: 60px;
+}
+article .food-campaign {
+  line-height: 170%;
 }
 article .food-campaign > p {
   margin: 0 auto 30px;
@@ -1277,48 +1207,17 @@ article .food-campaign ul {
   background-color: var(--color-green3);
   background-image: url("../img/food/food_bg_02.svg");
   background-position: center center;
-  padding: 120px 0;
+  padding: 120px 10%;
   margin-top: 90px;
 }
 article .food-campaign li {
-  margin: 100px auto;
-  padding: 60px;
-  width: 1300px;
+  margin: 90px auto;
+  padding: 50px;
   display: flex;
   align-items: center;
   border-radius: 46px;
   background-color: var(--color-white);
   position: relative;
-}
-article .food-content-left {
-  width: 60%;
-  height: 100%;
-}
-article .food-content-left img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 46px;
-}
-article .campaign-content-right {
-  width: 55%;
-  text-align: left;
-  margin-left: 60px;
-  font-family: "NanumGothicBold";
-}
-article .campaign-content-right b {
-  font-family: "money";
-  font-size: 1.4rem;
-}
-article .campaign-content-right p {
-  font-family: "money";
-  margin: 10px 0 20px;
-}
-article .campaign-content-right .name {
-  text-align: right;
-  vertical-align: top;
-  padding-right: 15px;
 }
 article .food-campaign li:nth-of-type(1)::before {
   content: "";
@@ -1338,25 +1237,65 @@ article .food-campaign li:nth-of-type(1)::after {
   content: "신청하기 →";
   display: block;
   position: absolute;
-  right: 0;
-  bottom: 0;
-  transform: translate(5%, 5%);
+  right: 3%;
+  bottom: 6%;
+  transform: translate(-3%, -6%);
   font-family: "money";
   font-size: 1.5rem;
   color: var(--color-green1);
   opacity: 0;
   transition: 0.3s;
 }
-article .food-campaign li:nth-of-type(1):hover::before,
-article .food-campaign li:nth-of-type(1):hover::after {
+article .food-campaign li:nth-of-type(1):hover::before, article .food-campaign li:nth-of-type(1):hover::after {
   opacity: 1;
+}
+article .food-content-left {
+  height: auto;
+}
+article .food-content-left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 46px;
+}
+article .campaign-content-right {
+  text-align: left;
+  margin-left: 5%;
+}
+article .campaign-content-right b {
+  font-family: "money";
+  font-size: 1.4rem;
+}
+article .campaign-content-right p {
+  font-family: "money";
+  margin: 10px 0 20px;
+}
+article .campaign-content-right .name {
+  vertical-align: top;
+  padding-right: 15px;
+  font-family: "NanumGothicBold";
+}
+article .campaign-content-right .etarget {
+  margin-right: 6px;
+}
+article .campaign-content-right .etarget > img {
+  width: 26px;
+  height: 26px;
+  margin-top: -3px;
+}
+article .campaign-content-right .econtent {
+  margin-right: 8px;
+}
+article .campaign-content-right .econtent > img {
+  margin-top: -3px;
 }
 article .food-safety-1 .food-safety-figure {
   margin-top: 90px;
   display: flex;
   justify-content: center;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
 }
 article .food-safety-1 .food-safety-figure figcaption > p {
   font-size: 1.25rem;
@@ -1369,17 +1308,32 @@ article .food-safety-2 .safety-tab-menu {
 article .food-safety-2 .safety-tab-menu li {
   border-color: transparent;
 }
+article .food-safety-2 .safety-tab-menu li:hover, article .food-safety-2 .safety-tab-menu li.active {
+  border: 1px solid var(--color-green1);
+  color: var(--color-green1);
+}
+article .food-safety-2 .safety-tab-content > span {
+  display: block;
+  margin: 0 142px;
+}
 article .food-safety-2 .safety-tab-content li {
-  margin: 150px auto;
-  width: 1400px;
+  margin: 150px 142px;
   display: flex;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   transition: 0.5s;
 }
+article .food-safety-2 .safety-tab-content li:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+article .food-safety-2 .safety-tab-content li:nth-of-type(2) .safety-content-right {
+  text-align: right;
+  margin: auto 0;
+}
 article .food-safety-2 .safety-content-right {
-  width: 50%;
-  height: 100%;
+  width: 70%;
   text-align: left;
-  margin: auto 0 auto 120px;
+  margin: auto 0;
 }
 article .food-safety-2 .safety-content-right strong {
   font-family: "money";
@@ -1391,19 +1345,7 @@ article .food-safety-2 .safety-content-right p {
 }
 article .food-safety-2 .safety-content-right span {
   margin-top: 20px;
-  display: inline-block;
-}
-article .food-safety-2 .safety-tab-content li:nth-of-type(2) {
-  flex-direction: row-reverse;
-}
-article .food-safety-2 .safety-tab-content li:nth-of-type(2) .safety-content-right {
-  text-align: right;
-  margin: auto 120px auto 0;
-}
-article .food-safety-2 .safety-tab-menu .tab-list li:hover,
-article .food-safety-2 .safety-tab-menu .tab-list li.active {
-  outline: 1px solid var(--color-green1);
-  color: var(--color-green1);
+  display: block;
 }
 
 .rule-popup-box1, .rule-popup-box2, .rule-popup-box3,
@@ -1418,26 +1360,34 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
   display: none;
 }
 
-.rule-popup-box1.on, .rule-popup-box2.on, .rule-popup-box3.on,
-.record-popup-box1.on {
+.rule-popup-box1.open, .rule-popup-box2.open, .rule-popup-box3.open,
+.record-popup-box1.open {
   display: block;
 }
 
 .popup {
-  width: 1300px;
+  width: 70%;
+  height: 80%;
   margin: 0 auto;
   display: flex;
   padding: 50px;
   text-align: left;
   background-color: var(--color-white);
+  overflow-y: scroll;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.popup p > img {
-  border-radius: 46px;
+.popup p {
+  width: 50%;
+}
+.popup p img {
   width: 100%;
+  height: 100%;
+  border-radius: 46px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .popup .popup-cont {
   width: 65%;
@@ -1456,26 +1406,38 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
   color: var(--color-green1);
 }
 .popup .popup-cont .button {
-  margin-top: 30px;
+  margin: 30px 0 50px;
 }
 .popup .popup-close-btn {
   position: absolute;
-  right: 0;
-  top: 0;
-  transform: translate(-80%, -10%);
+  right: 2%;
+  top: -3%;
+  transform: translate(-2%, 3%);
   font-size: 3rem;
 }
 
 .record-popup-box1 .popup {
-  width: 1300px;
-  height: 80%;
-  overflow-y: scroll;
+  height: 60%;
+  padding-top: 80px;
+  display: block;
+}
+.record-popup-box1 .popup p {
+  width: 100%;
 }
 
-@media (max-width: 1024px) {
+.ev-scroll {
+  opacity: 0;
+  transform: translateY(30px); /* 아래에서 위로 올라오는 효과 */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* 서서히 나타나고, 위로 올라오는 애니메이션 설정 */
+}
+
+.ev-scroll.visible {
+  opacity: 1;
+  transform: translateY(0); /* 화면에 나타날 때 위치를 원래대로 */
+}
+
+@media (min-width: 1024px) and (max-width: 1700px) {
   body {
-    width: 100%;
-    margin: 0 auto;
     font-size: 15px;
     word-break: keep-all;
   }
@@ -1483,7 +1445,6 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
     line-height: 135%;
   }
   h2, h3, .tab-list, .food-safety-1, .line {
-    width: auto;
     margin: 0 50px;
   }
   h2 {
@@ -1495,6 +1456,9 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
     font-size: 1.75rem;
     line-height: 1.5;
   }
+  h3 > br {
+    display: none;
+  }
   .button {
     font-size: 0.8rem;
     border: 2px solid var(--color-green2);
@@ -1504,6 +1468,7 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
   .main-title {
     margin: 30px 50px 90px;
     font-size: 1.2rem;
+    line-height: 2;
   }
   .tab-list {
     font-size: 0.7rem;
@@ -1528,13 +1493,12 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
     transform: translate(0, 0);
   }
   article .food-rule {
-    width: 70%;
+    width: 85%;
     padding: 50px;
     border-radius: 30px;
   }
   article .food-rule > p {
     font-size: 0.9rem;
-    line-height: 25px;
   }
   article .food-rule > span {
     font-size: 0.5rem;
@@ -1549,7 +1513,6 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
     height: 30%;
     padding: 40px 20px;
     margin: 30px 0;
-    position: relative;
   }
   article .food-rule > div figure > p {
     width: 100px;
@@ -1561,7 +1524,7 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
   }
   article .food-rule > div figure > figcaption p {
     font-size: 0.9rem;
-    margin: 15px 0 0;
+    margin: 15px 0 10px;
   }
   article .food-rule > div figure > figcaption span {
     font-size: 0.75rem;
@@ -1572,25 +1535,18 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
   article .food-rule > div figure > span {
     font-size: 0.5rem;
   }
+  article .food-rule > div figure::before {
+    border-radius: 30px;
+  }
+  article .food-rule > div figure::after {
+    font-size: 1.2rem;
+    transform: translate(-30%, -150%);
+  }
   article .food-rule > b {
     font-size: 0.9rem;
     letter-spacing: 0.15rem;
     text-align: center;
     margin: 0;
-  }
-  article .food-record span {
-    font-size: 0.85rem;
-  }
-  article .food-record p {
-    margin: 60px 0;
-    width: 100%;
-    height: auto;
-  }
-  article .food-record p img {
-    width: 100%;
-  }
-  article .food-record div:nth-of-type(1) {
-    margin-bottom: 45px;
   }
   article .food-rule::before {
     background-size: cover;
@@ -1602,15 +1558,16 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
     width: 162px;
     height: 151px;
   }
-  article .food-rule figure::before {
-    border-radius: 30px;
+  article .food-record span {
+    font-size: 0.85rem;
   }
-  article .food-rule figure::after {
-    font-size: 1.2rem;
+  article .food-record p {
+    margin: 60px 0;
+    width: 100%;
+    height: auto;
   }
-  article .food-rule figure:hover::before,
-  article .food-rule figure:hover::after {
-    opacity: 1;
+  article .food-record div:nth-of-type(1) {
+    margin-bottom: 45px;
   }
   article .food-campaign > p {
     width: 162px;
@@ -1625,10 +1582,289 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
   article .food-campaign li {
     margin: 50px auto;
     padding: 40px;
-    width: 80%;
+    width: 85%;
+    border-radius: 30px;
+  }
+  article .food-campaign li:nth-of-type(1)::before {
+    border-radius: 30px;
+  }
+  article .food-campaign li:nth-of-type(1)::after {
+    font-size: 1.2rem;
+  }
+  article .food-content-left {
+    width: 100%;
+  }
+  article .food-content-left img {
+    border-radius: 30px;
+  }
+  article .campaign-content-right {
+    width: 70%;
+    margin-top: 25px;
+  }
+  article .campaign-content-right b {
+    font-size: 1.2rem;
+  }
+  article .campaign-content-right p {
+    font-size: 0.8rem;
+    margin: 15px 0;
+  }
+  article .campaign-content-right .name {
+    width: 97px;
+    padding-right: 10px;
+  }
+  article .campaign-content-right .etarget > img {
+    width: 17px;
+    height: 17px;
+  }
+  article .campaign-content-right .econtent {
+    margin-right: 7px;
+  }
+  article .campaign-content-right .econtent > img {
+    width: 15px;
+    height: 15px;
+    margin-left: 1px;
+  }
+  article .food-safety-1 .food-safety-figure {
+    margin-top: 60px;
+  }
+  article .food-safety-1 .food-safety-figure figure > p {
+    width: 130px;
+    margin: 0 auto;
+  }
+  article .food-safety-1 .food-safety-figure figure > p img {
+    width: 100%;
+  }
+  article .food-safety-1 .food-safety-figure figcaption > p {
+    font-size: 1rem;
+    margin: 15px 0;
+  }
+  article .food-safety-2 .safety-tab-menu {
+    margin: 0 0 60px;
+  }
+  article .food-safety-2 .safety-tab-content span {
+    display: inline-block;
+    margin: 0 50px;
+    line-height: 170%;
+  }
+  article .food-safety-2 .safety-tab-content li {
+    display: block;
+  }
+  article .food-safety-2 .safety-tab-content li:nth-of-type(2) .safety-content-right {
+    margin: 50px 30px 30px auto;
+  }
+  article .food-safety-2 .safety-content-right {
+    width: 90%;
+    margin: 50px auto 30px 30px;
+  }
+  article .food-safety-2 .safety-content-right strong {
+    font-size: 1.2rem;
+  }
+  article .food-safety-2 .safety-content-right p {
+    font-size: 0.8rem;
+    margin-top: 15px;
+  }
+  article .food-safety-2 .safety-content-right span {
+    display: block;
+    margin: 20px 0 0;
+  }
+  .popup {
+    display: block;
+  }
+  .popup p {
+    width: 100%;
+    height: 60%;
+  }
+  .popup p > img {
+    border-radius: 20px;
+  }
+  .popup .popup-cont {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .popup .popup-cont h4 {
+    font-size: 1rem;
+  }
+  .popup .popup-cont span {
+    margin: 20px 0;
+  }
+  .popup .popup-cont span > br {
+    display: none;
+  }
+  .popup .popup-cont .button {
+    margin: 25px 0;
+  }
+  .popup .popup-close-btn {
+    top: 3%;
+    transform: translate(-2%, -3%);
+    font-size: 1.8rem;
+  }
+  .record-popup-box1 .popup {
+    padding: 60px 10px;
+  }
+  .record-popup-box1 .popup p img {
+    height: auto;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    font-size: 15px;
+    word-break: keep-all;
+  }
+  main {
+    line-height: 135%;
+  }
+  h2, h3, .tab-list, .food-safety-1, .line {
+    margin: 0 50px;
+  }
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 60px;
+  }
+  h3 {
+    margin-bottom: 60px;
+    font-size: 1.75rem;
+    line-height: 1.5;
+  }
+  h3 > br {
+    display: none;
+  }
+  .button {
+    font-size: 0.8rem;
+    border: 2px solid var(--color-green2);
+    border-radius: 30px;
+    padding: 20px 30px;
+  }
+  .main-title {
+    margin: 30px 50px 90px;
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+  .tab-list {
+    font-size: 0.7rem;
+  }
+  .tab-list li {
+    padding: 15px 25px;
+    border-radius: 30px;
+  }
+  article .food-main .food-main-bg {
+    height: auto;
+    position: static;
+    background-position: center bottom;
+  }
+  article .food-main .food-main-bg p {
+    font-size: 0.9rem;
+    padding: 50px 0;
+  }
+  article .food-main .food-main-bg span {
+    width: 100%;
+    padding: 30px 60px 0;
+    position: static;
+    transform: translate(0, 0);
+  }
+  article .food-rule {
+    width: 85%;
+    padding: 50px;
+    border-radius: 30px;
+  }
+  article .food-rule > p {
+    font-size: 0.9rem;
+  }
+  article .food-rule > span {
+    font-size: 0.5rem;
+  }
+  article .food-rule > div {
+    display: block;
+    margin-top: 0;
+  }
+  article .food-rule > div figure {
+    border-radius: 30px;
+    width: 100%;
+    height: 30%;
+    padding: 40px 20px;
+    margin: 30px 0;
+  }
+  article .food-rule > div figure > p {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+  }
+  article .food-rule > div figure > p img {
+    width: 100%;
+  }
+  article .food-rule > div figure > figcaption p {
+    font-size: 0.9rem;
+    margin: 15px 0 10px;
+  }
+  article .food-rule > div figure > figcaption span {
+    font-size: 0.75rem;
+  }
+  article .food-rule > div figure > figcaption span > br {
+    display: none;
+  }
+  article .food-rule > div figure > span {
+    font-size: 0.5rem;
+  }
+  article .food-rule > div figure::before {
+    border-radius: 30px;
+  }
+  article .food-rule > div figure::after {
+    font-size: 1.2rem;
+    transform: translate(-30%, -150%);
+  }
+  article .food-rule > b {
+    font-size: 0.9rem;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    margin: 0;
+  }
+  article .food-rule::before {
+    background-size: cover;
+    width: 239px;
+    height: 54px;
+  }
+  article .food-rule::after {
+    background-size: cover;
+    width: 162px;
+    height: 151px;
+  }
+  article .food-record span {
+    font-size: 0.85rem;
+  }
+  article .food-record p {
+    margin: 60px 0;
+    width: 100%;
+    height: auto;
+  }
+  article .food-record div:nth-of-type(1) {
+    margin-bottom: 45px;
+  }
+  article .food-campaign > p {
+    width: 162px;
+  }
+  article .food-campaign ul {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    padding: 60px 0;
+    margin-top: 60px;
+  }
+  article .food-campaign li {
+    margin: 50px auto;
+    padding: 40px;
+    width: 85%;
     display: block;
     border-radius: 30px;
-    position: relative;
+  }
+  article .food-campaign li:nth-of-type(1)::before {
+    border-radius: 30px;
+  }
+  article .food-campaign li:nth-of-type(1)::after {
+    right: 5%;
+    bottom: 5%;
+    transform: translate(-5%, -5%);
+    font-size: 1.2rem;
   }
   article .food-content-left {
     width: 100%;
@@ -1649,19 +1885,20 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
     margin: 15px 0;
   }
   article .campaign-content-right .name {
-    width: 25%;
+    width: 97px;
     padding-right: 10px;
   }
-  article .food-campaign li:nth-of-type(1)::before {
-    border-radius: 30px;
+  article .campaign-content-right .etarget > img {
+    width: 17px;
+    height: 17px;
   }
-  article .food-campaign li:nth-of-type(1)::after {
-    transform: translate(-30%, -30%);
-    font-size: 1.2rem;
+  article .campaign-content-right .econtent {
+    margin-right: 7px;
   }
-  article .food-campaign li:nth-of-type(1):hover::before,
-  article .food-campaign li:nth-of-type(1):hover::after {
-    opacity: 1;
+  article .campaign-content-right .econtent > img {
+    width: 15px;
+    height: 15px;
+    margin-left: 1px;
   }
   article .food-safety-1 .food-safety-figure {
     margin-top: 60px;
@@ -1675,7 +1912,6 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
   }
   article .food-safety-1 .food-safety-figure figcaption > p {
     font-size: 1rem;
-    font-family: "NanumGothicBold";
     margin: 15px 0;
   }
   article .food-safety-2 .safety-tab-menu {
@@ -1684,11 +1920,14 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
   article .food-safety-2 .safety-tab-content span {
     display: inline-block;
     margin: 0 50px;
+    line-height: 170%;
   }
   article .food-safety-2 .safety-tab-content li {
-    margin: 120px auto;
-    width: 80%;
+    margin: 120px 50px;
     display: block;
+  }
+  article .food-safety-2 .safety-tab-content li:nth-of-type(2) .safety-content-right {
+    margin: 50px 30px 30px auto;
   }
   article .food-safety-2 .safety-content-right {
     width: 90%;
@@ -1705,69 +1944,60 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
     display: block;
     margin: 20px 0 0;
   }
-  article .food-safety-2 .safety-tab-content li:nth-of-type(2) .safety-content-right {
-    margin: 50px 30px 30px auto;
-  }
   .popup {
-    width: 80%;
-    height: 80%;
-    overflow-y: scroll;
     display: block;
-    padding: 60px 40px;
   }
   .popup p {
     width: 100%;
     height: 60%;
   }
   .popup p > img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
     border-radius: 20px;
   }
   .popup .popup-cont {
     width: 100%;
     height: auto;
     margin-left: 0;
-    margin-top: 25px;
+    margin-top: 40px;
   }
   .popup .popup-cont h4 {
     font-size: 1rem;
   }
   .popup .popup-cont span {
-    display: block;
     margin: 20px 0;
   }
   .popup .popup-cont span > br {
     display: none;
   }
-  .popup .popup-cont p {
-    margin: 15px 0;
-    color: var(--color-green1);
-  }
   .popup .popup-cont .button {
-    margin-top: 25px;
+    margin: 25px 0;
   }
   .popup .popup-close-btn {
-    position: absolute;
-    transform: translate(-70%, 0);
+    top: 3%;
+    transform: translate(-2%, -3%);
     font-size: 1.8rem;
   }
   .record-popup-box1 .popup {
-    width: 80%;
-    height: 80%;
+    padding: 60px 10px;
   }
-  .record-popup-box1 .popup p > img {
+  .record-popup-box1 .popup p img {
     height: auto;
   }
 }
 @media (max-width: 480px) {
+  h2, h3, .tab-list, .food-safety-1, .line {
+    width: auto;
+    margin: 0 25px;
+  }
+  h2 {
+    margin-bottom: 60px;
+  }
   h3 {
+    margin-bottom: 60px;
     font-size: 1.5rem;
   }
   .main-title {
-    margin: 30px 50px;
+    margin: 30px 25px;
     font-size: 1rem;
   }
   .main-title b {
@@ -1779,6 +2009,13 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
   .tab-list {
     gap: 10px;
     font-size: 0.6rem;
+    line-height: 1;
+  }
+  article .food-main .food-main-bg p {
+    padding: 50px 25px;
+  }
+  article .food-main .food-main-bg span {
+    padding: 30px 25px 0;
   }
   article .food-rule {
     padding: 50px 25px;
@@ -1786,17 +2023,17 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
   article .food-rule > div figure > p {
     width: 75px;
   }
-  article .food-rule > div figure > figcaption p {
-    margin: 15px 0 10px;
+  article .food-rule > div figure::before {
+    display: none;
   }
-  article .food-rule > div figure > figcaption span {
-    font-size: 0.75rem;
+  article .food-rule > div figure::after {
+    display: none;
+  }
+  article .food-rule > div figure:hover::before, article .food-rule > div figure:hover::after {
+    opacity: 0;
   }
   article .food-rule > b {
     margin: 0 0 80px;
-  }
-  article .food-record p {
-    margin: 30px 0;
   }
   article .food-rule::before {
     width: 200px;
@@ -1806,15 +2043,8 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
   article .food-rule::after {
     transform: translate(15%, 15%);
   }
-  article .food-rule figure::before {
-    display: none;
-  }
-  article .food-rule figure::after {
-    display: none;
-  }
-  article .food-rule figure:hover::before,
-  article .food-rule figure:hover::after {
-    opacity: 0;
+  article .food-record p {
+    margin: 30px 0;
   }
   article .food-campaign > span {
     display: inline-block;
@@ -1825,20 +2055,34 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
     margin-top: 40px;
   }
   article .food-campaign li {
-    padding: 25px;
+    padding: 0;
   }
   article .food-campaign li:nth-of-type(1)::before {
     display: none;
   }
   article .food-campaign li:nth-of-type(1)::after {
-    display: none;
+    content: "↓ 클릭하여 신청하기";
+    left: 0;
+    top: 0;
+    right: 15%;
+    bottom: 5%;
+    transform: translate(-15%, -5%);
+    font-size: 0.75rem;
+    color: var(--color-gray-food);
+    opacity: 1;
   }
-  article .food-campaign li:nth-of-type(1):hover::before,
-  article .food-campaign li:nth-of-type(1):hover::after {
-    opacity: 0;
+  article .food-campaign td {
+    display: block;
   }
-  article .food-safety-1 > div > br {
-    display: none;
+  article .food-campaign tr:nth-of-type(1) td:nth-of-type(2) {
+    margin-bottom: 10px;
+  }
+  article .food-content-left img {
+    border-radius: 30px 30px 0 0;
+  }
+  article .campaign-content-right {
+    margin-top: 0;
+    padding: 25px;
   }
   article .food-safety-1 .food-safety-figure {
     margin-top: 30px;
@@ -1862,6 +2106,9 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
   }
   article .food-safety-2 .safety-tab-menu {
     margin: 0 0 30px;
+  }
+  article .food-safety-2 .safety-tab-content span {
+    margin: 0 25px;
   }
   article .food-safety-2 .safety-tab-content li {
     margin: 90px auto;
@@ -1888,21 +2135,18 @@ article .food-safety-2 .safety-tab-menu .tab-list li.active {
     text-align: right;
   }
   .popup {
-    height: 55%;
-    padding: 60px 30px;
+    height: 60%;
+    padding: 50px 25px;
   }
   .popup p {
     height: 65%;
-  }
-  .popup .popup-cont span {
-    margin: 10px 0;
   }
   .popup .popup-cont span > br {
     display: none;
   }
   .record-popup-box1 .popup {
     width: 80%;
-    height: auto;
-    padding: 60px 30px 30px;
+    height: 40%;
+    padding: 50px 10px;
   }
 }
