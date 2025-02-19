@@ -1,4 +1,4 @@
-@import "./common";
+@import "./_common";
 :root {
     --color-white: #F9F9F9;
     --color-gray: #F0F0F0;
@@ -7,15 +7,19 @@
     --color-green2: #B7D47F;
     --color-green3: #DCEFB7;
 } 
+
+.main-title-img img {
+    width: 100%;
+    margin-top: 120px;
+}
 .company{
     width: 1636px;
-    margin: 0 auto;
+    margin: 110px auto 0 auto;
 }
 .main-title{
-    margin: 50px 142px 90px;
+    margin: 50px 0 90px;
     overflow: hidden;
     position: relative;
-
     font-family: 'money';
     font-size: 1.6rem;
     b{
@@ -30,9 +34,12 @@
     content: '';
     width: 100%;
     position: absolute;
-    right: 0; top: 50%;
+    right: 0; 
+    
+    top: 50%;
     border-bottom: 1px solid var(--color-black);
     }
+
 // tab
 .tab-list{
     display: flex;
@@ -57,7 +64,6 @@
     text-align: center;
     margin-top: 60px;
     transition: all 0.5s ease;
-    display: none;
 }
 .tab-con01 > figure {
     margin-bottom: 90px;
@@ -77,29 +83,27 @@
     background-color: #8CC63E;
     font-family: 'NanumGothicExtraBold';
     margin-top: 90px;
-
 }
 .tab-con01 > p{
     margin-top: 60px;
     font-size: 20px;
+    line-height: 2.1;
     font-family: 'NanumGothic';
 }
 .b{
     opacity: 0;
     transform: translateY(50px);
-    transition: all 0.5s 0.25s ease;}
+    transition: all 0.5s ease;}
 .show {
     opacity: 1;
     transform: translateY(0);
 }
-
 .tab-body02{
     margin-top: 90px;
 }
 .tab-sub01{
     float: left;
     text-align: left;
-
 }
 .tab-sub01 > b{
     background-color: #DCEFB7;
@@ -109,6 +113,7 @@
 .tab-sub01 > p{
     font-size: 20px;
     margin-top: 30px;
+    line-height: 2.1;
     font-family: 'NanumGothic';
 }
 .tab-body02 > figure > img{
@@ -143,7 +148,7 @@
 .tab-sub02 > p{
     font-size: 25px;
     background-color: #DCEFB7;
-    display: inline-block; //글자크기에 맞춰테두리리
+    display: inline-block; //글자크기에 맞춰테두리
     margin-bottom: 20px;
     font-family: 'NanumGothic';
 }
@@ -178,19 +183,20 @@
 .tab-sub06 > p{
     font-size: 20px;
     margin-top: 90px;
+    line-height: 1.7;
     font-family: 'NanumGothic';
+    margin-bottom: 40px;
 }
 .tab-sub06 > b{
     font-size: 20px;
-    text-align: right;
-    float: right;
     font-family: 'NanumGothicExtraBold';
-    margin-top: 40px;
 }
 .tab-sub07 > figure > img{
-    margin-left: 1355px;
-    margin-top: 50px;
+    float: right;
+    margin-top: 20px;
 }
+
+//history
 .tab-con02{
     text-align: center;
     margin-top: 110px;
@@ -226,21 +232,17 @@
     font-weight: bold;
     border-bottom: 2px solid #8CC63E;
 }
-.tab-sub-body{}
 .tab-sub-con01{
     margin-top: 60px;
-    display: none;
 }
 .tab-img-con01{
     position: relative;
     border-radius: 46px;
     overflow: hidden;
 }
-
 .tab-img-con01 > img{
     width: 100%;
 }
-
 .tab-img-con01 > p{
     font-size: 30px;
     font-family: 'NanumGothic';
@@ -285,7 +287,6 @@
 .swiper-button-prev{
     margin-top: 10px;
 }
-
 .history{
     position: relative;
     &::before{
@@ -300,7 +301,6 @@
             content: '';
             display: block;
             clear: both;
-
     }
     >div{
         clear: both;
@@ -313,6 +313,7 @@
         font-size: 18px;
         font-family: 'NanumGothic';
     }
+
     // odd(홀수)/even(짝수)
     >div:nth-of-type(odd){
         float:right;
@@ -331,7 +332,8 @@
     >div:nth-of-type(even){
         &::after{
             content: '';
-            width:20px; height:20px;
+            width:20px; 
+            height:20px;
             border-radius: 100%;
             border:3px solid #8CC63E;
             position: absolute;
@@ -364,7 +366,8 @@
     text-align: center;
     border: 100px solid #8CC63E;
     border-radius: 100%;
-    width:150px; height:150px;
+    width:150px; 
+    height:150px;
     margin-left: 45px;
     color: white;
     font-size: 30px;
@@ -376,9 +379,10 @@
     margin-left: 50px;
 }
 
+//history2
 .tab-sub-con02{
-    margin-top: 60px; 
-    //display: none;
+    margin-top: 60px;
+    display: none;
 }
 .tab-img-con02{
     position: relative;
@@ -422,7 +426,6 @@
         opacity: 0.6;
     }
 }
-
 .swiper-slide > img {
     width: 100%;
     border-radius: 40px;
@@ -433,9 +436,8 @@
 .swiper-button-prev{
     margin-top: 10px;
 }
-
 .tab-coon01{
-    margin-top: 300px;
+    margin-top: 90px;
     text-align: center;
 }
 .tab-coon01 > h2{
@@ -454,8 +456,7 @@
     text-align: center;
     font-size: 25px;
     font-family: 'NanumGothicExtraBold';
-    margin-left: 700px;
-    margin-top: 45px;
+    margin: 45px auto 0;
     width: 15%;
     padding: 10px;
     border: 4px solid white;
@@ -542,3 +543,5 @@
     margin-top: 50px;
     text-align: center;
 }
+
+@import "_res-company.scss";
