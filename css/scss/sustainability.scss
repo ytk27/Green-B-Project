@@ -1,4 +1,4 @@
-@import "./common";
+@import "_common";
 
 :root {
     --color-white: #F9F9F9;
@@ -8,6 +8,7 @@
     --color-green2: #B7D47F;
     --color-green3: #DCEFB7;
 } 
+
 .main-title{
     margin: 50px 142px 90px;
     overflow: hidden;
@@ -23,6 +24,7 @@
         padding-right:20px;
     }
 }
+.main-title-img{padding-top: 122px;}
 .main-title::after{
     content: '';
     width: 100%;
@@ -55,6 +57,7 @@
     width: 1636px;
     margin: 0 auto;
 }
+
 .tab-head{
     text-align: center;
 }
@@ -65,10 +68,10 @@
         padding-top: 90px;
         letter-spacing: -2px;
     }
+    
     span{color: #8DC63F;}
 
     .sb-01{text-align: center;
-        padding-top: 30px;
             padding-bottom: 60px;
         b{font-size: 30px; color: #8DC63F;
             line-height: 5;
@@ -83,8 +86,8 @@
         }
     }
 }
+
 .tab-con-01{
-    
     ul{font-size: 20px;
         li{
             display: flex;
@@ -115,6 +118,7 @@
 
 //tab-con-02
 .tab-con-02{
+
     .pic{
         width:100%;
         padding:70px;
@@ -142,6 +146,8 @@
                     gap:30px;
                     align-items: center;
                     margin:10px 0px;
+
+                    
 
 
                     strong{
@@ -190,6 +196,8 @@
     .info-2{
         display: flex;
         gap: 150px;
+        padding-bottom: 100px;
+
 
         align-items: center;
         strong{
@@ -202,6 +210,8 @@
         flex-direction: row-reverse;
         gap: 150px;
         align-items: center;
+        padding-bottom: 100px;
+
         strong{
             font-size: 25px;
             display: block;
@@ -222,3 +232,7 @@
 }
 }
 }
+
+
+
+@import "_res_sustainability";
