@@ -1017,7 +1017,6 @@ header {
 }
 .tab-body .sb-01 {
   text-align: center;
-  padding-top: 30px;
   padding-bottom: 60px;
 }
 .tab-body .sb-01 b {
@@ -1165,4 +1164,701 @@ header {
 }
 .tab-con-03 .susang li p {
   font-size: 30px;
+}
+
+@media (min-width: 1024px) and (max-width: 1700px) {
+  .main-title {
+    margin: 50px 142px 90px;
+    overflow: hidden;
+    position: relative;
+    font-family: "money";
+    font-size: 1.6rem;
+  }
+  .main-title b {
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    padding-right: 20px;
+  }
+  .main-title-img {
+    padding-top: 122px;
+  }
+  .main-title::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border-bottom: 1px solid var(--color-black);
+  }
+  .tab-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: "money";
+    font-size: 1.1rem;
+  }
+  .tab-list li {
+    padding: 15px 40px;
+    border-radius: 85px;
+    border: 1px solid #ddd;
+    transition: 0.5s;
+  }
+  .main-tab-menu .tab-list li:hover,
+  .main-tab-menu .tab-list li.active {
+    background-color: var(--color-green1);
+    color: var(--color-white);
+  }
+  .sustainability {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .tab-head {
+    text-align: center;
+  }
+  .tab-body h2 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 90px;
+    letter-spacing: -2px;
+  }
+  .tab-body span {
+    color: #8DC63F;
+  }
+  .tab-body .sb-01 {
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  .tab-body .sb-01 b {
+    font-size: 30px;
+    color: #8DC63F;
+    line-height: 5;
+  }
+  .tab-body .sb-01 p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .tab-body .sb-01 p span {
+    font-size: 25px;
+  }
+  .tab-con-01 ul {
+    font-size: 20px;
+  }
+  .tab-con-01 ul li {
+    display: flex;
+    align-items: center;
+    padding: 40px 70px;
+    background-color: #F8F8F8;
+    width: 100%;
+    margin: 10px auto;
+  }
+  .tab-con-01 ul li b {
+    width: 20%;
+  }
+  .tab-con-01 ul li div p {
+    display: flex;
+  }
+  .tab-con-01 ul li div p::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: black;
+    border-radius: 100%;
+    margin: 10px 10px 0 0;
+  }
+  .tab-con-01 ul .bc {
+    background-color: #f0f0f0;
+  }
+  .tab-con-01 ul .bc-1 {
+    background-color: #f0f0f0;
+  }
+  .tab-con-02 .pic {
+    width: 100%;
+    padding: 70px;
+    background-color: #F9F9F9;
+    text-align: center;
+    border-radius: 46px;
+  }
+  .tab-con-02 .pic img {
+    width: 100%;
+  }
+  .tab-con-02 .esg {
+    border-bottom: 1px solid #ddd;
+  }
+  .tab-con-02 .esg li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .tab-con-02 .esg li > figure {
+    width: 100%;
+  }
+  .tab-con-02 .esg li > figure img {
+    width: 100%;
+  }
+  .tab-con-02 .esg li .info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .tab-con-02 .esg li .info div {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 10px 0px;
+  }
+  .tab-con-02 .esg li .info div strong {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .tab-con-02 .esg li:nth-of-type(2n) {
+    flex-direction: row-reverse;
+  }
+  .tab-con-02 .sb-03 {
+    padding-top: 120px;
+    text-align: center;
+  }
+  .tab-con-02 .sb-03 b {
+    font-size: 30px;
+    color: var(--color-green1);
+  }
+  .tab-con-02 .sb-03 p {
+    font-size: 20px;
+    padding: 40px 0 60px;
+  }
+  .tab-con-02 .sb-03 figure {
+    width: 100%;
+    padding: 150px 70px;
+    background-color: #F9F9F9;
+    text-align: center;
+    border-radius: 46px;
+  }
+  .tab-con-02 .sb-03 figure img {
+    border-radius: 46px;
+    width: 100%;
+  }
+  .tab-con-03 .susang li {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .tab-con-03 .susang li .info-2 {
+    display: flex;
+    gap: 150px;
+    padding-bottom: 100px;
+    align-items: center;
+  }
+  .tab-con-03 .susang li .info-2 strong {
+    font-size: 25px;
+    display: block;
+  }
+  .tab-con-03 .susang li .info-3 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 150px;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+  .tab-con-03 .susang li .info-3 strong {
+    font-size: 25px;
+    display: block;
+  }
+  .tab-con-03 .susang li .info-4 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 150px;
+  }
+  .tab-con-03 .susang li .info-4 strong {
+    font-size: 25px;
+    display: block;
+  }
+  .tab-con-03 .susang li p {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .main-title {
+    margin: 30px 50px 90px;
+    overflow: hidden;
+    position: relative;
+    font-family: "money";
+    font-size: 1.2rem;
+  }
+  .main-title b {
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    padding-right: 20px;
+  }
+  .main-title-img {
+    padding-top: 122px;
+  }
+  .main-title-img img {
+    width: 100%;
+  }
+  .main-title::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border-bottom: 1px solid var(--color-black);
+  }
+  .tab-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "money";
+    font-size: 0.7rem;
+  }
+  .tab-list li {
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    transition: 0.5s;
+  }
+  .main-tab-menu .tab-list li:hover,
+  .main-tab-menu .tab-list li.active {
+    background-color: var(--color-green1);
+    color: var(--color-white);
+  }
+  .sustainability {
+    width: auto;
+    margin: 0 25px;
+  }
+  .tab-head {
+    text-align: center;
+  }
+  .tab-body h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 60px;
+    letter-spacing: -2px;
+    word-break: keep-all;
+  }
+  .tab-body span {
+    color: #8DC63F;
+  }
+  .tab-body .sb-01 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 60px;
+  }
+  .tab-body .sb-01 b {
+    font-size: 25px;
+    color: #8DC63F;
+    line-height: 1;
+    font-weight: bold;
+  }
+  .tab-body .sb-01 p {
+    font-size: 15px;
+    line-height: 1.6;
+    padding-top: 30px;
+  }
+  .tab-body .sb-01 p span {
+    font-size: 23px;
+    font-weight: bolder;
+  }
+  .tab-con-01 ul {
+    font-size: 20px;
+  }
+  .tab-con-01 ul li {
+    display: block;
+    background-color: #F8F8F8;
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .tab-con-01 ul li div {
+    padding-top: 40px;
+  }
+  .tab-con-01 ul li div p {
+    display: block;
+    font-size: 15px;
+    font-weight: bolder;
+    line-height: 2;
+    padding: 10px;
+  }
+  .tab-con-01 ul li div p::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: black;
+    border-radius: 100%;
+    margin: 10x 10px 0 0;
+  }
+  .tab-con-01 ul .bc {
+    background-color: #f0f0f0;
+  }
+  .tab-con-01 ul .bc-1 {
+    background-color: #f0f0f0;
+  }
+  .tab-con-02 .pic {
+    width: 100%;
+    padding: 0px !important;
+    background-color: #F9F9F9;
+    text-align: center;
+    border-radius: 46px;
+  }
+  .tab-con-02 .pic img {
+    width: 100%;
+  }
+  .tab-con-02 .esg {
+    border-bottom: 1px solid #ddd;
+  }
+  .tab-con-02 .esg li {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .tab-con-02 .esg li > figure {
+    width: 100%;
+  }
+  .tab-con-02 .esg li > figure img {
+    width: 100%;
+  }
+  .tab-con-02 .esg li .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .tab-con-02 .esg li .info div {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 10px 0px;
+  }
+  .tab-con-02 .sb-03 {
+    padding-top: 120px;
+    text-align: center;
+  }
+  .tab-con-02 .sb-03 b {
+    font-size: 30px;
+    color: var(--color-green1);
+  }
+  .tab-con-02 .sb-03 p {
+    font-size: 20px;
+    padding: 40px 0 60px;
+    line-height: 2;
+    word-break: keep-all;
+  }
+  .tab-con-02 .sb-03 p br {
+    display: none;
+  }
+  .tab-con-02 .sb-03 figure {
+    width: 100%;
+    padding: 0px 0px;
+    background-color: #F9F9F9;
+    text-align: center;
+    border-radius: 46px;
+  }
+  .tab-con-02 .sb-03 figure img {
+    border-radius: 46px;
+    width: 100%;
+  }
+  .tab-con-03 .sb-01 {
+    padding-top: 0px !important;
+  }
+  .tab-con-03 .sb-01 h2 {
+    padding: 60px 0 60px;
+  }
+  .tab-con-03 .susang li {
+    width: auto;
+  }
+  .tab-con-03 .susang li img {
+    width: 100%;
+  }
+  .tab-con-03 .susang li .info-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 100px;
+  }
+  .tab-con-03 .susang li .info-2 strong {
+    font-size: 20px;
+    display: block;
+  }
+  .tab-con-03 .susang li .info-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 100px;
+  }
+  .tab-con-03 .susang li .info-3 strong {
+    font-size: 20px;
+    display: block;
+  }
+  .tab-con-03 .susang li .info-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .tab-con-03 .susang li .info-4 strong {
+    font-size: 20px;
+    display: block;
+  }
+  .tab-con-03 .susang li p {
+    font-size: 15px;
+    font-weight: bolder;
+  }
+}
+@media (max-width: 480px) {
+  .main-title {
+    margin: 30px 25px;
+    overflow: hidden;
+    position: relative;
+    font-family: "money";
+    font-size: 1rem;
+  }
+  .main-title b {
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    padding-right: 0;
+  }
+  .main-title-img {
+    padding-top: 122px;
+  }
+  .main-title-img img {
+    width: 100%;
+  }
+  .main-title::after {
+    content: "";
+    display: none;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border-bottom: 1px solid var(--color-black);
+  }
+  .tab-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "money";
+    font-size: 0.6rem;
+    gap: 10px;
+    line-height: 1;
+  }
+  .tab-list li {
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    transition: 0.5s;
+  }
+  .main-tab-menu .tab-list li:hover,
+  .main-tab-menu .tab-list li.active {
+    background-color: var(--color-green1);
+    color: var(--color-white);
+  }
+  .sustainability {
+    width: auto;
+    margin: 0 25px;
+  }
+  .tab-head {
+    text-align: center;
+  }
+  .tab-body h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 60px;
+    letter-spacing: -2px;
+  }
+  .tab-body span {
+    color: #8DC63F;
+  }
+  .tab-body .sb-01 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 90px;
+  }
+  .tab-body .sb-01 b {
+    font-size: 25px;
+    color: #8DC63F;
+    line-height: 1;
+    font-weight: bold;
+  }
+  .tab-body .sb-01 p {
+    font-size: 16px;
+    line-height: 2;
+    word-break: keep-all;
+    padding-top: 30px;
+  }
+  .tab-body .sb-01 p span {
+    font-size: 23px;
+    font-weight: bolder;
+  }
+  .tab-con-01 h2 {
+    word-break: keep-all;
+  }
+  .tab-con-01 ul {
+    font-size: 20px;
+  }
+  .tab-con-01 ul li {
+    display: block;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #F8F8F8;
+    width: 100%;
+    margin: 10px auto;
+  }
+  .tab-con-01 ul li div {
+    text-align: left;
+    padding-top: 40px;
+  }
+  .tab-con-01 ul li div p {
+    font-size: 15px;
+    font-weight: bolder;
+    line-height: 2;
+  }
+  .tab-con-01 ul li div p::before {
+    content: "";
+    width: 5px;
+    height: 2px;
+    background-color: black;
+    border-radius: 100%;
+    margin: 10x 10px 0 0;
+  }
+  .tab-con-01 ul .bc {
+    background-color: #f0f0f0;
+  }
+  .tab-con-01 ul .bc-1 {
+    background-color: #f0f0f0;
+  }
+  .tab-con-02 p {
+    word-break: keep-all;
+  }
+  .tab-con-02 p br {
+    display: none;
+  }
+  .tab-con-02 .pic {
+    width: 100%;
+    padding: 0px !important;
+    background-color: #F9F9F9;
+    text-align: center;
+    border-radius: 46px;
+  }
+  .tab-con-02 .pic img {
+    width: 100%;
+  }
+  .tab-con-02 .esg {
+    border-bottom: 1px solid #ddd;
+  }
+  .tab-con-02 .esg li {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+  .tab-con-02 .esg li > figure {
+    width: 100%;
+  }
+  .tab-con-02 .esg li > figure img {
+    width: 100%;
+  }
+  .tab-con-02 .esg li .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .tab-con-02 .esg li .info div {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 10px 0px;
+  }
+  .tab-con-02 .sb-03 {
+    padding-top: 120px;
+    text-align: center;
+  }
+  .tab-con-02 .sb-03 b {
+    font-size: 30px;
+    color: var(--color-green1);
+  }
+  .tab-con-02 .sb-03 p {
+    font-size: 16px;
+    padding: 40px 0 60px;
+    line-height: 2;
+  }
+  .tab-con-02 .sb-03 p br {
+    display: none;
+  }
+  .tab-con-02 .sb-03 figure {
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #F9F9F9;
+    text-align: center;
+    border-radius: 46px;
+    overflow: scroll;
+  }
+  .tab-con-02 .sb-03 figure img {
+    border-radius: 46px;
+    width: 1100px;
+  }
+  .tab-con-03 .sb-01 {
+    padding-top: 0px !important;
+  }
+  .tab-con-03 .sb-01 h2 {
+    padding: 60px 0 90px;
+  }
+  .tab-con-03 .susang {
+    margin: 0 25px;
+  }
+  .tab-con-03 .susang h2 {
+    word-break: keep-all;
+  }
+  .tab-con-03 .susang li {
+    width: auto;
+  }
+  .tab-con-03 .susang li img {
+    width: 100%;
+  }
+  .tab-con-03 .susang li .info-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 100px;
+    margin-right: 0;
+    align-items: center;
+  }
+  .tab-con-03 .susang li .info-2 strong {
+    font-size: 20px;
+    display: block;
+  }
+  .tab-con-03 .susang li .info-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding-bottom: 100px;
+    margin-left: 0;
+  }
+  .tab-con-03 .susang li .info-3 strong {
+    font-size: 20px;
+    display: block;
+  }
+  .tab-con-03 .susang li .info-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-left: 0;
+  }
+  .tab-con-03 .susang li .info-4 strong {
+    font-size: 20px;
+    display: block;
+  }
+  .tab-con-03 .susang li p {
+    font-size: 15px;
+    font-weight: bolder;
+  }
 }
