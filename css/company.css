@@ -948,6 +948,11 @@ header {
   --color-green3: #DCEFB7;
 }
 
+.main-title-img img {
+  width: 100%;
+  margin-top: 120px;
+}
+
 .company {
   width: 1636px;
   margin: 110px auto 0 auto;
