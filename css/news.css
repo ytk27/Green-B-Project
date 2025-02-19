@@ -1715,7 +1715,7 @@ ul.tabs li.current {
   ul.tabs li {
     flex: 1;
     text-align: center;
-    background-color: var(--color-green3);
+    background-color: none !important;
     color: var(--color-black);
     display: inline-block;
     padding: 20px 20px;
@@ -1725,7 +1725,7 @@ ul.tabs li.current {
     transition: all 0.2s ease;
   }
   ul.tabs li.current {
-    background: var(--color-green2);
+    background: none !important;
     color: var(--color-black);
     font-weight: bold;
   }
@@ -1733,7 +1733,7 @@ ul.tabs li.current {
     margin-top: 30px;
     border-radius: 0 20px 20px 20px;
     display: none;
-    background: var(--color-green2);
+    background: none !important;
     padding: 50px 10px 40px;
   }
   .tab-content.current {
