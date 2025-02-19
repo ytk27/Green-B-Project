@@ -2,6 +2,9 @@
 // font-family: 'NanumGothic';
 // font-family: 'NanumGothicBold';
 // font-family: 'NanumGothicExtraBold';
+
+@import "./_common.scss";
+
 :root{
     --color-gray-food: #575757;
 }
@@ -10,10 +13,11 @@ body{
     width: 1920px;
     margin: 0 auto;
     text-align: center;
-    line-height: 2;
+    background-color: var(--color-white);
     color: var(--color-black);
     font-family: 'NanumGothic';
 }
+main{margin: 120px 0 170px; line-height: 2;}
 //좌우 여백 조정(full width contents 제외)
 h2, h3, .tab-list, .food-safety-1,
 .line{width: 1636px; margin: 0 auto;}
@@ -30,14 +34,15 @@ h3{
     }
 }
 article{
-    padding: 90px 0;
+    margin: 90px 0;
 }
 .line{
+    padding: 90px 0 0;
     border-top: 1px solid var(--color-black);
 }
 // button
 .button{
-    font-family: 'money'; font-size: 1.1rem; line-height: 0.65rem;
+    font-family: 'money'; font-size: 1.1rem;
     color: var(--color-white);
     background-color: var(--color-green2);
     border: 3px solid var(--color-green2);
@@ -51,6 +56,10 @@ article{
     color: var(--color-green1);
 }
 // title
+.main-title-img{
+    width: 100%; height: 100%;
+    img{width: 100%;};
+} 
 .main-title{
     margin: 50px 142px 90px;
     overflow: hidden;
@@ -72,7 +81,7 @@ article{
     position: absolute;
     right: 0; top: 50%;
     border-bottom: 1px solid var(--color-black);
-    }
+}
 // tab
 .tab-list{
     display: flex;
@@ -81,6 +90,7 @@ article{
     gap: 20px;
     font-family: 'money';
     font-size: 1.1rem;
+    line-height: 1;
     li{
         padding: 15px 40px;
         border-radius: 85px;
@@ -98,21 +108,25 @@ article{
     // 3-1. 바른먹거리 원칙
     .food-main{
         .food-main-bg{
+            width: 100%;
             height: 770px;
-            background: url('/img/food/food_main_01.jpg');
-            margin-bottom: -240px;
+            background: url('../img/food/food_main_01.jpg') no-repeat center center;
+            position: relative;
             p{
                 color: var(--color-white);
                 font-size: 1.5rem;
                 font-family: 'NanumGothicBold';
-                padding-top: 100px;
+                padding-top: 80px;
                 line-height: 180%;
             }
-        }
-        span{
-            display: inline-block;
-            padding: 60px 120px;
-            background-color: var(--color-white);
+            span{
+                display: inline-block;
+                padding: 50px 100px;
+                background-color: var(--color-white);
+                position: absolute;
+                left: 50%; bottom: 0;
+                transform: translate(-50%, 0);
+            }
         }
     }
     .food-rule{
@@ -172,7 +186,7 @@ article{
     // Add Charactor imgs
     .food-rule::before{
         content: "";
-        background: url('/img/food/food_char_01.png');
+        background: url('../img/food/food_char_01.png');
         width: 342px; height: 77px;
         position: absolute;
         left: 0; top: 0;
@@ -180,11 +194,11 @@ article{
     }
     .food-rule::after{
         content: "";
-        background: url('/img/food/food_char_02.png');
+        background: url('../img/food/food_char_02.png');
         width: 232px; height: 216px;
         position: absolute;
         right: 0; bottom: 0;
-        transform: translate(40%, 20%);
+        transform: translate(40%, 30%);
     }
     // hover
     .food-rule figure::before{
@@ -199,10 +213,11 @@ article{
         opacity: 0; transition: .3s;
     }
     .food-rule figure::after{
-        content: '더보기 ->';
+        content: '더보기 →';
         display: block;
         position: absolute;
-        right: 10%; bottom: 5%;
+        right: 0; bottom: 0;
+        transform: translate(-30%, -30%);
         font-family: 'money';
         font-size: 1.25rem;
         color: var(--color-green1);
@@ -222,24 +237,23 @@ article{
         }
         ul{
             background-color: var(--color-green3);
-            background-image: url('/img/food/food_bg_01.svg');
-            background-position: left;
-            padding: 170px 0;
+            background-image: url('../img/food/food_bg_02.svg');
+            background-position: center center;
+            padding: 120px 0;
             margin-top: 90px;
         }
         li{
             margin: 100px auto;
-            padding: 50px;
-            width: 1400px;
+            padding: 60px;
+            width: 1300px;
             display: flex;
             align-items: center;
             border-radius: 46px;
             background-color: var(--color-white);
             position: relative;
         }
-        
     }
-    .content-left{
+    .food-content-left{
         width: 60%; height: 100%;
             img{
                 width: 100%; height: 100%;
@@ -247,14 +261,14 @@ article{
                 border-radius: 46px;
             }
     }
-    .content-right{
-        width: 50%;
+    .campaign-content-right{ 
+        width: 55%;
         text-align: left;
-        margin-left: 90px;
+        margin-left: 60px;
         font-family: 'NanumGothicBold';
-        b{font-family: 'money'; font-size: 2rem;}
+        b{font-family: 'money'; font-size: 1.4rem;}
         p{
-            font-family: 'money'; font-size: 1.1rem;
+            font-family: 'money';
             margin: 10px 0 20px;
         }
         .name{
@@ -275,10 +289,11 @@ article{
         opacity: 0; transition: .3s;
     }
     .food-campaign li:nth-of-type(1)::after{
-        content: '신청하기 ->';
+        content: '신청하기 →';
         display: block;
         position: absolute;
-        right: 3%; bottom: 5%;
+        right: 0; bottom: 0;
+        transform: translate(5%, 5%);
         font-family: 'money';
         font-size: 1.5rem;
         color: var(--color-green1);
@@ -305,43 +320,45 @@ article{
         }
     }
     .food-safety-2{
-        .sub-tab-menu{
+        .safety-tab-menu{
             margin: 90px;
             li{border-color: transparent;}
         }
-        .tab-content{
+        .safety-tab-content{
             li{
-                margin: 170px auto;
+                margin: 150px auto;
                 width: 1400px;
                 display: flex;
                 transition: .5s;
             }
         }
-        .tab-content-right{
+        .safety-content-right{
             width: 50%; height: 100%;
             text-align: left;
-            margin-left: 150px;
-            margin: auto 0 auto 150px;
+            margin: auto 0 auto 120px;
             strong{
-                font-family: 'money'; font-size: 2rem;
-                margin-bottom: 15px;
+                font-family: 'money'; font-size: 1.4rem;
             }
-            b{font-family: 'money'; display: inline-block;}
+            p{
+                font-family: 'money';
+                margin-top: 5px;
+            }
             span{
-                margin-top: 30px;
+                margin-top: 20px;
                 display: inline-block;
             }
         }
         // 2번째 리스트 좌우 변경
-        .tab-content li:nth-of-type(2){
+        .safety-tab-content li:nth-of-type(2){
             flex-direction: row-reverse;
-            .tab-content-right{
-                margin-left: 0; margin-right: 150px;
+            .safety-content-right{
+                text-align: right;
+                margin: auto 120px auto 0;
             }
         }
         // hover, onclick event
-        .sub-tab-menu .tab-list li:hover,
-        .sub-tab-menu .tab-list li.active{
+        .safety-tab-menu .tab-list li:hover,
+        .safety-tab-menu .tab-list li.active{
             outline: 1px solid var(--color-green1);
             color: var(--color-green1);
         }
@@ -359,11 +376,9 @@ article{
     display: none;
 }
 .rule-popup-box1.on, .rule-popup-box2.on, .rule-popup-box3.on,
-.record-popup-box1.on{
-    display: block;
-}
+.record-popup-box1.on{display: block;}
 .popup{
-    width: 1400px;
+    width: 1300px;
     margin: 0 auto;
     display: flex;
     padding: 50px;
@@ -391,13 +406,14 @@ article{
     }
     .popup-close-btn{
         position: absolute;
-        right: 30px; top: -20px;
+        right: 0; top: 0;
+        transform: translate(-80%, -10%);
         font-size: 3rem;
     }
 }
 .record-popup-box1 .popup{
     width: 1300px; height: 80%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 
@@ -422,7 +438,279 @@ article{
 // --------------------------------------------------------------------------------------------------------------------------
 // --------------------------------------------------------------------------------------------------------------------------
 
-@media (max-width:1024px){}
+@media (max-width:1024px){
+    // tablet
+    body{
+        width: 100%;
+        margin: 0 auto;
+        font-size: 15px;
+        word-break: keep-all;
+    }
+    main{line-height: 135%;}
+    //좌우 여백 조정(full width contents 제외)
+    h2, h3, .tab-list, .food-safety-1, .line{
+        width: auto; margin: 0 50px;
+    }
+    h2{
+        font-size: 1rem; margin-bottom: 60px;
+    }
+    h3{
+        margin-bottom: 60px;
+        font-size: 1.75rem; line-height: 1.5;
+    }
+    // button
+    .button{
+        font-size: 0.8rem;
+        border: 2px solid var(--color-green2);
+        border-radius: 30px;
+        padding: 20px 30px;
+    }
+    // title
+    .main-title{
+        margin: 30px 50px 90px;
+        font-size: 1.2rem;
+    }
+    // tab
+    .tab-list{
+        font-size: 0.7rem;
+        li{
+            padding: 15px 25px;
+            border-radius: 30px;
+        }
+    }
+    
+    article{
+        // 3-1. 바른먹거리 원칙
+        .food-main{
+            .food-main-bg{
+                height: auto;
+                position: static;
+                background-position: center bottom;
+                p{
+                    font-size: 0.9rem;
+                    padding: 50px 0;
+                }
+                span{
+                    width: 100%;
+                    padding: 30px 60px 0;
+                    position: static;
+                    transform: translate(0, 0);
+                }
+            }
+        }
+
+        .food-rule{
+            width: 70%;
+            padding: 50px;
+            border-radius: 30px;
+            > p{font-size: 0.9rem; line-height: 25px;}
+            > span{font-size: 0.5rem;}
+            > div{
+                display: block;
+                margin-top: 0;
+    
+                figure{
+                    border-radius: 30px;
+                    width: 100%;
+                    height: 30%;
+                    padding: 40px 20px;
+                    margin: 30px 0;
+                    position: relative;
+                    > p{
+                        width: 100px; height: auto;
+                        margin: 0 auto;
+                        img{width: 100%;}
+                    }
+    
+                    > figcaption{
+                        p{font-size: 0.9rem; margin: 15px 0 0;}
+                        span{
+                            font-size: 0.75rem;
+                            > br{display: none;}
+                        }
+                    } 
+                    > span{font-size: 0.5rem;}
+                }
+            }
+            > b{
+                font-size: 0.9rem;
+                letter-spacing: 0.15rem;
+                text-align: center;
+                margin: 0;
+            }
+        }
+        .food-record{
+            span{font-size: 0.85rem;}
+            p{
+                margin: 60px 0;
+                width: 100%; height: auto;
+                img{width: 100%;}
+            }
+            div:nth-of-type(1){margin-bottom: 45px}
+        }
+        // Add Charactor imgs
+        .food-rule::before{
+            background-size: cover;
+            width: 239px; height: 54px;
+        }
+        .food-rule::after{
+            background-size: cover;
+            width: 162px; height: 151px;
+        }
+        // hover
+        .food-rule figure::before{
+            border-radius: 30px;
+        }
+        .food-rule figure::after{
+            font-size: 1.2rem;
+        }
+        .food-rule figure:hover::before,
+        .food-rule figure:hover::after{
+            opacity: 1;
+        }
+    
+        // 3-2. 바른먹거리 캠페인
+        .food-campaign{
+            > p{width: 162px}
+            ul{
+                width: 100%; height: auto;
+                background-size: contain;
+                padding: 60px 0;
+                margin-top: 60px;
+            }
+            li{
+                margin: 50px auto;
+                padding: 40px;
+                width: 80%;
+                display: block;
+                border-radius: 30px;
+                position: relative;
+            }
+            
+        }
+        .food-content-left{
+            width: 100%;
+                img{border-radius: 30px;}
+        }
+        .campaign-content-right{
+            width: 100%;
+            margin-left: 0;
+            margin-top: 25px;
+            b{font-size: 1.2rem;}
+            p{
+                font-size: 0.8rem;
+                margin: 15px 0;
+            }
+            .name{
+                width: 25%;
+                padding-right: 10px;
+            }
+        }
+        // hover
+        .food-campaign li:nth-of-type(1)::before{
+            border-radius: 30px;
+        }
+        .food-campaign li:nth-of-type(1)::after{
+            transform: translate(-30%, -30%);
+            font-size: 1.2rem;
+        }
+        .food-campaign li:nth-of-type(1):hover::before,
+        .food-campaign li:nth-of-type(1):hover::after{
+            opacity: 1;
+        }
+    
+        // 3-3. 식품안전 및 품질정책
+        .food-safety-1{
+            .food-safety-figure{
+                margin-top: 60px;
+                figure > p{
+                    width: 130px;
+                    margin: 0 auto;
+                    img{width: 100%;}
+                }
+                figcaption > p{
+                    font-size: 1rem;
+                    font-family: 'NanumGothicBold';
+                    margin: 15px 0;
+                }
+            }
+        }
+        .food-safety-2{
+            .safety-tab-menu{
+                margin: 0 0 60px;
+            }
+            .safety-tab-content{
+                span{
+                    display: inline-block; margin: 0 50px;
+                }
+                li{
+                    margin: 120px auto;
+                    width: 80%;
+                    display: block;
+                }
+            }
+            .safety-content-right{
+                width: 90%;
+                margin: 50px auto 30px 30px;
+                strong{
+                    font-size: 1.2rem;
+                }
+                p{
+                    font-size: 0.8rem;
+                    margin-top: 15px;
+                }
+                span{display: block; margin: 20px 0 0;}
+            }
+            .safety-tab-content li:nth-of-type(2){
+                .safety-content-right{
+                    margin: 50px 30px 30px auto;
+                }
+            }
+        }
+    }
+    
+    //popup
+    .popup{
+        width: 80%; height: 80%;
+        overflow-y: scroll;
+        display: block;
+        padding: 60px 40px;
+    
+        p{
+            width: 100%; height: 60%;
+            > img{
+                width: 100%; height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        } 
+        .popup-cont{
+            width: 100%; height: auto;
+            margin-left: 0;
+            margin-top: 25px;
+            h4{font-size: 1rem;}
+            span{
+                display: block;
+                margin: 20px 0;
+                > br{display: none;}
+            }
+            p{
+                margin: 15px 0;
+                color: var(--color-green1);
+            }
+            .button{margin-top: 25px;}
+        }
+        .popup-close-btn{
+            position: absolute;
+            transform: translate(-70%, 0);
+            font-size: 1.8rem;
+        }
+    }
+    .record-popup-box1 .popup{
+        width: 80%; height: 80%;
+        p > img{height: auto;}
+    }
+}
 
 
 
@@ -463,38 +751,15 @@ article{
 // --------------------------------------------------------------------------------------------------------------------------
 
 @media (max-width:480px) {
-    body{
-        width: 100%;
-        margin: 0;
-        font-size: 15px;
-        line-height: 135%;
-        word-break: keep-all;
-    }
-    //좌우 여백 조정(full width contents 제외)
-    h2, h3, .tab-list, .food-safety-1, .line{
-        width: 76%; margin: 0 auto;
-    }
-    h2{
-        font-size: 1rem; margin-bottom: 60px;
-    }
+    // mobile
     h3{
-        margin-bottom: 60px;
         font-size: 1.5rem;
-        line-height: 42px;
-    }
-    // button
-    .button{
-        font-size: 0.7rem;
-        border-radius: 30px;
-        padding: 15px 25px;
     }
     // title
-    .main-title-img img{width: 100%};
     .main-title{
-        margin: 30px 30px;
+        margin: 30px 50px;
         font-size: 1rem;
         b{
-            display: inline;
             padding-right: 0;
         }
     }
@@ -505,90 +770,34 @@ article{
     .tab-list{
         gap: 10px;
         font-size: 0.6rem;
-
-        li{
-            padding: 10px 20px;
-            border-radius: 30px;
-        }
     }
     
     article{
         // 3-1. 바른먹거리 원칙
-        .food-main{
-            .food-main-bg{
-                height: auto;
-                margin: 0;
-                background-size: cover;
-                p{
-                    font-size: 0.8rem;
-                    padding: 50px 0;
-                    line-height: 160%;
-                }
-            }
-            span{
-                padding: 50px 50px 0;
-            }
-        }
         .food-rule{
-            width: 70%;
-            padding: 50px 30px;
-            border-radius: 30px;
-            > p{
-                font-size: 0.9rem; line-height: 25px;
-            }
-            > span{
-                font-size: 0.5rem;
-            }
+            padding: 50px 25px;
             > div{
-                display: block;
-                margin-top: 0;
-    
                 figure{
-                    border-radius: 30px;
-                    width: 100%;
-                    height: 30%;
-                    padding: 40px 0;
-                    margin: 30px 0;
-                    > p{
-                        width: 75px; height: auto;
-                        margin: 0 auto;
-                        img{width: 100%;}
-                    }
-    
+                    > p{width: 75px;}
                     > figcaption{
-                        p{font-size: 0.9rem; margin: 20px 0 10px;}
+                        p{margin: 15px 0 10px;}
                         span{font-size: 0.75rem}
                     } 
-                    > span{
-                        font-size: 0.5rem;
-                    }
                 }
             }
             > b{
-                font-size: 0.9rem;
-                letter-spacing: 0.15rem;
-                text-align: center;
                 margin: 0 0 80px;
             }
         }
         .food-record{
-            span{
-                font-size: 0.85rem;
-            }
-            p{margin: 30px 0; width: 100%;
-                img{width: 100%;}
-            }
-            div:nth-of-type(1){margin-bottom: 30px}
+            p{margin: 30px 0;}
         }
         // Add Charactor imgs
         .food-rule::before{
-            background-size: cover;
-            width: 239px; height: 54px;
-            transform: translate(14%, -90%);
+            width: 200px; height: 45px;
+            transform: translate(18%, -90%);
         }
         .food-rule::after{
-            background-size: cover;
-            width: 162px; height: 151px;
             transform: translate(15%, 15%);
         }
         // hover
@@ -605,44 +814,18 @@ article{
     
         // 3-2. 바른먹거리 캠페인
         .food-campaign{
-            > p{width: 162px}
             > span{
                 display: inline-block;
                 margin: 0 50px;
             }
             ul{
-                width: 100%; height: auto;
-                background-size: contain;
-                padding: 60px 0;
-                margin-top: 30px;
+                padding: 40px 0;
+                margin-top: 40px;
             }
             li{
-                margin: 50px auto;
                 padding: 25px;
-                width: 80%;
-                display: block;
-                border-radius: 30px;
-                position: relative;
             }
             
-        }
-        .content-left{
-            width: 100%;
-                img{border-radius: 30px;}
-        }
-        .content-right{
-            width: 100%;
-            margin-left: 0;
-            margin-top: 30px;
-            b{font-size: 1.2rem;}
-            p{
-                font-size: 0.8rem;
-                margin: 15px 0 20px;
-            }
-            .name{
-                width: 25%;
-                padding-right: 10px;
-            }
         }
         // hover
         .food-campaign li:nth-of-type(1)::before{
@@ -669,16 +852,10 @@ article{
                     align-items: center;
                     padding: 20px 0;
                     > p{
-                        width: 105px; margin: 0 auto;
-                        > img{width: 100%;}
+                        width: 105px;
                     }
                     > figcaption{width: 60%;}
                 }    
-                figcaption > p{
-                    font-size: 1rem;
-                    font-family: 'NanumGothicBold';
-                    margin: 15px 0;
-                }
             }
             // 반응형 구분선 추가
             .food-safety-figure figure:nth-of-type(1),
@@ -687,92 +864,50 @@ article{
             }
         }
         .food-safety-2{
-            .sub-tab-menu{
-                margin: 0 0 60px;
+            .safety-tab-menu{
+                margin: 0 0 30px;
             }
-            .tab-content{
-                span{
-                    display: inline-block; margin: 0 50px;
-                    br{display: none;}
-                }
+            .safety-tab-content{
                 li{
-                    margin: 60px auto;
-                    width: 80%;
-                    display: block;
+                    margin: 90px auto;
+                    width: 74%;
                 }
             }
-            .tab-content-right{
-                width: 90%;
-                margin: 30px 10px;
-                strong{
-                    font-size: 1.2rem;
+            .safety-content-right{
+                margin: 25px 0 0 15px;
+                strong{font-size: 1rem;}
+                p{
+                    margin-top: 5px;
+                    font-size: 0.6rem;
                 }
-                b{
-                    display: inline-block;
-                    margin-top: 15px;
+                span{
+                    margin: 15px 0 0;
+                    > br{display: none;}
                 }
-                span{margin: 20px 0 0;}
             }
-            .tab-content li:nth-of-type(2){
-                .tab-content-right{
+            .safety-tab-content li:nth-of-type(2){
+                .safety-content-right{
+                    margin: 25px 15px 0 0;
                     text-align: right;
-                    margin-left: auto;
-                    margin-right: 10px;
                 }
             }
         }
     }
     
     //popup
-    .rule-popup-box1, .rule-popup-box2, .rule-popup-box3,
-    .record-popup-box1{
-        width: 100%; height: 100vh;
-        background-color: rgba(#000000, 0.6);
-        position: fixed;
-        top: 0; left: 0;
-        z-index: 99999;
-        display: none;
-    }
-    .rule-popup-box1.on, .rule-popup-box2.on, .rule-popup-box3.on,
-    .record-popup-box1.on{
-        display: block;
-    }
     .popup{
-        width: 80%; height: 50%;
-        overflow: scroll;
-        display: block;
-        padding: 35px;
-    
-        p{
-            width: 100%; height: 60%;
-            > img{
-                width: 100%; height: 100%;
-                object-fit: cover;
-                border-radius: 20px;
-            }
-        } 
+        height: 55%;
+        padding: 60px 30px;
+        p{height: 65%;}
         .popup-cont{
-            width: 100%; height: auto;
-            margin-left: 0;
-            margin-top: 25px;
-            h4{font-size: 1rem;}
             span{
-                display: block;
-                margin: 20px 0;
+                margin: 10px 0;
+                > br{display: none;}
             }
-            p{
-                margin: 15px 0;
-                color: var(--color-green1);
-            }
-            .button{margin-top: 25px;}
-        }
-        .popup-close-btn{
-            position: absolute;
-            right: 10px; top: 10px;
-            font-size: 1.8rem;
         }
     }
     .record-popup-box1 .popup{
         width: 80%; height: auto;
+        padding: 60px 30px 30px;
     }
 }
