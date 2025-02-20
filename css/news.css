@@ -952,6 +952,12 @@ header {
     display: none;
   }
 }
+body {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-family: "NanumGothic";
+}
+
 .main-title {
   width: 100%;
   margin: 50px auto 90px;
@@ -1016,9 +1022,14 @@ header {
 }
 
 .sec1 {
+  background-color: var(--color-white);
   width: calc(100% - 284px);
   margin: 0 auto;
   height: 75vh;
+}
+
+main {
+  background-color: var(--color-white);
 }
 
 .container {
@@ -1045,6 +1056,11 @@ ul.tabs li {
   cursor: pointer;
   border-radius: 20px 20px 0 0;
   transition: all 0.2s ease;
+  font-family: "NanumGothic";
+}
+
+.tab-link {
+  font-family: "NanumGothic";
 }
 
 ul.tabs li.current {
@@ -1096,6 +1112,7 @@ ul.tabs li.current {
   display: flex;
   flex-direction: column;
   padding-left: 30px;
+  font-family: "NanumGothic";
 }
 .tab-news-container a .news-cont-1 .tab-news-text b:nth-of-type(1) {
   width: 90%;
@@ -1111,6 +1128,7 @@ ul.tabs li.current {
   width: 90%;
   font-size: 15px;
   margin: 15px 0;
+  font-weight: normal;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -1118,6 +1136,7 @@ ul.tabs li.current {
   -webkit-box-orient: vertical;
 }
 .tab-news-container a .news-cont-1 .tab-news-text b:nth-of-type(3) {
+  font-weight: normal;
   width: 90%;
   font-size: 12px;
 }
@@ -1202,6 +1221,7 @@ ul.tabs li.current {
   font-size: 15px;
   margin-bottom: 30px;
   overflow: hidden;
+  font-weight: normal;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -1209,6 +1229,7 @@ ul.tabs li.current {
 }
 .esg-news-container .esg-news-box .esg-text b:nth-of-type(4) {
   font-size: 15px;
+  font-weight: normal;
 }
 
 .esg-news-btn {
