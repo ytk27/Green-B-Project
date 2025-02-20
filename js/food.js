@@ -1,25 +1,28 @@
 // scroll
 // Intersection Observer API를 사용하여 60% 이상 보일 때 'visible' 클래스를 추가
-const options = {
-    threshold: 0.5 // 50% 이상 보일 때
-};
+function scroll(){
+    const options = {
+        threshold: 0.5 // 50% 이상 보일 때
+    };
 
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        const txt = entry.target;
-        if (entry.isIntersecting) {
-            // 50% 이상 보이면 'visible' 클래스를 추가
-            txt.classList.add('visible');
-            observer.unobserve(txt);  // 한 번 나타나면 더 이상 관찰하지 않음
-        }
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            const txt = entry.target;
+            if (entry.isIntersecting) {
+                // 50% 이상 보이면 'visible' 클래스를 추가
+                txt.classList.add('visible');
+                observer.unobserve(txt);  // 한 번 나타나면 더 이상 관찰하지 않음
+            }
+        });
+    }, options);
+
+    // 모든 텍스트 박스를 옵저버에 등록
+    document.querySelectorAll('.ev-scroll').forEach(txt => {
+        observer.observe(txt);
     });
-}, options);
+}
 
-// 모든 텍스트 박스를 옵저버에 등록
-document.querySelectorAll('.ev-scroll').forEach(txt => {
-    observer.observe(txt);
-});
-
+scroll();
 
 
 
@@ -101,8 +104,6 @@ function safety(){
         // // 페이지가 처음 로드될 때도 확인
         // handleScroll();
         // Intersection Observer API를 사용하여 60% 이상 보일 때 'visible' 클래스를 추가
-
-        scroll();
 
         // get data
         const eltabBtn = document.querySelectorAll('.safety-tab-menu li');

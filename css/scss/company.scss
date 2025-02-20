@@ -15,6 +15,7 @@
 .company{
     width: 1636px;
     margin: auto auto 0 auto;
+    color: var(--color-black);
 }
 .main-title{
     margin: 50px 0 90px;
@@ -24,7 +25,7 @@
     font-size: 1.6rem;
     b{
         display: inline-block;
-        background-color: var(--color-white);
+        background-color: #FFFFFF;
         position: relative;
         z-index: 2;
         padding-right:20px;
@@ -35,7 +36,6 @@
     width: 100%;
     position: absolute;
     right: 0; 
-    
     top: 50%;
     border-bottom: 1px solid var(--color-black);
     }
@@ -74,11 +74,11 @@
 }
 .tab-con01 > b{
     margin-top: 90px;
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'NanumGothicExtraBold';
 }
 .tab-con01 > strong{
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     background-color: #8CC63E;
     font-family: 'NanumGothicExtraBold';
@@ -202,12 +202,12 @@
     margin-top: 110px;
 }
 .tab-con02 > b{
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'NanumGothicExtraBold';
     color: #8CC63E;
 }
 .tab-con02 > strong{
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'NanumGothicExtraBold';
 }
 .tab-con02 > p{
@@ -441,7 +441,7 @@
     text-align: center;
 }
 .tab-coon01 > h2{
-    font-size: 50px;
+    font-size: 40px;
     font-family: 'NanumGothicExtraBold';
     margin-bottom: 60px;
 }
