@@ -977,18 +977,14 @@ footer {
 
 .main-title-img {
   width: 100%;
-  min-height: 100px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  margin-top: 121px;
 }
 .main-title-img img {
   width: 100%;
-  height: auto;
-  min-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .main-title::after {
@@ -1026,7 +1022,7 @@ footer {
 .sec1 {
   width: calc(100% - 284px);
   margin: 0 auto;
-  height: 80vh;
+  height: 75vh;
 }
 
 .container {
@@ -1151,7 +1147,7 @@ ul.tabs li.current {
 .sec2 {
   width: calc(100% - 284px);
   margin: 0 auto;
-  height: 120vh;
+  height: 1000px;
   text-align: center;
 }
 
@@ -1423,7 +1419,7 @@ ul.tabs li.current {
   .sec2 {
     width: calc(100% - 100px);
     margin: 0 auto;
-    height: 90vh;
+    height: 800px;
     text-align: center;
   }
   .esg-news-container {
@@ -1474,7 +1470,7 @@ ul.tabs li.current {
     font-size: 15px;
   }
   .esg-news-container .esg-news-box .esg-text b:nth-of-type(2) {
-    font-size: 30px;
+    font-size: 25px;
     margin: 30px 0;
   }
   .esg-news-container .esg-news-box .esg-text b:nth-of-type(3) {
@@ -1858,7 +1854,7 @@ ul.tabs li.current {
     flex-direction: column;
     text-align: left;
     white-space: pre-line;
-    padding: 0 30px;
+    padding: 20px 30px;
   }
   .esg-news-container .esg-news-box .esg-text b {
     font-family: "NanumGothic";
@@ -1869,12 +1865,11 @@ ul.tabs li.current {
   }
   .esg-news-container .esg-news-box .esg-text b:nth-of-type(2) {
     font-size: 20px;
-    margin: 30px 0;
+    margin: 15px 0;
   }
   .esg-news-container .esg-news-box .esg-text b:nth-of-type(3) {
     font-size: 13px;
     margin-bottom: 30px;
-    overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;

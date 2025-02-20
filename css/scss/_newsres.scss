@@ -247,7 +247,7 @@ ul.tabs li.current{
 .sec2 {
     width: $widn;
     margin: 0 auto;
-    height: 90vh;
+    height: 800px;
     text-align: center;
 }
 
@@ -296,7 +296,7 @@ ul.tabs li.current{
                 color: var(--color-black);
 
                 &:nth-of-type(1){font-size: 15px;}
-                &:nth-of-type(2){font-size: 30px; margin: 30px 0;}
+                &:nth-of-type(2){font-size: 25px; margin: 30px 0;}
                 &:nth-of-type(3){
                     font-size: 15px; margin-bottom: 30px;
                     overflow: hidden;
@@ -774,17 +774,16 @@ ul.tabs li.current{
                 flex-direction: column;
                 text-align: left;
                 white-space: pre-line;
-                padding: 0 30px;
+                padding: 20px 30px;
     
                 b{
                     font-family: $nanum1;
                     color: var(--color-black);
     
                     &:nth-of-type(1){font-size: 15px;}
-                    &:nth-of-type(2){font-size: 20px; margin: 30px 0;}
+                    &:nth-of-type(2){font-size: 20px; margin: 15px 0;}
                     &:nth-of-type(3){
                         font-size: 13px; margin-bottom: 30px;
-                        overflow: hidden;
                         text-overflow: ellipsis;
                         display: -webkit-box;
                         -webkit-line-clamp: 3;

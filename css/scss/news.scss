@@ -37,18 +37,13 @@ $nanum3 : 'NanumGothicExtraBold';
 }
 
 .main-title-img {
-    width: 100%;
-    min-height: 100px;
+    width: 100%; height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-
+    margin-top: 121px;
     img {
         width: 100%;
-        height: auto;
-        min-height: 100%;
-        object-fit: cover;
     }
 }
 
@@ -93,7 +88,7 @@ $nanum3 : 'NanumGothicExtraBold';
 .sec1 {
     width: $widn;
     margin: 0 auto;
-    height: 80vh;
+    height: 75vh;
 }
 
 .container{
@@ -240,7 +235,7 @@ ul.tabs li.current{
 .sec2 {
     width: $widn;
     margin: 0 auto;
-    height: 120vh;
+    height: 1000px;
     text-align: center;
 }
 

@@ -77,8 +77,9 @@
     .section-wrap {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: $wid;
-        padding-top: 150px;
+        padding-top: 100px;
     }
 
     .main-title {
@@ -163,16 +164,16 @@
             color: var(--color-white);
             
             &:nth-of-type(1){
-                font-size: 8vw;
+                font-size: 150px;
                 opacity: 60%;
             }
             &:nth-of-type(2){
                 margin: 70px 0 10px;
-                font-size: 2.5vw;
+                font-size: 50px;
             }
             &:nth-of-type(3){
                 font-weight: normal;
-                font-size: 1.1vw;
+                font-size: 20px;
                 white-space: pre-line;
             }
         }
@@ -356,6 +357,7 @@
         }
 
         .tab-menu-1 {
+            height: 80%;
             text-align: center;
             display: flex;
             justify-content: center;
@@ -454,6 +456,7 @@
         }
 
         .tab-menu-2 {
+            height: 100%;
             text-align: center;
             display: flex;
             justify-content: center;
@@ -489,7 +492,7 @@
                             &:nth-of-type(2) {
                                 font-family: $nanum1;
                                 font-weight: normal;
-                                font-size: 18px;
+                                font-size: 15px;
                             }
                         }
                         img {
@@ -553,7 +556,7 @@
             }
             b{
                 color: var(--color-black);
-                font-size: 1vw;
+                font-size: 15px;
                 font-weight: normal;
             }
         }
@@ -563,7 +566,7 @@
     // section 5
 
     .sec5 {
-        height: 1000px;
+        height: 100vh;
         background-color: var(--color-white);
         display: flex;
         justify-content: center;
@@ -583,7 +586,7 @@
 
     .swiper-slide {
         text-align: center;
-        font-size: 18px;
+        font-size: 15px;
         background: var(--color-green3);
         display: flex;
         justify-content: center;
@@ -681,7 +684,7 @@
     // section 6
 
     .sec6 {
-        height: 1000px;
+        height: 100vh;
         background-color: var(--color-white);
         display: flex;
         justify-content: center;

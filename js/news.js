@@ -168,25 +168,32 @@ $(document).ready(function () {
             `
         ]
     ];
-
+    
     let addedNewsCount = 0;
 
     $loadMoreBtn.on("click", function () {
-        // 그룹이 2개보다 적을 때
         if (addedNewsCount < 2) {
-            // join으로 한그룹(뉴스 2개) 넣기
             $newsContainer.append(additionalNews[addedNewsCount].join(""));
             addedNewsCount++;
-
-            // css에 height 기본 120+그룹 늘어날 때마다 90 추가하기
-            let newHeight = 120 + addedNewsCount * 90;
-            $sec2.css("height", newHeight + "vh");
-
-            // 컨텐츠가 2그룹 있을 때는 더보기 버튼 삭제하기
+    
+            // 화면 크기별 높이 추가하기
+            let additionalHeight = 1000;
+    
+            if (window.innerWidth <= 1024 && window.innerWidth > 480) {
+                additionalHeight = 800;
+            } else if (window.innerWidth <= 480) {
+                additionalHeight = 600;
+            }
+    
+            let newHeight = $sec2.height() + additionalHeight;
+            $sec2.css("height", newHeight + "px");
+    
             if (addedNewsCount === 2) {
                 $loadMoreBtn.hide();
             }
         }
     });
+    
+    
 });
 

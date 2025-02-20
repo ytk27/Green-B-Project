@@ -3,60 +3,71 @@
 // index 전체 마우스 휠 이벤트
 // ************************
 
-$(document).ready(function () {
-    // 모바일 사이즈 등록하기
-    let mql = window.matchMedia("(max-width: 480px)");
+document.addEventListener("DOMContentLoaded", function () {
+    // 모바일 환경을 구분시키기 위해 matchMedia를 사용해 화면 너비가 480px 이하인지 확인한다.
+    const mediaQuery = window.matchMedia("(max-width: 480px)");
 
-    function handleScrollEvent(e) {
-        e.preventDefault();
+    // 스크롤을 감지해서 이벤트를 제어하는 함수 실행
+    function handleScrollEvent(event) {
+        // 브라우저의 기본 스크롤을 막는다
+        event.preventDefault();
 
-        const sections = $("section");
-        const footer = $("footer");
+        const sections = document.querySelectorAll("section");
+        const footer = document.querySelector("footer");
         let currentSection = 0;
+        // 현재 스크롤의 위치 변수
+        const scrollY = window.scrollY || window.pageYOffset;
+        const windowHeight = window.innerHeight;
 
-        sections.each(function (index) {
-            if ($(window).scrollTop() >= $(this).offset().top - $(window).height() / 2) {
+        // 현재 스크롤위치 >= 섹션의 상단부터의 거리 - 윈도우높이/2
+        sections.forEach((section, index) => {
+            if (scrollY >= section.offsetTop - windowHeight / 2) {
                 currentSection = index;
             }
         });
 
-        if (e.originalEvent.deltaY > 0) {
+        // 아래로 스크롤 할 시엔
+        if (event.deltaY > 0) {
             if (currentSection < sections.length - 1) {
-                $("html, body").stop().animate(
-                    { scrollTop: $(sections[currentSection + 1]).offset().top },
-                    600
-                );
+                // 다음 섹션으로 이동하게 함
+                smoothScroll(sections[currentSection + 1].offsetTop);
             } else {
-                $("html, body").stop().animate({ scrollTop: footer.offset().top }, 600);
+                // 마지막 섹션이면 바로 푸터로 이동
+                smoothScroll(footer.offsetTop);
             }
         } else {
-            if ($(window).scrollTop() >= footer.offset().top - $(window).height() / 2) {
-                $("html, body").stop().animate(
-                    { scrollTop: $(sections[sections.length - 1]).offset().top },
-                    600
-                );
+            // 위로 스크롤 할 시에는
+            if (scrollY >= footer.offsetTop - windowHeight / 2) {
+                smoothScroll(sections[sections.length - 1].offsetTop);
             } else if (currentSection > 0) {
-                $("html, body").stop().animate(
-                    { scrollTop: $(sections[currentSection - 1]).offset().top },
-                    600
-                );
+                smoothScroll(sections[currentSection - 1].offsetTop);
             }
         }
     }
-
-    function checkMobile() {
-        if (mql.matches) {
-            // 모바일이면 wheel 끄기
-            $(document).off("wheel", handleScrollEvent);
-        } else {
-            // 데스크톱이면 wheel 키기
-            $(document).on("wheel", handleScrollEvent);
-        }
+    // 스크롤 부드럽게 만들기
+    function smoothScroll(targetY) {
+        window.scrollTo({
+            top: targetY,
+            behavior: "smooth",
+        });
     }
 
+    // 디바이스 체크 (모바일인지)
+    function checkMobile() {
+        // 480px 이하일 때는 스크롤 이벤트 삭제시켜버림
+        if (mediaQuery.matches) {
+            window.removeEventListener("wheel", handleScrollEvent);
+        // 아닐 때는 활성화 시켜라
+        } else {
+            window.addEventListener("wheel", handleScrollEvent, { passive: false });
+        }
+    }
+    // 실행할 때 화면 크기 보고
+    // 웹사이트 크기가 바뀔 때마다 checkMobile 반복 실행 명령
     checkMobile();
-    mql.addEventListener("change", checkMobile);
+    mediaQuery.addEventListener("change", checkMobile);
 });
+
 
 
 // *************
@@ -67,6 +78,7 @@ $(document).ready(function () {
 const imgWraps = document.querySelectorAll(".img-wrap");
 imgWraps[0].classList.add("active");
 
+// 활성된 이미지에서 active 제거 명령 함수
 function clearActiveImage() {
     imgWraps.forEach(wrap => wrap.classList.remove("active"));
 }
@@ -74,6 +86,9 @@ function clearActiveImage() {
 imgWraps.forEach((wrap) => {
     wrap.onclick = function (event) {
         event.stopPropagation();
+        // 선택한 이미지에 active가 없을 경우엔
+        // clearActiveImage()함수로 기존 active 제거하고
+        // 선택한 이미지한테 새로운 active 추가하기
         if (!wrap.classList.contains("active")) {
             clearActiveImage();
             wrap.classList.add("active");
@@ -81,6 +96,8 @@ imgWraps.forEach((wrap) => {
     };
 });
 
+// 바깥쪽 클릭할 때에는 모든 active 제거시키고
+// 첫번째 이미지에 추가시켜서 초기상태로 만들어놓기
 window.addEventListener("click", () => {
     clearActiveImage();
     imgWraps[0].classList.add("active");
@@ -174,6 +191,7 @@ $(document).ready(function () {
     ];
 
     // imglist-1
+    // 랜덤 수 생성하기 (소수점빼고)
     const randomImglist1 = imglist1Data[Math.floor(Math.random() * imglist1Data.length)];
     $(".imglist-1 a").attr("href", randomImglist1.link);
     $(".imglist-1 img").attr("src", randomImglist1.imgSrc);

@@ -88,11 +88,11 @@
         padding-top: 150px;
     }
     .section-wrap {
+        padding-top: 100px !important;
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: $widt;
-        padding-top: 0;
 
     }
 
@@ -281,7 +281,7 @@
     //section 4
 
     .sec4 {
-        height: 1000px;
+        height: 100vh;
         background-color: var(--color-green2);
         display: flex;
         justify-content: center;
@@ -574,7 +574,7 @@
     // section 5
 
     .sec5 {
-        height: 1000px;
+        height: 100vh;
         background-color: var(--color-white);
         display: flex;
         justify-content: center;
@@ -688,7 +688,7 @@
     // section 6
 
     .sec6 {
-        height: 1000px;
+        height: 80vh;
         background-color: var(--color-white);
         display: flex;
         justify-content: center;
@@ -1438,7 +1438,7 @@
     //section 4
 
     .sec4 {
-        height: 1000px;
+        height: 100vh;
         background-color: var(--color-green2);
         display: flex;
         justify-content: center;
