@@ -1,7 +1,7 @@
 @import "_common";
 
 :root {
-    --color-white: #F9F9F9;
+    --color-white: #ffffff;
     --color-gray: #F0F0F0;
     --color-black: #3C3C3C;
     --color-green1: #8CC63E;
@@ -10,7 +10,7 @@
 } 
 
 .main-title{
-    margin: 50px 142px 90px;
+    margin: 50px 142px;
     overflow: hidden;
     position: relative;
 
@@ -24,7 +24,11 @@
         padding-right:20px;
     }
 }
-.main-title-img{padding-top: 122px;}
+.main-title-img{
+    padding-top: 122px;
+    img{height: 250px;}
+    
+}
 .main-title::after{
     content: '';
     width: 100%;
@@ -68,7 +72,7 @@ main{color: var(--color-black);}
     h2{
         text-align: center;
         font-size: 40px;
-        padding-top: 40px;
+        padding-top: 90px;
         letter-spacing: -2px;
         opacity: 0;
         transform: translateY(30%);
@@ -154,7 +158,7 @@ main{color: var(--color-black);}
 
     .pic{
         width:100%;
-        padding:70px;
+        padding:100px;
         background-color: #F9F9F9;
         text-align: center;
         border-radius: 46px;
@@ -210,7 +214,7 @@ main{color: var(--color-black);}
 }
 
 .sb-03{
-    padding-top: 120px;
+    padding-top: 100px;
     text-align: center;
     opacity: 0;
     transform: translateY(30%);
