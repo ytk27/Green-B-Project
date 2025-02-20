@@ -1,7 +1,7 @@
 @media (min-width:1024px) and (max-width:1700px) {
 
     .main-title{
-        margin: 50px 142px;
+        margin: 30px 50px;
         overflow: hidden;
         position: relative;
     
@@ -15,7 +15,13 @@
             padding-right:20px;
         }
     }
-    .main-title-img{padding-top: 122px;}
+    .main-title-img{
+        padding-top: 122px;
+        img{
+            height: 250px;
+            width: 100%;
+        }
+    }
     .main-title::after{
         content: '';
         width: 100%;
@@ -46,7 +52,7 @@
     
     .sustainability{
         width: 100%;
-        margin: 0 auto;
+        margin: 0 50px;
     }
     
     .tab-head{
@@ -249,7 +255,9 @@
     }
     .main-title-img{
         padding-top: 122px;
-        img{width: 100%;}
+        img{
+            height: 250px;
+        }
     }
     .main-title::after{
         content: '';
@@ -505,7 +513,7 @@
 }
 .main-title-img{
     padding-top: 122px;
-    img{width: 100%;
+    img{
         height: 200px;
     }
 }

@@ -26,7 +26,11 @@
 }
 .main-title-img{
     padding-top: 122px;
-    img{height: 250px;}
+    img{
+        height: 250px;
+        width: 100%;
+        object-fit: cover
+    }
     
 }
 .main-title::after{
@@ -57,7 +61,10 @@
     color: var(--color-white);
 }
 
-main{color: var(--color-black);}
+main{
+    color: var(--color-black);
+    font-family: 'NanumGothic';
+}
 
 .sustainability{
     width: 1636px;
