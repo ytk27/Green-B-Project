@@ -59,7 +59,7 @@ input, textarea {
 }
 
 :root {
-  --color-white: #F9F9F9;
+  --color-white: #Ffffff;
   --color-gray: #F0F0F0;
   --color-black: #3C3C3C;
   --color-green1: #8CC63E;
@@ -940,7 +940,7 @@ header {
   }
 }
 :root {
-  --color-white: #F9F9F9;
+  --color-white: #ffffff;
   --color-gray: #F0F0F0;
   --color-black: #3C3C3C;
   --color-green1: #8CC63E;
@@ -949,7 +949,7 @@ header {
 }
 
 .main-title {
-  margin: 50px 142px 90px;
+  margin: 50px 142px;
   overflow: hidden;
   position: relative;
   font-family: "money";
@@ -1013,7 +1013,7 @@ main {
 .tab-body h2 {
   text-align: center;
   font-size: 40px;
-  padding-top: 40px;
+  padding-top: 90px;
   letter-spacing: -2px;
   opacity: 0;
   transform: translateY(30%);
@@ -1099,7 +1099,7 @@ main {
 
 .tab-con-02 .pic {
   width: 100%;
-  padding: 70px;
+  padding: 100px;
   background-color: #F9F9F9;
   text-align: center;
   border-radius: 46px;
@@ -1152,7 +1152,7 @@ main {
   flex-direction: row-reverse;
 }
 .tab-con-02 .sb-03 {
-  padding-top: 120px;
+  padding-top: 100px;
   text-align: center;
   opacity: 0;
   transform: translateY(30%);
@@ -1256,7 +1256,7 @@ main {
 
 @media (min-width: 1024px) and (max-width: 1700px) {
   .main-title {
-    margin: 50px 142px 90px;
+    margin: 50px 142px;
     overflow: hidden;
     position: relative;
     font-family: "money";
@@ -1364,7 +1364,7 @@ main {
   }
   .tab-con-02 .pic {
     width: 100%;
-    padding: 70px;
+    padding: 100px;
     background-color: #F9F9F9;
     text-align: center;
     border-radius: 46px;
@@ -1406,7 +1406,7 @@ main {
     flex-direction: row-reverse;
   }
   .tab-con-02 .sb-03 {
-    padding-top: 120px;
+    padding-top: 100px;
     text-align: center;
   }
   .tab-con-02 .sb-03 b {
@@ -1469,7 +1469,7 @@ main {
 }
 @media (max-width: 1024px) {
   .main-title {
-    margin: 30px 50px 90px;
+    margin: 30px 50px;
     overflow: hidden;
     position: relative;
     font-family: "money";
@@ -1516,7 +1516,7 @@ main {
   }
   .sustainability {
     width: auto;
-    margin: 0 25px;
+    margin: 0 50px;
   }
   .tab-head {
     text-align: center;
@@ -1623,7 +1623,7 @@ main {
     margin: 10px 0px;
   }
   .tab-con-02 .sb-03 {
-    padding-top: 120px;
+    padding-top: 100px;
     text-align: center;
   }
   .tab-con-02 .sb-03 b {
@@ -1829,7 +1829,7 @@ main {
   }
   .tab-con-02 .pic {
     width: 100%;
-    padding: 0px !important;
+    padding: 70px;
     background-color: #F9F9F9;
     text-align: center;
     border-radius: 46px;
@@ -1865,7 +1865,7 @@ main {
     margin: 10px 0px;
   }
   .tab-con-02 .sb-03 {
-    padding-top: 120px;
+    padding-top: 100px;
     text-align: center;
   }
   .tab-con-02 .sb-03 b {
