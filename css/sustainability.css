@@ -1012,8 +1012,8 @@ main {
 
 .tab-body h2 {
   text-align: center;
-  font-size: 50px;
-  padding-top: 90px;
+  font-size: 40px;
+  padding-top: 40px;
   letter-spacing: -2px;
   opacity: 0;
   transform: translateY(30%);
@@ -1308,7 +1308,7 @@ main {
   }
   .tab-body h2 {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     padding-top: 90px;
     letter-spacing: -2px;
   }
@@ -1543,7 +1543,7 @@ main {
     font-weight: bold;
   }
   .tab-body .sb-01 p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.6;
     padding-top: 30px;
   }
@@ -1756,7 +1756,7 @@ main {
   }
   .tab-body h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     padding-top: 60px;
     letter-spacing: -2px;
   }
@@ -1769,19 +1769,19 @@ main {
     padding-top: 90px;
   }
   .tab-body .sb-01 b {
-    font-size: 25px;
+    font-size: 20px;
     color: #8DC63F;
     line-height: 1;
     font-weight: bold;
   }
   .tab-body .sb-01 p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 2;
     word-break: keep-all;
     padding-top: 30px;
   }
   .tab-body .sb-01 p span {
-    font-size: 23px;
+    font-size: 18px;
     font-weight: bolder;
   }
   .tab-con-01 h2 {
