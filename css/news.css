@@ -509,10 +509,6 @@ header {
     display: none;
   }
 }
-footer {
-  padding-top: 170px;
-}
-
 .footer-up-menu {
   width: calc(100% - 284px);
   display: flex;
