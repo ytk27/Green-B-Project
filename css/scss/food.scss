@@ -15,7 +15,7 @@ body{
     color: var(--color-black);
     font-family: 'NanumGothic';
 }
-main{margin: 120px 0 170px; line-height: 2;}
+main{margin-top: 120px;}
 //좌우 여백 조정(full width contents 제외)
 h2, h3, .tab-list, .food-safety-1,
 .line{margin: 0 142px;}
@@ -106,7 +106,7 @@ article{
         .food-main-bg{
             width: 100%;
             height: 770px;
-            background: url('../img/food/food_main_01.jpg') no-repeat center center;
+            background: url('../img/food/food_main_01.jpg') no-repeat center center / cover;
             position: relative;
             p{
                 color: var(--color-white);
@@ -181,7 +181,7 @@ article{
                     display: block;
                     position: absolute;
                     right: 0; bottom: 0;
-                    transform: translate(-30%, -30%);
+                    transform: translate(-30%, -60%);
                     font-family: 'money';
                     font-size: 1.25rem;
                     color: var(--color-green1);
@@ -238,14 +238,16 @@ article{
             background-color: var(--color-green3);
             background-image: url('../img/food/food_bg_02.svg');
             background-position: center center;
-            padding: 120px 10%;
+            padding: 120px 0;
             margin-top: 90px;
         }
         li{
+            width: 1300px;
             margin: 90px auto;
-            padding: 50px;
+            padding: 60px;
             display: flex;
             align-items: center;
+            column-gap: 5%;
             border-radius: 46px;
             background-color: var(--color-white);
             position: relative;
@@ -289,13 +291,14 @@ article{
     }
     .campaign-content-right{ 
         text-align: left;
-        margin-left: 5%;
+        //margin-left: 5%;
         b{font-family: 'money'; font-size: 1.4rem;}
         p{
             font-family: 'money';
             margin: 10px 0 20px;
         }
         .name{
+            width: 133px;
             vertical-align: top;
             padding-right: 15px;
             font-family: 'NanumGothicBold';
@@ -391,7 +394,7 @@ article{
 .rule-popup-box1.open, .rule-popup-box2.open, .rule-popup-box3.open,
 .record-popup-box1.open{display: block;}
 .popup{
-    width: 70%; height: 80%;
+    width: 60%; height: 70%;
     margin: 0 auto;
     display: flex;
     padding: 50px;
@@ -423,12 +426,12 @@ article{
             margin: 15px 0;
             color: var(--color-green1);
         }
-        .button{margin: 30px 0 50px;}
+        .button{margin-top: 40px;}
     }
     .popup-close-btn{
         position: absolute;
-        right: 2%; top: -3%;
-        transform: translate(-2%, 3%);
+        right: 2%; top: 1%;
+        transform: translate(-2%, -1%);
         font-size: 3rem;
     }
 }

@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>풀무원</title>
+
+    <!-- meta -->
+    <meta name="author" content="김도연,황수빈,여태경,천지호">
+    <meta name="description" content="웹사이트 리뉴얼 팀 프로젝트 - 풀무원">
+    <meta name="keywords" content="company, renewal, green, healthy">
+    <meta name="Resource-type" content="document">
+    <meta property="og:title" content="풀무원" />
+    <meta property="og:description" content="풀무원" />
+
+    <!-- resources -->
     <link rel="stylesheet" href="./css/food.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script defer src="./js/common.js"></script>
+    <script defer src="./js/food.js"></script>
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-gothic.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./img/public/public_favicon_01.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./img/public/public_favicon_01.png" sizes="16x16" />
 </head>
 <body>
     <main>
@@ -18,9 +33,9 @@
             </div>
             <div class="main-tab-menu">
                 <ul class="tab-list">
-                    <li class="active"><a href="./food_rule.html">바른먹거리 원칙</a></li>
-                    <li><a href="./food_campaign.html">바른먹거리 캠페인</a></li>
-                    <li><a href="./food_safety.html">식품안전 및 품질정책</a></li>
+                    <a href="./food_rule.html"><li class="active">바른먹거리 원칙</li></a>
+                    <a href="./food_campaign.html"><li>바른먹거리 캠페인</li></a>
+                    <a href="./food_safety.html"><li>식품안전 및 품질정책</li></a>
                 </ul>
             </div>
 
@@ -156,7 +171,7 @@
                             <p>둘째,</p>
                             원료와 첨가물을 투명하게 공개합니다.
                         </div>
-                        <div class="button"><a href="https://product.pulmuone.kr/search_list.asp" target="_blank"> 클린라벨 확인하기 →</a></div>
+                        <div class="button"><a href="https://product.pulmuone.kr/search_list.asp" target="_blank"> 확인하기 →</a></div>
                     </div>
                     <span class="popup-close-btn">×</span>
                 </div>
@@ -169,64 +184,6 @@
             </div>
         </div>
     </main>
-
-    <script>
-        // popup
-        const elrecbtn = document.querySelector('.food-record .button');
-        const elfigbtns = document.querySelectorAll('.food-rule figure');
-        const elpopup = document.querySelectorAll('.rule-popup-box1, .rule-popup-box2, .rule-popup-box3, .record-popup-box1');
-        const elclosebtn = document.querySelectorAll('.rule-popup-box1 .popup-close-btn, .rule-popup-box2 .popup-close-btn, .rule-popup-box3 .popup-close-btn, .record-popup-box1 .popup-close-btn');
-        
-        elfigbtns.forEach(function(fig, i){
-            fig.onclick = function(){
-                elpopup[i].classList.add("open");
-                document.body.style.overflow = 'hidden';
-                event.preventDefault();
-
-                elclosebtn[i].onclick = function(){
-                    elpopup[i].classList.remove("open");
-                    document.body.style.overflow = 'auto';
-                }
-            }
-        })
-
-        elrecbtn.onclick = function(){
-            elpopup[3].classList.add("open");
-            document.body.style.overflow = 'hidden';
-            event.preventDefault();
-
-            elclosebtn[3].onclick = function(){
-                    elpopup[3].classList.remove("open");
-                    document.body.style.overflow = 'auto';
-                }
-        }
-        
-
-        // scroll
-        // Intersection Observer API를 사용하여 60% 이상 보일 때 'visible' 클래스를 추가
-        const options = {
-            threshold: 0.6 // 60% 이상 보일 때
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                const txt = entry.target;
-                if (entry.isIntersecting) {
-                    // 60% 이상 보이면 'visible' 클래스를 추가
-                    txt.classList.add('visible');
-                    observer.unobserve(txt);  // 한 번 나타나면 더 이상 관찰하지 않음
-                }
-            });
-        }, options);
-
-        // 모든 텍스트 박스를 옵저버에 등록
-        document.querySelectorAll('.ev-scroll').forEach(txt => {
-            observer.observe(txt);
-        });
-
-
-                
-    </script>
 
 </body>
 </html>
