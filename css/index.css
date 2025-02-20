@@ -509,16 +509,13 @@ header {
     display: none;
   }
 }
-footer {
-  padding-top: 170px;
-}
-
 .footer-up-menu {
   width: calc(100% - 284px);
   display: flex;
   align-items: center;
   margin: 0 auto;
   padding-bottom: 10px;
+  padding-top: 170px;
 }
 .footer-up-menu .footer-privacy {
   width: 100%;

@@ -509,16 +509,13 @@ header {
     display: none;
   }
 }
-footer {
-  padding-top: 170px;
-}
-
 .footer-up-menu {
   width: calc(100% - 284px);
   display: flex;
   align-items: center;
   margin: 0 auto;
   padding-bottom: 10px;
+  padding-top: 170px;
 }
 .footer-up-menu .footer-privacy {
   width: 100%;
@@ -1027,6 +1024,13 @@ footer {
   font-size: 50px;
   padding-top: 90px;
   letter-spacing: -2px;
+  opacity: 0;
+  transform: translateY(30%);
+  transition: 1s;
+}
+.tab-body h2.act {
+  opacity: 1;
+  transform: translateY(0%);
 }
 .tab-body span {
   color: #8DC63F;
@@ -1039,13 +1043,26 @@ footer {
   font-size: 30px;
   color: #8DC63F;
   line-height: 5;
+  opacity: 0;
+  transform: translateY(10%);
+  transition: 0.5s;
+}
+.tab-body .sb-01 b.act {
+  opacity: 1;
 }
 .tab-body .sb-01 p {
   font-size: 20px;
   line-height: 1.6;
+  opacity: 0;
+  transform: translateY(30%);
 }
 .tab-body .sb-01 p span {
   font-size: 25px;
+}
+.tab-body .sb-01 p.act {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: 1.5s;
 }
 
 .tab-con-01 ul {
@@ -1058,20 +1075,29 @@ footer {
   background-color: #F8F8F8;
   width: 1140px;
   margin: 10px auto;
+  word-break: keep-all;
+  opacity: 0;
+  transform: translateY(40%);
 }
 .tab-con-01 ul li b {
   width: 20%;
 }
 .tab-con-01 ul li div p {
   display: flex;
+  font-weight: 600;
 }
 .tab-con-01 ul li div p::before {
   content: "";
-  width: 7px;
-  height: 7px;
+  width: 5px;
+  height: 5px;
   background-color: black;
   border-radius: 100%;
   margin: 10px 10px 0 0;
+}
+.tab-con-01 ul li.act {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: 1s;
 }
 .tab-con-01 ul .bc {
   background-color: #f0f0f0;
@@ -1100,12 +1126,21 @@ footer {
 }
 .tab-con-02 .esg li > figure img {
   width: 100%;
+  opacity: 0;
+  transform: translateY(20%);
+}
+.tab-con-02 .esg li > figure img.act {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: 1s;
 }
 .tab-con-02 .esg li .info {
   width: 47%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  opacity: 0;
+  transform: translateY(20%);
 }
 .tab-con-02 .esg li .info div {
   display: flex;
@@ -1117,12 +1152,19 @@ footer {
   display: block;
   margin-bottom: 20px;
 }
+.tab-con-02 .esg li .info.act {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: 0.5s 0.3s;
+}
 .tab-con-02 .esg li:nth-of-type(2n) {
   flex-direction: row-reverse;
 }
 .tab-con-02 .sb-03 {
   padding-top: 120px;
   text-align: center;
+  opacity: 0;
+  transform: translateY(30%);
 }
 .tab-con-02 .sb-03 b {
   font-size: 30px;
@@ -1142,6 +1184,11 @@ footer {
 .tab-con-02 .sb-03 figure img {
   border-radius: 46px;
 }
+.tab-con-02 .sb-03.act {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: 1.2s;
+}
 
 .tab-con-03 .susang li {
   width: 1320px;
@@ -1150,8 +1197,17 @@ footer {
 .tab-con-03 .susang li .info-2 {
   display: flex;
   gap: 150px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   align-items: center;
+}
+.tab-con-03 .susang li .info-2 img {
+  opacity: 0;
+  transform: translateY(20%);
+}
+.tab-con-03 .susang li .info-2 img.act {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: 1s;
 }
 .tab-con-03 .susang li .info-2 strong {
   font-size: 25px;
@@ -1162,7 +1218,16 @@ footer {
   flex-direction: row-reverse;
   gap: 150px;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
+}
+.tab-con-03 .susang li .info-3 img {
+  opacity: 0;
+  transform: translateY(20%);
+}
+.tab-con-03 .susang li .info-3 img.act {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: 1s;
 }
 .tab-con-03 .susang li .info-3 strong {
   font-size: 25px;
@@ -1174,12 +1239,28 @@ footer {
   align-items: center;
   gap: 150px;
 }
+.tab-con-03 .susang li .info-4 img {
+  opacity: 0;
+  transform: translateY(20%);
+}
+.tab-con-03 .susang li .info-4 img.act {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: 1s;
+}
 .tab-con-03 .susang li .info-4 strong {
   font-size: 25px;
   display: block;
 }
 .tab-con-03 .susang li p {
   font-size: 30px;
+  opacity: 0;
+  transform: translateY(20%);
+}
+.tab-con-03 .susang li p.act {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: 0.5s 0.3s;
 }
 
 @media (min-width: 1024px) and (max-width: 1700px) {
