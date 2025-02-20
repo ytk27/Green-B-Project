@@ -955,7 +955,7 @@ header {
 
 .company {
   width: 1636px;
-  margin: 110px auto 0 auto;
+  margin: auto auto 0 auto;
 }
 
 .main-title {
@@ -1167,7 +1167,7 @@ header {
 
 .tab-sub07 > figure > img {
   float: right;
-  margin-top: 20px;
+  margin-top: 35px;
 }
 
 .tab-con02 {
@@ -1565,29 +1565,12 @@ header {
   text-align: center;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .company {
     width: 100%;
     padding: 0 25px;
-    margin: 80px auto 0 auto;
+    margin: 0 auto 0 auto;
   }
-  .tab-list {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .tab-list li {
-    padding: 10px 20px;
-    font-size: 1rem;
-  }
-  .tab-con01 > b,
-  .tab-con01 > strong {
-    font-size: 40px;
-  }
-  .tab-con01 > p {
-    font-size: 18px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
   .main-title {
     margin: 30px 50px 90px;
     font-size: 1.2rem;
@@ -1601,7 +1584,7 @@ header {
   }
   .tab-con01 > b,
   .tab-con01 > strong {
-    font-size: 30px;
+    font-size: 35px;
   }
   .tab-con01 > p {
     font-size: 15px;
@@ -1722,7 +1705,7 @@ header {
   }
   .tab-con02 > p {
     margin-top: 60px;
-    font-size: 15px;
+    font-size: 20px;
     font-family: "NanumGothic";
     line-height: 2.1;
   }
@@ -1735,7 +1718,7 @@ header {
   .tab-sub-head > p {
     font-family: "NanumGothicBold";
     border-bottom: 2px solid transparent;
-    font-size: 17px;
+    font-size: 20px;
   }
   .tab-sub-head > p:hover,
   .tab-sub-head > p.active {
@@ -1849,7 +1832,7 @@ header {
     font-family: "NanumGothicBold";
   }
   .history-main > p {
-    font-size: 23px;
+    font-size: 25px;
     font-family: "NanumGothicBold";
     margin-left: 40px;
   }
@@ -1907,7 +1890,7 @@ header {
     display: inline-block;
   }
   .tab-coon01 > h1 {
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 45px;
     font-family: "NanumGothicBold";
     text-align: center;
@@ -1992,6 +1975,11 @@ header {
   }
 }
 @media (max-width: 480px) {
+  .company {
+    width: 100%;
+    padding: 0 25px;
+    margin: 0 auto 0 auto;
+  }
   .main-title {
     margin: 30px 25px;
     font-size: 1rem;
@@ -2006,19 +1994,19 @@ header {
   }
   .tab-con01 > b,
   .tab-con01 > strong {
-    font-size: 24px;
+    font-size: 30px;
   }
   .tab-con01 > p {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 2;
   }
   .tab-sub01 > b {
     background-color: #DCEFB7;
-    font-size: 17px;
+    font-size: 18px;
     font-family: "NanumGothicBold";
   }
   .tab-sub01 > p {
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 30px;
     line-height: 2.1;
     font-family: "NanumGothic";
@@ -2061,7 +2049,7 @@ header {
     transform: translateY(-30%);
   }
   .tab-sub02 > p {
-    font-size: 17px;
+    font-size: 18px;
     background-color: #DCEFB7;
     display: inline-block;
     margin-bottom: 20px;
@@ -2116,24 +2104,27 @@ header {
   }
   .tab-list li {
     padding: 8px 15px;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
   .tab-con02 {
     text-align: center;
     margin-top: 110px;
   }
   .tab-con02 > b {
-    font-size: 22px;
+    font-size: 30px;
     font-family: "NanumGothicExtraBold";
     color: #8CC63E;
   }
   .tab-con02 > strong {
-    font-size: 22px;
+    font-size: 30px;
     font-family: "NanumGothicExtraBold";
+  }
+  .tab-con02 > strong > br {
+    display: none;
   }
   .tab-con02 > p {
     margin-top: 60px;
-    font-size: 13px;
+    font-size: 15px;
     font-family: "NanumGothic";
     line-height: 2.1;
   }
@@ -2146,7 +2137,7 @@ header {
   .tab-sub-head > p {
     font-family: "NanumGothicBold";
     border-bottom: 2px solid transparent;
-    font-size: 14px;
+    font-size: 15px;
   }
   .tab-sub-head > p:hover,
   .tab-sub-head > p.active {
@@ -2225,10 +2216,10 @@ header {
     margin-top: 170px;
   }
   .history-main > figure > img {
-    width: 70%;
+    width: 80%;
     max-width: 300px;
     height: auto;
-    margin-right: -10px;
+    margin-right: -1px;
   }
   .history-main > h2 {
     display: flex;
@@ -2241,11 +2232,11 @@ header {
     height: 100px;
     margin-left: 15px;
     color: white;
-    font-size: 17px;
+    font-size: 20px;
     font-family: "NanumGothicBold";
   }
   .history-main > p {
-    font-size: 17px;
+    font-size: 20px;
     font-family: "NanumGothicBold";
     margin-left: 20px;
     margin-top: 0px;
@@ -2273,19 +2264,19 @@ header {
     width: 100%;
   }
   .tab-coon01 > h2 {
-    font-size: 22px;
+    font-size: 30px;
     font-family: "NanumGothicExtraBold";
     margin-bottom: 60px;
   }
   .tab-coon01 > h2 > strong {
-    font-size: 22px;
+    font-size: 30px;
     color: #8CC63E;
   }
   .tab-coon01 > h2 > strong > br {
     display: none;
   }
   .tab-coon01 > b {
-    font-size: 17px;
+    font-size: 20px;
     font-family: "NanumGothic";
     display: block;
   }
@@ -2303,25 +2294,35 @@ header {
     display: inline-block;
   }
   .tab-coon01 > h1 {
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 45px;
     font-family: "NanumGothicBold";
     text-align: center;
   }
+  .tab-cl > figure {
+    width: 40%;
+    margin: 60px 0;
+  }
+  .tab-cl > figure > img {
+    width: 100%;
+    margin: auto;
+  }
   .tab-cl > p {
-    font-size: 16px;
+    font-size: 20px;
     font-family: "NanumGothicExtraBold";
     color: #8CC63E;
+    margin-right: 20px;
   }
   .tab-cl > b {
-    font-size: 16px;
+    font-size: 20px;
     font-family: "NanumGothicExtraBold";
+    margin-left: 20px;
   }
   .tab-cl01 {
     float: none;
   }
   .tab-cl01 > b {
-    font-size: 17px;
+    font-size: 20px;
     font-family: "NanumGothicBold";
     text-align: center;
   }
@@ -2339,7 +2340,7 @@ header {
     margin-top: 60px;
   }
   .tab-cl01 > p {
-    font-size: 13px;
+    font-size: 15px;
     font-family: "NanumGothic";
     margin-top: 60px;
     text-align: center;
@@ -2349,7 +2350,7 @@ header {
     float: none;
   }
   .tab-cl02 > b {
-    font-size: 17px;
+    font-size: 20px;
     font-family: "NanumGothicBold";
     text-align: center;
   }
@@ -2367,7 +2368,7 @@ header {
     margin-top: 60px;
   }
   .tab-cl02 > p {
-    font-size: 13px;
+    font-size: 15px;
     font-family: "NanumGothic";
     margin-top: 50px;
     text-align: center;
