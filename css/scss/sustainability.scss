@@ -18,7 +18,7 @@
     font-size: 1.6rem;
     b{
         display: inline-block;
-        background-color: white;
+        background-color: var(--color-white);
         position: relative;
         z-index: 2;
         padding-right:20px;
@@ -53,6 +53,8 @@
     color: var(--color-white);
 }
 
+main{color: var(--color-black);}
+
 .sustainability{
     width: 1636px;
     margin: 0 auto;
@@ -65,8 +67,8 @@
 .tab-body{
     h2{
         text-align: center;
-        font-size: 50px;
-        padding-top: 90px;
+        font-size: 40px;
+        padding-top: 40px;
         letter-spacing: -2px;
         opacity: 0;
         transform: translateY(30%);
@@ -129,7 +131,7 @@
                     &::before{
                         content: "";
                         width:5px;height:5px;
-                        background-color: black;
+                        background-color: var(--color-black);
                         border-radius: 100%;
                         margin:10px 10px 0 0;
                     }
