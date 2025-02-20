@@ -294,7 +294,7 @@
     width: 100%;
 }
 .tab-coon01{
-    margin-top: 300px;
+    margin-top: 90px;
     text-align: center;
 }
 .tab-coon01 > h2{
@@ -421,6 +421,9 @@
         b{
             padding-right: 0;
         }
+    }
+    .main-title::after{
+        display: none;
     }
     .tab-list{
         gap: 10px;
