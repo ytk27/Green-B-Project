@@ -948,9 +948,19 @@ header {
   --color-green3: #DCEFB7;
 }
 
+.main-title-img {
+  margin-top: 120px;
+}
+
 .main-title-img img {
   width: 100%;
-  margin-top: 120px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.body {
+  background-color: var(--color-white);
 }
 
 .company {
@@ -960,7 +970,7 @@ header {
 }
 
 .main-title {
-  margin: 50px 0 90px;
+  margin: 50px auto;
   overflow: hidden;
   position: relative;
   font-family: "money";
@@ -968,7 +978,7 @@ header {
 }
 .main-title b {
   display: inline-block;
-  background-color: #FFFFFF;
+  background-color: var(--color-white);
   position: relative;
   z-index: 2;
   padding-right: 20px;
@@ -1006,7 +1016,7 @@ header {
 
 .tab-con01 {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 90px;
   transition: all 0.5s ease;
 }
 
@@ -1173,7 +1183,7 @@ header {
 
 .tab-con02 {
   text-align: center;
-  margin-top: 110px;
+  margin-top: 90px;
 }
 
 .tab-con02 > b {
@@ -1572,7 +1582,7 @@ header {
     padding: 0 25px;
   }
   .main-title {
-    margin: 30px 50px 90px;
+    margin: 30px 50px;
     font-size: 1.6rem;
   }
   .tab-list {
@@ -1981,7 +1991,7 @@ header {
     margin: 0 auto 0 auto;
   }
   .main-title {
-    margin: 30px 50px 90px;
+    margin: 50px 0;
     font-size: 1.2rem;
   }
   .tab-list {
@@ -2104,17 +2114,17 @@ header {
     margin-top: 110px;
   }
   .tab-con02 > b {
-    font-size: 30px;
+    font-size: 35px;
     font-family: "NanumGothicExtraBold";
     color: #8CC63E;
   }
   .tab-con02 > strong {
-    font-size: 30px;
+    font-size: 35px;
     font-family: "NanumGothicExtraBold";
   }
   .tab-con02 > p {
     margin-top: 60px;
-    font-size: 20px;
+    font-size: 15px;
     font-family: "NanumGothic";
     line-height: 2.1;
   }
@@ -2389,8 +2399,17 @@ header {
     padding: 0 25px;
     margin: 0 auto 0 auto;
   }
+  .main-title-img {
+    margin-top: 120px;
+  }
+  .main-title-img img {
+    width: 100%;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .main-title {
-    margin: 30px 25px;
+    margin: 25px 0;
     font-size: 1rem;
   }
   .main-title b {
