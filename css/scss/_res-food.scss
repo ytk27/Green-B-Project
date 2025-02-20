@@ -493,6 +493,13 @@
         .food-safety-2{
             .safety-tab-menu{
                 margin: 0 0 30px;
+                .tab-list{            
+                    justify-content: center;
+                    margin: 0 25px;
+                    li{
+                        white-space: nowrap;
+                    }
+                }
             }
             .safety-tab-content{
                 span{margin: 0 25px;}

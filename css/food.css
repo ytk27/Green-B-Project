@@ -1906,6 +1906,13 @@ article .food-safety-2 .safety-content-right span {
   article .food-safety-2 .safety-tab-menu {
     margin: 0 0 30px;
   }
+  article .food-safety-2 .safety-tab-menu .tab-list {
+    justify-content: center;
+    margin: 0 25px;
+  }
+  article .food-safety-2 .safety-tab-menu .tab-list li {
+    white-space: nowrap;
+  }
   article .food-safety-2 .safety-tab-content span {
     margin: 0 25px;
   }
