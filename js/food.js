@@ -73,9 +73,12 @@ function campaign(){
     // link
     const linkLi = document.querySelector('.food-campaign li:first-child');
     
-    linkLi.addEventListener('click', function() {
+    // linkLi.addEventListener('click', function() {
+    //     window.location.href = "https://www.pulmuonefoundation.org/curriculum/children";
+    // });
+    linkLi.onclick = function(){
         window.location.href = "https://www.pulmuonefoundation.org/curriculum/children";
-    });
+    }
 }
 
 
