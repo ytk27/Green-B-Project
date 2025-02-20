@@ -32,7 +32,7 @@ $nanum3 : 'NanumGothicExtraBold';
     position: relative;
     text-align: left;
     font-family: 'money';
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     b{
         display: inline-block;
         background-color: var(--color-white);
@@ -45,7 +45,6 @@ $nanum3 : 'NanumGothicExtraBold';
 
 .main-title-img {
     width: 100%;
-    min-height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +103,7 @@ $nanum3 : 'NanumGothicExtraBold';
 }
 
 .container{
-    margin: 60px 0;
+    margin: 90px 0;
     width: 100%;
 }
 
@@ -252,7 +251,7 @@ ul.tabs li.current{
 }
 
 .esg-news-container {
-    margin-top: 60px;
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -351,7 +350,7 @@ $widn: calc(100% - 100px);
 }
 
 .container{
-    margin: 30px 0;
+    margin: 90px 0;
     width: 100%;
 }
 
@@ -509,27 +508,27 @@ ul.tabs li.current{
     
     .main-title{
         width: 100%;
-        margin: 50px 0;
+        margin: 30px 25px;
         box-sizing: border-box;
-        padding: 0 50px;
+        padding: 0 25px;
         overflow: hidden;
         position: relative;
         text-align: left;
         font-family: 'money';
-        font-size: 1.6rem;
+        font-size: 1rem;
         b{
             display: inline-block;
             background-color: var(--color-white);
             position: relative;
             z-index: 2;
-            padding-right: 20px;
+            padding-right: 0;
         }
     
     }
     
     .main-title-img {
         width: 100%;
-        min-height: 100px;
+        height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -537,7 +536,7 @@ ul.tabs li.current{
     
         img {
             width: 100%;
-            height: auto;
+            height: 100%;
             min-height: 100%;
             object-fit: cover;
         }
@@ -546,6 +545,7 @@ ul.tabs li.current{
     
     
     .main-title::after{
+        display: none;
         content: '';
         position: absolute;
         left: 50%; top: 50%;
@@ -588,7 +588,7 @@ ul.tabs li.current{
     }
     
     .container{
-        margin: 60px 0;
+        margin: 90px 0;
         width: 100%;
     }
     
@@ -738,7 +738,7 @@ ul.tabs li.current{
     }
     
     .esg-news-container {
-        margin-top: 60px;
+        margin-top: 90px;
         display: flex;
         flex-direction: column;
         text-align: center;
