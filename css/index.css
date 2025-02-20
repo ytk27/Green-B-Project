@@ -954,6 +954,7 @@ header {
 }
 body {
   background-color: var(--color-white);
+  color: var(--color-black);
   font-family: "NanumGothic";
 }
 
@@ -1114,7 +1115,7 @@ body {
   color: var(--color-white);
 }
 .slide-text b:nth-of-type(1) {
-  font-size: 150px;
+  font-size: 140px;
   opacity: 60%;
 }
 .slide-text b:nth-of-type(2) {
@@ -1123,7 +1124,7 @@ body {
 }
 .slide-text b:nth-of-type(3) {
   font-weight: normal;
-  font-size: 20px;
+  font-size: 15px;
   white-space: pre-line;
 }
 

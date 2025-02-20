@@ -333,6 +333,8 @@ function updateNews() {
     document.getElementById("nextBtn").disabled = currentPage === newsData.length - 1;
 }
 
+// prevBtn 클릭 시,
+// currentPage를 1 감소. 이전 뉴스로 이동
 document.getElementById("prevBtn").addEventListener("click", () => {
     if (currentPage > 0) {
         currentPage--;
@@ -340,6 +342,8 @@ document.getElementById("prevBtn").addEventListener("click", () => {
     }
 });
 
+// nextBtn 클릭 시,
+// currentPage를 1 증가.  다음 뉴스로 이동
 document.getElementById("nextBtn").addEventListener("click", () => {
     if (currentPage < newsData.length - 1) {
         currentPage++;

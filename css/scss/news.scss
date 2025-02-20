@@ -14,6 +14,15 @@ $nanum3 : 'NanumGothicExtraBold';
 // ************************
 // ************************
 
+body {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-family: 'NanumGothic';
+}
+
+
+
+
 
 // title
 .main-title{
@@ -86,9 +95,14 @@ $nanum3 : 'NanumGothicExtraBold';
 // section 1
 
 .sec1 {
+    background-color: var(--color-white);
     width: $widn;
     margin: 0 auto;
     height: 75vh;
+}
+
+main {
+    background-color: var(--color-white);
 }
 
 .container{
@@ -114,7 +128,13 @@ ul.tabs li{
     cursor: pointer;
     border-radius: 20px 20px 0 0;
     transition: all .2s ease;
+    font-family: $nanum1;
 
+}
+
+.tab-link {
+    
+    font-family: $nanum1;
 }
 
 ul.tabs li.current{
@@ -165,6 +185,7 @@ ul.tabs li.current{
                 display: flex;
                 flex-direction: column;
                 padding-left: 30px;
+                font-family: $nanum1;
 
                 b{
                     &:nth-of-type(1) {
@@ -181,6 +202,7 @@ ul.tabs li.current{
                         width: 90%;
                         font-size: 15px;
                         margin: 15px 0;
+                        font-weight: normal;
                         overflow: hidden;
                         text-overflow: ellipsis;
                         display: -webkit-box;
@@ -189,6 +211,7 @@ ul.tabs li.current{
                         
                     }
                     &:nth-of-type(3) {
+                        font-weight: normal;
                         width: 90%;
                         font-size: 12px;
                     }
@@ -288,12 +311,14 @@ ul.tabs li.current{
                 &:nth-of-type(3){
                     font-size: 15px; margin-bottom: 30px;
                     overflow: hidden;
+                    font-weight: normal;
                     text-overflow: ellipsis;
                     display: -webkit-box;
                     -webkit-line-clamp: 3;
                     -webkit-box-orient: vertical;
                 }
-                &:nth-of-type(4){font-size: 15px;}
+                &:nth-of-type(4){font-size: 15px;
+                    font-weight: normal;}
 
 
             }
