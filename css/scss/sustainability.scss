@@ -24,7 +24,11 @@
         padding-right:20px;
     }
 }
-.main-title-img{padding-top: 122px;}
+.main-title-img{
+    padding-top: 122px;
+    img{height: 250px;}
+    
+}
 .main-title::after{
     content: '';
     width: 100%;
