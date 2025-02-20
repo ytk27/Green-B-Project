@@ -190,33 +190,37 @@ $(document).ready(function () {
         { link: "https://youtu.be/KYLvO9ldrQk?si=j9A7NchKNk8Y8ZHV", imgSrc: "./img/index/index_mediaimgs_12.jpg" }
     ];
 
-    // imglist-1
+    // imglist-1 랜덤 데이터 관리
     // 랜덤 수 생성하기 (소수점빼고)
     const randomImglist1 = imglist1Data[Math.floor(Math.random() * imglist1Data.length)];
+    // 선택된 이미지랑 링크를 HTML에 적용
     $(".imglist-1 a").attr("href", randomImglist1.link);
     $(".imglist-1 img").attr("src", randomImglist1.imgSrc);
 
     // imglist-2 중복없이 4개 넣기
     function getRandomImages(arr, num) {
         let result = [];
+        // 원본 배열을 복사시키기
         let tempArr = [...arr];
 
         for (let i = 0; i < num; i++) {
             const randomIndex = Math.floor(Math.random() * tempArr.length);
             result.push(tempArr[randomIndex]);
-            // 선택한거 삭제 (중복방지)
+            // splice메서드로 선택한 배열 삭제
             tempArr.splice(randomIndex, 1);
         }
 
         return result;
     }
 
+    // imglist-2 랜덤 데이터 관리
     // 랜덤으로 4개 선택
     const randomImages = getRandomImages(imglist2Data, 4);
 
     // li에 넣기
     $(".imglist-2 ul li").each(function(index) {
         const selectedImage = randomImages[index];
+        // img랑 링크도 각각 적용
         $(this).find("a").attr("href", selectedImage.link);
         $(this).find("img").attr("src", selectedImage.imgSrc);
     });
@@ -230,13 +234,14 @@ $(document).ready(function () {
 // *****************
 
 
-
 // **********************
 // tablet section2 slider
 // **********************
 
 $(document).ready(function() {
+    // 작은 이미지 클릭 시
     $(".small-img").click(function() {
+        // data-속성값 가져오기
         var newSrc = $(this).attr("data-img");
         var newTitle = $(this).attr("data-title");
         var newDesc = $(this).attr("data-desc");
@@ -245,13 +250,13 @@ $(document).ready(function() {
         $("#main-title").text(newTitle);
         $("#main-desc").text(newDesc);
 
+        // 선택한 이미지 강조시키기
         $(".small-img").removeClass("active");
         $(this).addClass("active");
     });
 });
 
 // section5 뉴스 데이터 관리
-
 const newsData = [
     [
         {
@@ -314,11 +319,16 @@ function updateNews() {
             </a>
         `;
 
+        // newsContainer를 newsWrapper에 자식요소로 추가하기
         newsWrapper.appendChild(newsContainer);
     });
 
+    // 페이지 넘버 설정하기 현재페이지(0)+1 / 전체페이지 길이
     pageNumberElement.textContent = `${currentPage + 1} / ${newsData.length}`;
 
+    // 버튼 비활성화 시키기
+    // currentPage === 0 현재페이지가 첫번째 페이지일 때, 이전버튼 비활성화
+    // currentPage === newsData.length - 1 현재 페이지가 마지막 페이지일 때, 다음버튼 비활성화
     document.getElementById("prevBtn").disabled = currentPage === 0;
     document.getElementById("nextBtn").disabled = currentPage === newsData.length - 1;
 }

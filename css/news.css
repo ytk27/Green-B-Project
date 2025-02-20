@@ -519,7 +519,6 @@ footer {
   align-items: center;
   margin: 0 auto;
   padding-bottom: 10px;
-  padding-top: 170px;
 }
 .footer-up-menu .footer-privacy {
   width: 100%;
@@ -1147,7 +1146,7 @@ ul.tabs li.current {
 .sec2 {
   width: calc(100% - 284px);
   margin: 0 auto;
-  height: 1000px;
+  height: 1200px;
   text-align: center;
 }
 
@@ -1419,7 +1418,7 @@ ul.tabs li.current {
   .sec2 {
     width: calc(100% - 100px);
     margin: 0 auto;
-    height: 800px;
+    height: 1000px;
     text-align: center;
   }
   .esg-news-container {
@@ -1813,7 +1812,7 @@ ul.tabs li.current {
   .sec2 {
     width: calc(100% - 50px);
     margin: 0 auto;
-    height: 90vh;
+    height: 110vh;
     text-align: center;
   }
   .esg-news-container {

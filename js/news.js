@@ -182,7 +182,7 @@ $(document).ready(function () {
             if (window.innerWidth <= 1024 && window.innerWidth > 480) {
                 additionalHeight = 800;
             } else if (window.innerWidth <= 480) {
-                additionalHeight = 600;
+                additionalHeight = 700;
             }
     
             let newHeight = $sec2.height() + additionalHeight;
