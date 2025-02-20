@@ -957,7 +957,7 @@ header {
 }
 .main-title b {
   display: inline-block;
-  background-color: white;
+  background-color: var(--color-white);
   position: relative;
   z-index: 2;
   padding-right: 20px;
@@ -995,6 +995,10 @@ header {
 .main-tab-menu .tab-list li.active {
   background-color: var(--color-green1);
   color: var(--color-white);
+}
+
+main {
+  color: var(--color-black);
 }
 
 .sustainability {
@@ -1077,7 +1081,7 @@ header {
   content: "";
   width: 5px;
   height: 5px;
-  background-color: black;
+  background-color: var(--color-black);
   border-radius: 100%;
   margin: 10px 10px 0 0;
 }
