@@ -1304,11 +1304,11 @@ ul.tabs li.current {
     align-items: center;
     gap: 20px;
     font-family: "money";
-    font-size: 1.1rem;
+    font-size: 0.7rem;
   }
   .tab-list a li {
-    padding: 15px 40px;
-    border-radius: 85px;
+    padding: 15px 25px;
+    border-radius: 30px;
     border: 1px solid #ddd;
     transition: 0.5s;
   }
@@ -1694,9 +1694,10 @@ ul.tabs li.current {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     font-family: "money";
-    font-size: 1.1rem;
+    font-size: 0.6rem;
+    line-height: 1;
   }
   .tab-list a li {
     padding: 15px 40px;
