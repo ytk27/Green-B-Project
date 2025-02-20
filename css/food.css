@@ -965,7 +965,7 @@ body {
 }
 
 main {
-  margin-top: 120px;
+  margin-top: 121px;
 }
 
 h2, h3, .tab-list, .food-safety-1,
@@ -986,11 +986,15 @@ h3 {
 }
 
 article {
-  margin: 90px 0;
+  margin-top: 100px;
+}
+article:nth-of-type(1) {
+  margin-top: 90px;
 }
 
 .line {
-  padding: 90px 0 0;
+  margin-top: 100px;
+  padding-top: 100px;
   border-top: 1px solid var(--color-black);
 }
 
@@ -1018,14 +1022,17 @@ article {
 
 .main-title-img {
   width: 100%;
-  height: 100%;
+  height: 250px;
 }
 .main-title-img img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main-title {
-  margin: 50px 142px 90px;
+  margin: 50px 142px;
   overflow: hidden;
   position: relative;
   text-align: left;
@@ -1333,7 +1340,7 @@ article .food-safety-2 .safety-tab-content > span {
   margin: 0 142px;
 }
 article .food-safety-2 .safety-tab-content li {
-  margin: 150px 142px;
+  margin: 150px 142px 0;
   display: flex;
   -moz-column-gap: 10%;
        column-gap: 10%;
@@ -1479,11 +1486,9 @@ article .food-safety-2 .safety-content-right span {
   }
 }
 @media (max-width: 1024px) {
-  body {
+  main {
     font-size: 15px;
     word-break: keep-all;
-  }
-  main {
     line-height: 135%;
   }
   h2, h3, .tab-list, .food-safety-1, .line {
@@ -1508,7 +1513,7 @@ article .food-safety-2 .safety-content-right span {
     padding: 20px 30px;
   }
   .main-title {
-    margin: 30px 50px 90px;
+    margin: 30px 50px;
     font-size: 1.2rem;
     line-height: 2;
   }
@@ -1518,6 +1523,9 @@ article .food-safety-2 .safety-content-right span {
   .tab-list li {
     padding: 15px 25px;
     border-radius: 30px;
+  }
+  .line {
+    margin-top: 100px;
   }
   article .food-main .food-main-bg {
     height: auto;
@@ -1694,7 +1702,7 @@ article .food-safety-2 .safety-content-right span {
     line-height: 170%;
   }
   article .food-safety-2 .safety-tab-content li {
-    margin: 120px 50px;
+    margin: 120px 50px 0;
     display: block;
   }
   article .food-safety-2 .safety-tab-content li:nth-of-type(2) .safety-content-right {
@@ -1768,6 +1776,9 @@ article .food-safety-2 .safety-content-right span {
     margin-bottom: 60px;
     font-size: 1.5rem;
   }
+  .main-title-img {
+    height: 200px;
+  }
   .main-title {
     margin: 30px 25px;
     font-size: 1rem;
@@ -1778,10 +1789,26 @@ article .food-safety-2 .safety-content-right span {
   .main-title::after {
     display: none;
   }
+  .main-tab-menu {
+    overflow-x: scroll;
+    margin: 0 25px;
+  }
+  .main-tab-menu::-webkit-scrollbar {
+    display: none;
+  }
   .tab-list {
     gap: 10px;
     font-size: 0.6rem;
     line-height: 1;
+    justify-content: start;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+  .tab-list li {
+    white-space: nowrap;
+  }
+  .line {
+    margin-top: 100px;
   }
   article .food-main .food-main-bg p {
     padding: 50px 25px;

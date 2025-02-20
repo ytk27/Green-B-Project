@@ -39,11 +39,11 @@
 
 @media (max-width:1024px){
     // tablet
-    body{
+    main{
         font-size: 15px;
         word-break: keep-all;
+        line-height: 135%;
     }
-    main{line-height: 135%;}
     // 좌우 여백 조정(full width contents 제외)
     h2, h3, .tab-list, .food-safety-1, .line{
         margin: 0 50px;
@@ -66,7 +66,7 @@
     }
     // title
     .main-title{
-        margin: 30px 50px 90px;
+        margin: 30px 50px;
         font-size: 1.2rem;
         line-height: 2;
     }
@@ -77,6 +77,9 @@
             padding: 15px 25px;
             border-radius: 30px;
         }
+    }
+    .line{
+        margin-top: 100px;
     }
     
     article{
@@ -248,7 +251,7 @@
                     line-height: 170%;
                 }
                 li{
-                    margin: 120px 50px;
+                    margin: 120px 50px 0;
                     display: block;
 
                     &:nth-of-type(2){
@@ -341,6 +344,9 @@
         font-size: 1.5rem;
     }
     // title
+    .main-title-img{
+        height: 200px;
+    }
     .main-title{
         margin: 30px 25px;
         font-size: 1rem;
@@ -352,10 +358,25 @@
         display: none;
     }
     // tab
+    .main-tab-menu{
+        overflow-x: scroll;
+        margin: 0 25px;
+        &::-webkit-scrollbar{display: none;}
+    }
     .tab-list{
         gap: 10px;
         font-size: 0.6rem;
         line-height: 1;
+
+        justify-content: start;
+        margin: 0;
+        padding-bottom: 10px;
+        li{
+            white-space: nowrap;
+        }
+    }
+    .line{
+        margin-top: 100px;
     }
     
     article{
