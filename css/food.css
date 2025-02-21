@@ -1242,7 +1242,7 @@ article .food-campaign li {
   background-color: var(--color-white);
   position: relative;
 }
-article .food-campaign li:nth-of-type(1)::before {
+article .food-campaign li::before {
   content: "";
   display: block;
   position: absolute;
@@ -1256,20 +1256,20 @@ article .food-campaign li:nth-of-type(1)::before {
   opacity: 0;
   transition: 0.3s;
 }
-article .food-campaign li:nth-of-type(1)::after {
+article .food-campaign li::after {
   content: "신청하기 →";
   display: block;
   position: absolute;
-  right: 3%;
-  bottom: 6%;
-  transform: translate(-3%, -6%);
+  right: 0;
+  bottom: 0;
+  transform: translate(-35%, -90%);
   font-family: "money";
   font-size: 1.5rem;
   color: var(--color-green1);
   opacity: 0;
   transition: 0.3s;
 }
-article .food-campaign li:nth-of-type(1):hover::before, article .food-campaign li:nth-of-type(1):hover::after {
+article .food-campaign li:hover::before, article .food-campaign li:hover::after {
   opacity: 1;
 }
 article .food-content-left {
@@ -1470,10 +1470,8 @@ article .food-safety-2 .safety-content-right span {
     width: 55%;
     display: block;
   }
-  article .food-campaign li:nth-of-type(1)::after {
-    right: 3%;
-    bottom: 3%;
-    transform: translate(-3%, -3%);
+  article .food-campaign li::after {
+    transform: translate(-30%, -90%);
   }
   article .campaign-content-right {
     margin-top: 50px;
@@ -1636,10 +1634,10 @@ article .food-safety-2 .safety-content-right span {
     display: block;
     border-radius: 30px;
   }
-  article .food-campaign li:nth-of-type(1)::before {
+  article .food-campaign li::before {
     border-radius: 30px;
   }
-  article .food-campaign li:nth-of-type(1)::after {
+  article .food-campaign li::after {
     right: 5%;
     bottom: 5%;
     transform: translate(-5%, -5%);
