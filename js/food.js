@@ -71,14 +71,22 @@ function rule(){
 
 function campaign(){
     // link
-    const linkLi = document.querySelector('.food-campaign li:first-child');
+    const linkLi = document.querySelectorAll('.food-campaign li');
+    const link = [
+        "https://www.pulmuonefoundation.org/curriculum/children",
+        "http://foodforchange.or.kr/parentschild",
+        "https://bdsenior.platfarm.co.kr/contents/view/VC2308210142552977B2100?menu=217&menuitem=1307"
+    ]
     
     // linkLi.addEventListener('click', function() {
     //     window.location.href = "https://www.pulmuonefoundation.org/curriculum/children";
     // });
-    linkLi.onclick = function(){
-        window.location.href = "https://www.pulmuonefoundation.org/curriculum/children";
-    }
+    
+    linkLi.forEach(function(li, i){
+        li.onclick = function(){
+            window.location.href = link[i];
+        }
+    })
 }
 
 
