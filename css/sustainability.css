@@ -1020,13 +1020,13 @@ main {
   color: var(--color-black);
   font-family: "NanumGothic";
 }
-main b {
-  font-family: "NanumGothicBold";
-}
 
 .sustainability {
   width: 1636px;
   margin: 0 auto;
+}
+.sustainability b {
+  font-family: "NanumGothicBold";
 }
 
 .tab-head {
@@ -1280,7 +1280,7 @@ main b {
 
 @media (min-width: 1024px) and (max-width: 1700px) {
   .main-title {
-    margin: 30px 50px;
+    margin: 30px 142px;
     overflow: hidden;
     position: relative;
     font-family: "money";
