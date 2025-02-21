@@ -355,6 +355,7 @@ header {
 
     // 헤더 밑으로 펼치기
     .nav-down {
+        overflow: hidden;
         position: fixed;
         left: 0;
         top: 0;
