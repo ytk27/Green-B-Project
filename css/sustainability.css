@@ -1267,7 +1267,7 @@ main {
 
 @media (min-width: 1024px) and (max-width: 1700px) {
   .main-title {
-    margin: 30px 142px;
+    margin: 50px 142px;
     overflow: hidden;
     position: relative;
     font-family: "money";
