@@ -964,11 +964,31 @@ header {
   --color-green3: #DCEFB7;
 }
 
-body {
-  font-family: "NanumGothic";
+.p {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(80px); /* 아래에서 시작 */
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-.main-title-img img {
+.p.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* .b는 스크롤할 때만 보이게 설정 */
+.b {
+  opacity: 0;
+  transform: translateY(20px); /* 처음에 약간 아래에 위치 */
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.b.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.main-title-img {
   width: 100%;
   height: 250px;
   margin-top: 120px;
@@ -976,7 +996,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.main-title-img img img {
+.main-title-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -985,6 +1005,7 @@ body {
 
 .body {
   background-color: var(--color-white);
+  font-family: "NanumGothic";
 }
 
 .company {
@@ -1056,12 +1077,14 @@ body {
 .tab-con01 > b {
   margin-top: 90px;
   font-size: 40px;
+  font-family: "NanumGothicExtraBold";
 }
 
 .tab-con01 > strong {
   font-size: 40px;
   color: white;
   background-color: #8CC63E;
+  font-family: "NanumGothicExtraBold";
   margin-top: 90px;
 }
 
@@ -1216,11 +1239,8 @@ body {
 
 .tab-con02 > strong > b {
   font-size: 40px;
+  font-family: "NanumGothicExtraBold";
   color: #8CC63E;
-}
-
-.tab-con02 > strong {
-  font-size: 40px;
 }
 
 .tab-con02 > p {
@@ -1238,6 +1258,7 @@ body {
 }
 
 .tab-sub-head > p {
+  font-family: "NanumGothicBold";
   border-bottom: 2px solid transparent;
 }
 
