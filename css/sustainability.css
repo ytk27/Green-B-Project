@@ -15,6 +15,7 @@ html {
 }
 
 body {
+  font-family: "NanumGothic";
   -moz-user-select: none;
        user-select: none;
   -webkit-user-select: none;

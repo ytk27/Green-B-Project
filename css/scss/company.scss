@@ -8,6 +8,10 @@
     --color-green3: #DCEFB7;
 } 
 
+body {
+    font-family: 'NanumGothic';
+}
+
 .main-title-img img {
     width: 100%;
     margin-top: 120px;
@@ -75,13 +79,11 @@
 .tab-con01 > b{
     margin-top: 90px;
     font-size: 40px;
-    font-family: 'NanumGothicExtraBold';
 }
 .tab-con01 > strong{
     font-size: 40px;
     color: white;
     background-color: #8CC63E;
-    font-family: 'NanumGothicExtraBold';
     margin-top: 90px;
 }
 .tab-con01 > p{
@@ -203,12 +205,10 @@
 }
 .tab-con02 > b{
     font-size: 40px;
-    font-family: 'NanumGothicExtraBold';
     color: #8CC63E;
 }
 .tab-con02 > strong{
     font-size: 40px;
-    font-family: 'NanumGothicExtraBold';
 }
 .tab-con02 > p{
     margin-top: 60px;
@@ -223,7 +223,6 @@
     gap: 50px;
 }
 .tab-sub-head > p{
-    font-family: 'NanumGothicBold';
     border-bottom: 2px solid transparent;
 }
 .tab-sub-head > p:hover,

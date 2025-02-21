@@ -16,6 +16,7 @@ html {
 }
 
 body {
+  font-family: "NanumGothic";
   -moz-user-select: none;
        user-select: none;
   -webkit-user-select: none;
@@ -962,6 +963,10 @@ header {
   --color-green3: #DCEFB7;
 }
 
+body {
+  font-family: "NanumGothic";
+}
+
 .main-title-img img {
   width: 100%;
   margin-top: 120px;
@@ -1036,14 +1041,12 @@ header {
 .tab-con01 > b {
   margin-top: 90px;
   font-size: 40px;
-  font-family: "NanumGothicExtraBold";
 }
 
 .tab-con01 > strong {
   font-size: 40px;
   color: white;
   background-color: #8CC63E;
-  font-family: "NanumGothicExtraBold";
   margin-top: 90px;
 }
 
@@ -1192,13 +1195,11 @@ header {
 
 .tab-con02 > b {
   font-size: 40px;
-  font-family: "NanumGothicExtraBold";
   color: #8CC63E;
 }
 
 .tab-con02 > strong {
   font-size: 40px;
-  font-family: "NanumGothicExtraBold";
 }
 
 .tab-con02 > p {
@@ -1216,7 +1217,6 @@ header {
 }
 
 .tab-sub-head > p {
-  font-family: "NanumGothicBold";
   border-bottom: 2px solid transparent;
 }
 
