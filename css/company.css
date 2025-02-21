@@ -1195,15 +1195,16 @@ header {
   margin-top: 90px;
 }
 
-.tab-con02 > b {
+.tab-con02 > strong {
+  letter-spacing: -3px;
+  font-size: 40px;
+  font-family: "NanumGothicExtraBold";
+}
+
+.tab-con02 > strong > b {
   font-size: 40px;
   font-family: "NanumGothicExtraBold";
   color: #8CC63E;
-}
-
-.tab-con02 > strong {
-  font-size: 40px;
-  font-family: "NanumGothicExtraBold";
 }
 
 .tab-con02 > p {
@@ -1714,14 +1715,14 @@ header {
     text-align: center;
     margin-top: 110px;
   }
-  .tab-con02 > b {
-    font-size: 40px;
-    font-family: "NanumGothicExtraBold";
-    color: #8CC63E;
-  }
   .tab-con02 > strong {
     font-size: 40px;
     font-family: "NanumGothicExtraBold";
+  }
+  .tab-con02 > strong > b {
+    font-size: 40px;
+    font-family: "NanumGothicExtraBold";
+    color: #8CC63E;
   }
   .tab-con02 > p {
     margin-top: 60px;
@@ -2001,7 +2002,7 @@ header {
     margin: 0 auto 0 auto;
   }
   .main-title {
-    margin: 50px 0;
+    margin: 30px 50px;
     font-size: 1.2rem;
   }
   .tab-list {
@@ -2117,21 +2118,21 @@ header {
     margin-top: 40px;
   }
   .tab-sub07 > figure > img {
-    width: 25%;
+    width: 30%;
     height: auto;
   }
   .tab-con02 {
     text-align: center;
     margin-top: 110px;
   }
-  .tab-con02 > b {
-    font-size: 35px;
-    font-family: "NanumGothicExtraBold";
-    color: #8CC63E;
-  }
   .tab-con02 > strong {
     font-size: 35px;
     font-family: "NanumGothicExtraBold";
+  }
+  .tab-con02 > strong > b {
+    font-size: 35px;
+    font-family: "NanumGothicExtraBold";
+    color: #8CC63E;
   }
   .tab-con02 > p {
     margin-top: 60px;
@@ -2557,7 +2558,7 @@ header {
     text-align: center;
     margin-top: 110px;
   }
-  .tab-con02 > b {
+  .tab-con02 > strong > b {
     font-size: 30px;
     font-family: "NanumGothicExtraBold";
     color: #8CC63E;

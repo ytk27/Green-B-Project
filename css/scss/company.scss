@@ -7,7 +7,6 @@
     --color-green2: #B7D47F;
     --color-green3: #DCEFB7;
 } 
-
 .main-title-img {
     width: 100%;
     height: 250px;
@@ -216,14 +215,15 @@
     text-align: center;
     margin-top: 90px;
 }
-.tab-con02 > b{
+.tab-con02 > strong{
+    letter-spacing: -3px;
+    font-size: 40px;
+    font-family: 'NanumGothicExtraBold';
+}
+.tab-con02 > strong > b{
     font-size: 40px;
     font-family: 'NanumGothicExtraBold';
     color: #8CC63E;
-}
-.tab-con02 > strong{
-    font-size: 40px;
-    font-family: 'NanumGothicExtraBold';
 }
 .tab-con02 > p{
     margin-top: 60px;
