@@ -27,15 +27,30 @@ const options = {
 };
 
 // .p가 화면에 나타나면 즉시 show 클래스 추가
-pElements.forEach((p) => {
-    p.classList.add("show");
-});
+// pElements.forEach((p) => {
+//     p.classList.add("show");
+// });
 
 // .b는 스크롤해야만 나타남
+const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show"); // .p가 화면에 보일 때 visible 추가
+            
+        }
+    });
+}, options);
+
+pElements.forEach((p) => {
+    observer2.observe(p);
+});
+
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add("visible"); // .b가 화면에 보일 때 visible 추가
+            
         }
     });
 }, options);
