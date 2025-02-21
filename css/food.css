@@ -294,6 +294,7 @@ header {
     top: 100%;
   }
   .nav-down {
+    overflow: hidden;
     position: fixed;
     left: 0;
     top: 0;
