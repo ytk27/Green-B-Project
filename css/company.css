@@ -963,11 +963,6 @@ header {
      object-fit: cover;
 }
 
-.main-title-img img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .body {
   background-color: var(--color-white);
 }
