@@ -1,20 +1,47 @@
-const contents = document.querySelectorAll(".b");
+// const contents = document.querySelectorAll(".b");
+
+// const options = {
+//     root: null,
+//     rootMargin: "0px",
+//     threshold: 0.3,
+// };
+// const observer = new IntersectionObserver((entries, observer) => {
+//     entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//         entry.target.classList.add("show");
+//     }
+// });
+// }, options);
+
+// contents.forEach((content) => {
+//     observer.observe(content);
+// });
+
+const pElements = document.querySelectorAll(".p");
+const bElements = document.querySelectorAll(".b");
 
 const options = {
     root: null,
     rootMargin: "0px",
     threshold: 0.3,
 };
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-    }
+
+// .p가 화면에 나타나면 즉시 show 클래스 추가
+pElements.forEach((p) => {
+    p.classList.add("show");
 });
+
+// .b는 스크롤해야만 나타남
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible"); // .b가 화면에 보일 때 visible 추가
+        }
+    });
 }, options);
 
-contents.forEach((content) => {
-    observer.observe(content);
+bElements.forEach((b) => {
+    observer.observe(b);
 });
 
 //swiper
