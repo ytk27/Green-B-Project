@@ -1,13 +1,10 @@
 const contents = document.querySelectorAll(".b");
 
-
-
 const options = {
     root: null,
     rootMargin: "0px",
     threshold: 0.3,
 };
-
 const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -21,7 +18,6 @@ contents.forEach((content) => {
 });
 
 //swiper
-
 const swiperSlide = document.querySelectorAll(".mySwiper .swiper-slide");
 const swiperSlide_img = document.querySelector(".tab-img-con01 img");
 const swiperSlide_p = document.querySelector(".tab-img-con01 p");
