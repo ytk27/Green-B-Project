@@ -1020,6 +1020,9 @@ main {
   color: var(--color-black);
   font-family: "NanumGothic";
 }
+main b {
+  font-family: "NanumGothicBold";
+}
 
 .sustainability {
   width: 1636px;
@@ -1092,10 +1095,11 @@ main {
 }
 .tab-con-01 ul li b {
   width: 20%;
+  font-family: "NanumGothicBold";
 }
 .tab-con-01 ul li div p {
   display: flex;
-  font-weight: 600;
+  font-family: "NanumGothicBold";
 }
 .tab-con-01 ul li div p::before {
   content: "";
@@ -1363,7 +1367,7 @@ main {
     align-items: center;
     padding: 40px 70px;
     background-color: #F8F8F8;
-    width: 100%;
+    width: 1140px;
     margin: 10px auto;
   }
   .tab-con-01 ul li b {
