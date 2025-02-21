@@ -1007,13 +1007,13 @@ main {
   color: var(--color-black);
   font-family: "NanumGothic";
 }
-main b {
-  font-family: "NanumGothicBold";
-}
 
 .sustainability {
   width: 1636px;
   margin: 0 auto;
+}
+.sustainability b {
+  font-family: "NanumGothicBold";
 }
 
 .tab-head {
