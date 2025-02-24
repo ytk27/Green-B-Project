@@ -345,24 +345,26 @@ header {
   .page-move-button {
     display: flex;
     flex-direction: column;
-    align-items: end;
     padding: 130px 50px;
   }
   .page-move-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 20px;
     margin: 15px 0;
-    padding: 3px 20px;
+    padding: 5px 10px 5px 15px;
     background-color: var(--color-gray);
     box-shadow: 0px 2px 6px 0px #b7b7b7;
   }
   .page-move-button a li {
     font-family: "NanumGothicBold";
     color: var(--color-black);
-    font-size: 20px;
+    font-size: 15px;
     white-space: nowrap;
   }
   .page-move-button a li img {
-    margin-left: 15px;
+    margin-left: 7px;
   }
   .page-move-button a:hover {
     background-color: #e4e4e4;
@@ -505,7 +507,7 @@ header {
   .page-move-button a li {
     font-family: "NanumGothicBold";
     color: var(--color-black);
-    font-size: 20px;
+    font-size: 15px;
   }
   .page-move-button a li img {
     display: none;

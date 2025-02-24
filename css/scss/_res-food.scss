@@ -302,8 +302,7 @@
         }
     }
     .record-popup-box1 .popup{
-        height: 40%;
-        padding: 60px 10px;
+        padding: 50px 10px;
         p {
             img{height: auto;}
         }
@@ -358,7 +357,7 @@
     }
     // tab
     .main-tab-menu{
-        overflow-x: scroll;
+        overflow-x: auto;
         margin: 0 25px;
         &::-webkit-scrollbar{display: none;}
     }
@@ -434,14 +433,15 @@
             }
             li{
                 padding: 0;
+                margin: 60px auto;
                 // hover
-                &:nth-of-type(1)::before{
+                &::before{
                     display: none;
                 }
-                &:nth-of-type(1)::after{
+                &::after{
                     content: '↓ 클릭하여 신청하기';
-                    left: 0; top: 0; right: 15%; bottom: 5%;
-                    transform: translate(-15%, -5%);
+                    left: 0; top: 0; right: 0; bottom: 0;
+                    transform: translate(0, -5%);
                     font-size: 0.75rem;
                     color: var(--color-gray-food);
                     opacity: 1;
@@ -491,13 +491,11 @@
         }
         .food-safety-2{
             .safety-tab-menu{
-                margin: 0 0 30px;
+                margin: 0 25px 30px;
+
                 .tab-list{            
                     justify-content: center;
-                    margin: 0 25px;
-                    li{
-                        white-space: nowrap;
-                    }
+                    font-size: 0.75rem;
                 }
             }
             .safety-tab-content{
@@ -542,5 +540,17 @@
     .record-popup-box1 .popup{
         width: 80%; height: 30%;
         padding: 50px 10px;
+    }
+}
+
+@media (max-width: 305px){
+    .food-safety-2{
+        .safety-tab-menu{
+
+            .tab-list{
+                display: inline-block;
+                li{margin: 5px;}
+            }
+        }
     }
 }

@@ -336,12 +336,19 @@ article{
     .food-safety-2{
         .safety-tab-menu{
             margin: 90px;
+            .tab-list{
+                font-family: 'NanumGothic';
+                font-size: 1rem;
+            }
             li{
                 border-color: transparent;
+                padding: 5px 0;
+                border-radius: 0;
 
                 // hover, onclick event
                 &:hover, &.active{
-                    border: 1px solid var(--color-green1);
+                    font-weight: bold;
+                    border-bottom: 1px solid var(--color-green1);
                     color: var(--color-green1);
                 }
             }

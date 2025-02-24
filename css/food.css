@@ -346,24 +346,26 @@ header {
   .page-move-button {
     display: flex;
     flex-direction: column;
-    align-items: end;
     padding: 130px 50px;
   }
   .page-move-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 20px;
     margin: 15px 0;
-    padding: 3px 20px;
+    padding: 5px 10px 5px 15px;
     background-color: var(--color-gray);
     box-shadow: 0px 2px 6px 0px #b7b7b7;
   }
   .page-move-button a li {
     font-family: "NanumGothicBold";
     color: var(--color-black);
-    font-size: 20px;
+    font-size: 15px;
     white-space: nowrap;
   }
   .page-move-button a li img {
-    margin-left: 15px;
+    margin-left: 7px;
   }
   .page-move-button a:hover {
     background-color: #e4e4e4;
@@ -506,7 +508,7 @@ header {
   .page-move-button a li {
     font-family: "NanumGothicBold";
     color: var(--color-black);
-    font-size: 20px;
+    font-size: 15px;
   }
   .page-move-button a li img {
     display: none;
@@ -1326,11 +1328,18 @@ article .food-safety-1 .food-safety-figure figcaption > p {
 article .food-safety-2 .safety-tab-menu {
   margin: 90px;
 }
+article .food-safety-2 .safety-tab-menu .tab-list {
+  font-family: "NanumGothic";
+  font-size: 1rem;
+}
 article .food-safety-2 .safety-tab-menu li {
   border-color: transparent;
+  padding: 5px 0;
+  border-radius: 0;
 }
 article .food-safety-2 .safety-tab-menu li:hover, article .food-safety-2 .safety-tab-menu li.active {
-  border: 1px solid var(--color-green1);
+  font-weight: bold;
+  border-bottom: 1px solid var(--color-green1);
   color: var(--color-green1);
 }
 article .food-safety-2 .safety-tab-content > span {
@@ -1753,8 +1762,7 @@ article .food-safety-2 .safety-content-right span {
     font-size: 1.8rem;
   }
   .record-popup-box1 .popup {
-    height: 40%;
-    padding: 60px 10px;
+    padding: 50px 10px;
   }
   .record-popup-box1 .popup p img {
     height: auto;
@@ -1786,7 +1794,7 @@ article .food-safety-2 .safety-content-right span {
     display: none;
   }
   .main-tab-menu {
-    overflow-x: scroll;
+    overflow-x: auto;
     margin: 0 25px;
   }
   .main-tab-menu::-webkit-scrollbar {
@@ -1851,17 +1859,18 @@ article .food-safety-2 .safety-content-right span {
   }
   article .food-campaign li {
     padding: 0;
+    margin: 60px auto;
   }
-  article .food-campaign li:nth-of-type(1)::before {
+  article .food-campaign li::before {
     display: none;
   }
-  article .food-campaign li:nth-of-type(1)::after {
+  article .food-campaign li::after {
     content: "↓ 클릭하여 신청하기";
     left: 0;
     top: 0;
-    right: 15%;
-    bottom: 5%;
-    transform: translate(-15%, -5%);
+    right: 0;
+    bottom: 0;
+    transform: translate(0, -5%);
     font-size: 0.75rem;
     color: var(--color-gray-food);
     opacity: 1;
@@ -1900,14 +1909,11 @@ article .food-safety-2 .safety-content-right span {
     border-bottom: 1px solid var(--color-gray-food);
   }
   article .food-safety-2 .safety-tab-menu {
-    margin: 0 0 30px;
+    margin: 0 25px 30px;
   }
   article .food-safety-2 .safety-tab-menu .tab-list {
     justify-content: center;
-    margin: 0 25px;
-  }
-  article .food-safety-2 .safety-tab-menu .tab-list li {
-    white-space: nowrap;
+    font-size: 0.75rem;
   }
   article .food-safety-2 .safety-tab-content span {
     margin: 0 25px;
@@ -1951,5 +1957,13 @@ article .food-safety-2 .safety-content-right span {
     width: 80%;
     height: 30%;
     padding: 50px 10px;
+  }
+}
+@media (max-width: 305px) {
+  .food-safety-2 .safety-tab-menu .tab-list {
+    display: inline-block;
+  }
+  .food-safety-2 .safety-tab-menu .tab-list li {
+    margin: 5px;
   }
 }
