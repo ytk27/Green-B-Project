@@ -55,9 +55,22 @@
     📦Green-B-Project
      ┣ 📂css
      ┃ ┣ 📂scss
+     ┃ ┃ ┣ 📜_common.scss
+     ┃ ┃ ┣ 📜_indexres.scss
+     ┃ ┃ ┣ 📜_newsres.scss
      ┃ ┃ ┣ 📜_res_sustainability.scss //반응형
      ┃ ┃ ┣ 📜_res-company.scss
      ┃ ┃ ┣ 📜_res-foods.scss
+     ┃ ┃ ┣ 📜company.scss
+     ┃ ┃ ┣ 📜food.scss
+     ┃ ┃ ┣ 📜index.scss
+     ┃ ┃ ┣ 📜news.scss
+     ┃ ┃ ┣ 📜sustainability.scss
+     ┃ ┣ 📜company.css
+     ┃ ┣ 📜food.css
+     ┃ ┣ 📜index.css
+     ┃ ┣ 📜news.css
+     ┃ ┣ 📜sustainability.css
      ┣ 📂img
      ┃ ┣ 📂company
      ┃ ┗ 📂food
@@ -76,6 +89,18 @@
      ┃ ┣ 📂fonts 
      ┃ ┣ 📂music
      ┃ ┣ 📂video
+     ┣ 📜company_ceo.html
+     ┣ 📜company_history.html
+     ┣ 📜food_campaign.html
+     ┣ 📜food_rule.html
+     ┣ 📜food_safety.html
+     ┣ 📜include.html
+     ┣ 📜index.html
+     ┣ 📜news_enter.html
+     ┣ 📜news_esg.html
+     ┣ 📜sustainability_activity.html
+     ┣ 📜sustainability_ons.html
+     ┣ 📜sustainability_result.html
      ┣ 📜.env
      ┗ 📜README.md
 
