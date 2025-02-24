@@ -36,7 +36,7 @@
 | **김도연** | [dododoodo](https://github.com/tolix-a) | 팀장 |     |
 | 여태경 | [ytk27](https://github.com/pjiyeon90) | 개발 |   ✔   |
 | 천지호 | [jiho](https://github.com/0011git) | 디자인 |    |
-| 황수빈 | [수빈](https://github.com/Pon119) | 기획 |       |
+| 황수빈 | [subin75](https://github.com/Pon119) | 기획 |       |
 
 
 
