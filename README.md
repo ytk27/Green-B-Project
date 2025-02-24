@@ -89,9 +89,9 @@
 
 ## 📚 참고 URL
 - 기획서 : 
-[pulmuone Google Docs](<https://docs.google.com/presentation/d/1tlmfOmfyTzOd-6NjCS3rTwU-81MRL-_QRetkOH44cr4/edit#slide=id.p>)
+[Pulmuone Google Docs](<https://docs.google.com/presentation/d/1tlmfOmfyTzOd-6NjCS3rTwU-81MRL-_QRetkOH44cr4/edit#slide=id.p>)
 - 화면 설계 : 
-[pulmuon Figma](<https://www.figma.com/design/yvRbuH4Q8I5dwRoWZ62oT1/(B%EC%A1%B0)%EC%8A%A4%ED%86%A0%EB%A6%AC%EB%B3%B4%EB%93%9C?node-id=2741-4201&p=f&t=GGYomiavl7cKnkD6-0>)
+[Pulmuon Figma](<https://www.figma.com/design/yvRbuH4Q8I5dwRoWZ62oT1/(B%EC%A1%B0)%EC%8A%A4%ED%86%A0%EB%A6%AC%EB%B3%B4%EB%93%9C?node-id=2741-4201&p=f&t=GGYomiavl7cKnkD6-0>)
 - ppt : 
 [SeoulW Canva]()
 
