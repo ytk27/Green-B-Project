@@ -9,8 +9,9 @@
 ![seoulw_sub (3)](https://github.com/user-attachments/assets/cb28df43-f385-4149-a4c6-b6b174f82dff)
 
 
-## 🔗 배포 URL
-<https://ytk27.github.io/Green-B-Project/>
+## 🔗 URL
+- 기존 <https://www.pulmuone.co.kr/pulmuone/main/Index.do>
+- 리뉴얼 <https://ytk27.github.io/Green-B-Project/>
 
 
 
@@ -97,7 +98,7 @@
 
 
 ---
-# 담당 개발 상세 : 성주영
+# 담당 개발 상세 : 
 
 ## 📑 요약
 
