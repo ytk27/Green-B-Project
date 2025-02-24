@@ -92,9 +92,9 @@
 - 기획서 : 
 [Pulmuone Google Docs](<https://docs.google.com/presentation/d/1tlmfOmfyTzOd-6NjCS3rTwU-81MRL-_QRetkOH44cr4/edit#slide=id.p>)
 - 화면 설계 : 
-[Pulmuon Figma](<https://www.figma.com/design/yvRbuH4Q8I5dwRoWZ62oT1/(B%EC%A1%B0)%EC%8A%A4%ED%86%A0%EB%A6%AC%EB%B3%B4%EB%93%9C?node-id=2741-4201&p=f&t=GGYomiavl7cKnkD6-0>)
+[Pulmuone Figma](<https://www.figma.com/design/yvRbuH4Q8I5dwRoWZ62oT1/(B%EC%A1%B0)%EC%8A%A4%ED%86%A0%EB%A6%AC%EB%B3%B4%EB%93%9C?node-id=2741-4201&p=f&t=GGYomiavl7cKnkD6-0>)
 - ppt : 
-[Pulmuon Canva](https://www.canva.com/design/DAGf-bGIHP0/ht3xe4QL4MPhP579NkMXyg/edit)
+[Pulmuone Canva](https://www.canva.com/design/DAGf-bGIHP0/ht3xe4QL4MPhP579NkMXyg/edit)
 
 
 ---
