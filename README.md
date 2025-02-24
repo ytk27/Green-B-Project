@@ -6,7 +6,7 @@
 ## 🥬 소개
 기존의**풀무원**사이트를 리다지인 및 재구성한 리뉴얼 프로젝트입니다.
 
-![seoulw_sub (3)]()
+![seoulw_sub (3)](https://github.com/user-attachments/assets/cb28df43-f385-4149-a4c6-b6b174f82dff)
 
 
 ## 🔗 배포 URL
@@ -21,7 +21,7 @@
 ### 2. **목표**
    - 중복되는 컨텐츠 정리 및 전체비율 수정등 으로 사용자 만족도 향상 
      
-### 4. **주요 기술 스**
+### 4. **개발 환경**
    - HTML, SCSS
      
 ### 5. **기간 및 인원**
@@ -40,18 +40,11 @@
 
 
 ## 💡 주요 기능
-### 1. 
-   - [KOPIS API](https://www.kopis.or.kr/por/cs/openapi/openApiList.do?menuId=MNU_00074)를 활용해 메인 컨텐츠를 제공
+### 1. 이미지 변경 및 텍스트 변경
+   - swiper을 활용하여 선택한 이미지와 그에 맞는 텍스트로 변경
 
-### 2. 카카오맵 API 지도
-   - [카카오맵 API](https://apis.map.kakao.com/web/)를 사용해 디테일 페이지에서 공연장 지도 출력
-
-### 3. 반응형 웹
+### 2. 반응형 웹
    - 모바일 스몰(~480px), 태블릿(~1024px), PC(1024~1700px) 해상도 지원
-
-### 4. 리뷰 작성 및 북마크 기능
-   - 회원 전용으로 리뷰 작성 및 북마크 등록/삭제 기능 제공
-   - DB로 Google Firebase를 사용
 
 
 
@@ -88,17 +81,17 @@
 ## 🛠️ 개발 환경
 | 기술            | 기술명                                                 | Badge                                                           |
 |:-----------------:|:-----------------------------------------------------:|:-------------------------------------------------------------:|
-| **스타일링**      | SASS                                                 | ![Swiper](https://camo.githubusercontent.com/4e0b81cd28426be6f132f480ee7dfe04576ebfbe7d573229458a9554c63d65e8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f534153532d4343363639393f7374796c653d666c61742d737175617265266c6f676f3d73617373266c6f676f436f6c6f723d77686907465) |`
+| **스타일링**      | SASS                                                 | ![SASS](https://camo.githubusercontent.com/18c8bec42317b6f104e69fc59c2d9262b40b24c65954995d50af3904232c36a1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f536173732d4343363639393f7374796c653d666c61742d737175617265266c6f676f3d53617373266c6f676f436f6c6f723d7768697465) |`
 | **슬라이더**      | Swiper                                               | ![Swiper](https://img.shields.io/badge/Swiper-6332F6?style=flat-square&logo=swiper&logoColor=white) |`
-| **배포**          | GitHub                                               | ![Swiper](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white) |`
+| **배포**          | GitHub                                               | ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white) |`
 
 
 
 ## 📚 참고 URL
 - 기획서 : 
-[SeoulW Google Docs](<https://docs.google.com/presentation/d/1tlmfOmfyTzOd-6NjCS3rTwU-81MRL-_QRetkOH44cr4/edit#slide=id.p>)
+[pulmuone Google Docs](<https://docs.google.com/presentation/d/1tlmfOmfyTzOd-6NjCS3rTwU-81MRL-_QRetkOH44cr4/edit#slide=id.p>)
 - 화면 설계 : 
-[SeoulW Figma](<https://www.figma.com/design/yvRbuH4Q8I5dwRoWZ62oT1/(B%EC%A1%B0)%EC%8A%A4%ED%86%A0%EB%A6%AC%EB%B3%B4%EB%93%9C?node-id=2741-4201&p=f&t=GGYomiavl7cKnkD6-0>)
+[pulmuon Figma](<https://www.figma.com/design/yvRbuH4Q8I5dwRoWZ62oT1/(B%EC%A1%B0)%EC%8A%A4%ED%86%A0%EB%A6%AC%EB%B3%B4%EB%93%9C?node-id=2741-4201&p=f&t=GGYomiavl7cKnkD6-0>)
 - ppt : 
 [SeoulW Canva]()
 
