@@ -106,13 +106,16 @@
 
 
 
-## 🛠️ 개발 환경
-| 기술            | 기술명                                                 | Badge                                                           |
+## 🛠️ 개발 환경 및 기술
+| 환경 및 기술            | 명칭                                                 | Badge                                                           |
 |:-----------------:|:-----------------------------------------------------:|:-------------------------------------------------------------:|
-| **스타일링**      | SASS                                                 | ![SASS](https://camo.githubusercontent.com/18c8bec42317b6f104e69fc59c2d9262b40b24c65954995d50af3904232c36a1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f536173732d4343363639393f7374796c653d666c61742d737175617265266c6f676f3d53617373266c6f676f436f6c6f723d7768697465) |`
-| **슬라이더**      | Swiper                                               | ![Swiper](https://img.shields.io/badge/Swiper-6332F6?style=flat-square&logo=swiper&logoColor=white) |`
-| **배포**          | GitHub                                               | ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white) |`
-
+| **웹 브라우저**      | Chrome                                                 | ![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white) |`
+| **마크업 언어**      | HTML5                                               | ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+| **스크립트 언어**      | JavaScript                                               | ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+| **스타일링**      | SASS,CSS                                                 | ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) |`
+| **라이브러리**      | jQuery                                             |![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white) |`
+| **디자인/프로토타입**      | Figma         |![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) |`
+| **배포**          | GitHub                                               | ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)|`
 
 
 ## 📚 참고 URL
