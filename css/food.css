@@ -1328,12 +1328,17 @@ article .food-safety-1 .food-safety-figure figcaption > p {
 article .food-safety-2 .safety-tab-menu {
   margin: 90px;
 }
+article .food-safety-2 .safety-tab-menu .tab-list {
+  font-family: "NanumGothic";
+  font-size: 1rem;
+}
 article .food-safety-2 .safety-tab-menu li {
   border-color: transparent;
-  padding: 15px 0;
+  padding: 5px 0;
   border-radius: 0;
 }
 article .food-safety-2 .safety-tab-menu li:hover, article .food-safety-2 .safety-tab-menu li.active {
+  font-weight: bold;
   border-bottom: 1px solid var(--color-green1);
   color: var(--color-green1);
 }
@@ -1854,17 +1859,18 @@ article .food-safety-2 .safety-content-right span {
   }
   article .food-campaign li {
     padding: 0;
+    margin: 60px auto;
   }
-  article .food-campaign li:nth-of-type(1)::before {
+  article .food-campaign li::before {
     display: none;
   }
-  article .food-campaign li:nth-of-type(1)::after {
+  article .food-campaign li::after {
     content: "↓ 클릭하여 신청하기";
     left: 0;
     top: 0;
-    right: 15%;
-    bottom: 5%;
-    transform: translate(-15%, -5%);
+    right: 0;
+    bottom: 0;
+    transform: translate(0, -5%);
     font-size: 0.75rem;
     color: var(--color-gray-food);
     opacity: 1;
@@ -1907,6 +1913,7 @@ article .food-safety-2 .safety-content-right span {
   }
   article .food-safety-2 .safety-tab-menu .tab-list {
     justify-content: center;
+    font-size: 0.75rem;
   }
   article .food-safety-2 .safety-tab-content span {
     margin: 0 25px;
@@ -1952,9 +1959,11 @@ article .food-safety-2 .safety-content-right span {
     padding: 50px 10px;
   }
 }
-@media (max-width: 250px) {
+@media (max-width: 305px) {
   .food-safety-2 .safety-tab-menu .tab-list {
     display: inline-block;
-    row-gap: 10px;
+  }
+  .food-safety-2 .safety-tab-menu .tab-list li {
+    margin: 5px;
   }
 }
