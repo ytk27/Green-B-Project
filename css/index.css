@@ -960,6 +960,115 @@ body {
   font-family: "NanumGothic";
 }
 
+.sticky-btn {
+  z-index: 15;
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.up-btn,
+.call-btn {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.call-popup {
+  position: fixed;
+  bottom: 230px;
+  right: 50px;
+  width: 320px;
+  padding: 20px;
+  background-color: var(--color-white);
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 20;
+}
+
+.call-center {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.call-center h2 {
+  font-size: 25px;
+}
+.call-center img {
+  width: 45px;
+  padding-right: 5px;
+}
+
+.call-popup h3 {
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: solid 2px var(--color-black);
+}
+.call-popup h3 span {
+  color: var(--color-green1);
+}
+
+.call-popup p {
+  font-size: 15px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.call-center2 {
+  border-radius: 15px;
+  background-color: var(--color-green3);
+  text-align: right;
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin: 10px 0;
+}
+.call-center2 b {
+  color: var(--color-black);
+  padding: 10px;
+}
+.call-center2 b:nth-child(1) {
+  padding-left: 20px;
+  white-space: pre-line;
+}
+.call-center2 b:nth-child(2) {
+  white-space: pre-line;
+  font-size: 10px;
+}
+
+.call-popup .close-popup {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #717171;
+}
+
+.call-popup .close-popup:hover {
+  color: var(--color-black);
+}
+
 .sec1 {
   height: 100vh;
   display: flex;
