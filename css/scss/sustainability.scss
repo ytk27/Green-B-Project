@@ -60,6 +60,10 @@
     color: var(--color-white);
 }
 
+body{
+    background-color: var(--color-white);
+
+}
 main{
     color: var(--color-black);
     font-family: 'NanumGothic';
@@ -128,7 +132,7 @@ main{
             display: flex;
             align-items: center;
             padding: 40px 70px;
-            background-color: #F8F8F8;
+            background-color: #F5F5F5;
             width: 1140px;
             margin: 10px auto;
             word-break: keep-all;
@@ -169,7 +173,7 @@ main{
     .pic{
         width:100%;
         padding:100px;
-        background-color: #F9F9F9;
+        background-color: #F5F5F5;
         text-align: center;
         border-radius: 46px;
     }
@@ -200,6 +204,10 @@ main{
                 flex-direction: column;
                 opacity: 0;
                 transform: translateY(20%);
+                img{
+                    border-radius: 50%;
+                }
+                
                 div{
                     display: flex;
                     gap:30px;
@@ -239,10 +247,8 @@ main{
     }
     figure{
         width:100%;
-        padding:150px 70px;
-        background-color: #F9F9F9;
+        padding:0px 70px;
         text-align: center;
-        border-radius: 46px;
         img{border-radius: 46px;}
     }
 }

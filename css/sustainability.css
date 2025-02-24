@@ -512,6 +512,7 @@ header {
   margin: 0 auto;
   padding-bottom: 10px;
   padding-top: 170px;
+  background-color: var(--color-white);
 }
 .footer-up-menu .footer-privacy {
   width: 100%;
@@ -1003,6 +1004,10 @@ header {
   color: var(--color-white);
 }
 
+body {
+  background-color: var(--color-white);
+}
+
 main {
   color: var(--color-black);
   font-family: "NanumGothic";
@@ -1073,7 +1078,7 @@ main {
   display: flex;
   align-items: center;
   padding: 40px 70px;
-  background-color: #F8F8F8;
+  background-color: #F5F5F5;
   width: 1140px;
   margin: 10px auto;
   word-break: keep-all;
@@ -1111,7 +1116,7 @@ main {
 .tab-con-02 .pic {
   width: 100%;
   padding: 100px;
-  background-color: #F9F9F9;
+  background-color: #F5F5F5;
   text-align: center;
   border-radius: 46px;
 }
@@ -1143,6 +1148,9 @@ main {
   flex-direction: column;
   opacity: 0;
   transform: translateY(20%);
+}
+.tab-con-02 .esg li .info img {
+  border-radius: 50%;
 }
 .tab-con-02 .esg li .info div {
   display: flex;
@@ -1178,10 +1186,8 @@ main {
 }
 .tab-con-02 .sb-03 figure {
   width: 100%;
-  padding: 150px 70px;
-  background-color: #F9F9F9;
+  padding: 0px 70px;
   text-align: center;
-  border-radius: 46px;
 }
 .tab-con-02 .sb-03 figure img {
   border-radius: 46px;
@@ -1315,7 +1321,7 @@ main {
     color: var(--color-white);
   }
   .sustainability {
-    width: 100%;
+    width: calc(100% - 100px);
     margin: 0 50px;
   }
   .tab-head {
@@ -1353,7 +1359,7 @@ main {
     display: flex;
     align-items: center;
     padding: 40px 70px;
-    background-color: #F8F8F8;
+    background-color: #F5F5F5;
     width: 1140px;
     margin: 10px auto;
   }
@@ -1380,7 +1386,7 @@ main {
   .tab-con-02 .pic {
     width: 100%;
     padding: 100px;
-    background-color: #F9F9F9;
+    background-color: #F5F5F5;
     text-align: center;
     border-radius: 46px;
   }
@@ -1406,6 +1412,9 @@ main {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+  }
+  .tab-con-02 .esg li .info img {
+    border-radius: 50%;
   }
   .tab-con-02 .esg li .info div {
     display: flex;
@@ -1434,8 +1443,7 @@ main {
   }
   .tab-con-02 .sb-03 figure {
     width: 100%;
-    padding: 150px 70px;
-    background-color: #F9F9F9;
+    padding: 0px 70px;
     text-align: center;
     border-radius: 46px;
   }
@@ -1571,7 +1579,7 @@ main {
   }
   .tab-con-01 ul li {
     display: block;
-    background-color: #F8F8F8;
+    background-color: #F5F5F5;
     width: 100%;
     margin: 10px auto;
     text-align: center;
@@ -1603,7 +1611,7 @@ main {
   .tab-con-02 .pic {
     width: 100%;
     padding: 0px !important;
-    background-color: #F9F9F9;
+    background-color: #F5F5F5;
     text-align: center;
     border-radius: 46px;
   }
@@ -1647,7 +1655,7 @@ main {
   }
   .tab-con-02 .sb-03 p {
     font-size: 20px;
-    padding: 40px 0 60px;
+    padding: 0 0 60px;
     line-height: 2;
     word-break: keep-all;
   }
@@ -1657,7 +1665,6 @@ main {
   .tab-con-02 .sb-03 figure {
     width: 100%;
     padding: 0px 0px;
-    background-color: #F9F9F9;
     text-align: center;
     border-radius: 46px;
   }
@@ -1710,6 +1717,7 @@ main {
   .tab-con-03 .susang li p {
     font-size: 15px;
     font-weight: bolder;
+    width: 427px;
   }
 }
 @media (max-width: 480px) {
@@ -1809,7 +1817,7 @@ main {
     display: block;
     text-align: center;
     padding: 20px 10px;
-    background-color: #F8F8F8;
+    background-color: #F5F5F5;
     width: 100%;
     margin: 10px auto;
   }
@@ -1897,8 +1905,7 @@ main {
   }
   .tab-con-02 .sb-03 figure {
     width: 100%;
-    padding: 20px 20px;
-    background-color: #F9F9F9;
+    padding: 0 20px;
     text-align: center;
     border-radius: 46px;
     overflow: scroll;
@@ -1963,6 +1970,7 @@ main {
   .tab-con-03 .susang li p {
     font-size: 15px;
     font-weight: bolder;
+    width: calc(100% - 25px);
   }
 }
 @media (max-width: 360px) {

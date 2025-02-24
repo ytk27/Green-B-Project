@@ -658,17 +658,20 @@ header {
     margin: 0 auto;
     padding-bottom: 10px;
     padding-top: 170px;
+    background-color: var(--color-white);
 
     .footer-privacy {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+        
 
         a {
             font-family: 'NanumGothic';
             color: var(--color-black);
             margin-right: 30px;
             font-size: 15px;
+            
 
             &:hover {
                 color: #0e0e0e;
@@ -709,17 +712,21 @@ header {
 }
 .footer-down-menu {
     background-color: var(--color-green2);
+    
     .footer-back {
         width: $wid0;
         padding: 30px 0;
         display: flex;
         margin: 0 auto;
         justify-content: space-between;
+        
 
         .footer-left {
             flex-wrap: wrap;
+            
             .footer-logo {
                 margin: 0 auto;
+                
 
                 h1 {
                     width: 80px;
@@ -796,6 +803,7 @@ header {
 
     .footer-wrap-pc {
         display: none;
+        
     }
 
     .footer-wrap-mobile {
