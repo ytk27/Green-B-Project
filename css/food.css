@@ -1328,9 +1328,11 @@ article .food-safety-2 .safety-tab-menu {
 }
 article .food-safety-2 .safety-tab-menu li {
   border-color: transparent;
+  padding: 15px 0;
+  border-radius: 0;
 }
 article .food-safety-2 .safety-tab-menu li:hover, article .food-safety-2 .safety-tab-menu li.active {
-  border: 1px solid var(--color-green1);
+  border-bottom: 1px solid var(--color-green1);
   color: var(--color-green1);
 }
 article .food-safety-2 .safety-tab-content > span {
@@ -1753,8 +1755,7 @@ article .food-safety-2 .safety-content-right span {
     font-size: 1.8rem;
   }
   .record-popup-box1 .popup {
-    height: 40%;
-    padding: 60px 10px;
+    padding: 50px 10px;
   }
   .record-popup-box1 .popup p img {
     height: auto;
@@ -1786,7 +1787,7 @@ article .food-safety-2 .safety-content-right span {
     display: none;
   }
   .main-tab-menu {
-    overflow-x: scroll;
+    overflow-x: auto;
     margin: 0 25px;
   }
   .main-tab-menu::-webkit-scrollbar {
@@ -1900,14 +1901,10 @@ article .food-safety-2 .safety-content-right span {
     border-bottom: 1px solid var(--color-gray-food);
   }
   article .food-safety-2 .safety-tab-menu {
-    margin: 0 0 30px;
+    margin: 0 25px 30px;
   }
   article .food-safety-2 .safety-tab-menu .tab-list {
     justify-content: center;
-    margin: 0 25px;
-  }
-  article .food-safety-2 .safety-tab-menu .tab-list li {
-    white-space: nowrap;
   }
   article .food-safety-2 .safety-tab-content span {
     margin: 0 25px;
@@ -1951,5 +1948,11 @@ article .food-safety-2 .safety-content-right span {
     width: 80%;
     height: 30%;
     padding: 50px 10px;
+  }
+}
+@media (max-width: 250px) {
+  .food-safety-2 .safety-tab-menu .tab-list {
+    display: inline-block;
+    row-gap: 10px;
   }
 }

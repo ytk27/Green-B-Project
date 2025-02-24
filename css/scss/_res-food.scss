@@ -302,8 +302,7 @@
         }
     }
     .record-popup-box1 .popup{
-        height: 40%;
-        padding: 60px 10px;
+        padding: 50px 10px;
         p {
             img{height: auto;}
         }
@@ -358,7 +357,7 @@
     }
     // tab
     .main-tab-menu{
-        overflow-x: scroll;
+        overflow-x: auto;
         margin: 0 25px;
         &::-webkit-scrollbar{display: none;}
     }
@@ -491,13 +490,10 @@
         }
         .food-safety-2{
             .safety-tab-menu{
-                margin: 0 0 30px;
+                margin: 0 25px 30px;
+
                 .tab-list{            
                     justify-content: center;
-                    margin: 0 25px;
-                    li{
-                        white-space: nowrap;
-                    }
                 }
             }
             .safety-tab-content{
@@ -542,5 +538,17 @@
     .record-popup-box1 .popup{
         width: 80%; height: 30%;
         padding: 50px 10px;
+    }
+}
+
+@media (max-width: 250px){
+    .food-safety-2{
+        .safety-tab-menu{
+
+            .tab-list{
+                display: inline-block;
+                row-gap: 10px;            
+            }
+        }
     }
 }

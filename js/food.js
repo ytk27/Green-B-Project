@@ -21,9 +21,23 @@ function scroll(){
         observer.observe(txt);
     });
 }
-
 scroll();
 
+
+// tabmenu scroll
+const elMenu = document.querySelector('.main-tab-menu');
+const eltab = document.querySelectorAll('.main-tab-menu .tab-list li');
+
+// 스크롤 이동
+elMenu.scrollTo(localStorage.getItem('left'), 0);
+
+// 브라우저 왼쪽에서부터 탭의 거리를 가져와 local storage에 저장.
+// 이때 main의 padding값을 빼주어야 탭 전체가 다 보일 수 있음.
+eltab.forEach(function(tab, i){
+    tab.onclick = function(){
+        localStorage.setItem('left', this.offsetLeft-25);
+    }
+})
 
 
 
@@ -31,37 +45,38 @@ scroll();
 // -----------------------------------------------------------------------------------------------------------------------------
 // 3-1. 바른먹거리 원칙
 // -----------------------------------------------------------------------------------------------------------------------------
+
 function rule(){
     // popup
-    const elrecbtn = document.querySelector('.food-record .button');
-    const elfigbtns = document.querySelectorAll('.food-rule figure');
-    const elpopup = document.querySelectorAll('.rule-popup-box1, .rule-popup-box2, .rule-popup-box3, .record-popup-box1');
+    const elbtns = document.querySelectorAll('.food-rule figure, .food-record .button');
+
+    const elpopups = document.querySelectorAll('.rule-popup-box1, .rule-popup-box2, .rule-popup-box3, .record-popup-box1');
     const elclosebtn = document.querySelectorAll('.rule-popup-box1 .popup-close-btn, .rule-popup-box2 .popup-close-btn, .rule-popup-box3 .popup-close-btn, .record-popup-box1 .popup-close-btn');
     
-    elfigbtns.forEach(function(fig, i){
-        fig.onclick = function(){
-            elpopup[i].classList.add("open");
+    elbtns.forEach(function(btn, i){
+        btn.onclick = function(event){
+            elpopups[i].classList.add("open");
             document.body.style.overflow = 'hidden';
             event.preventDefault();
     
+            // 버튼 클릭 시 모달 닫기
             elclosebtn[i].onclick = function(){
-                elpopup[i].classList.remove("open");
+                elpopups[i].classList.remove("open");
                 document.body.style.overflow = 'auto';
             }
+
+            // 모달 바깥 영역 클릭 시 모달 닫기
+            window.addEventListener('click', (e) => {
+                if (e.target === elpopups[i]) {
+                    elpopups[i].classList.remove("open");
+                    document.body.style.overflow = 'auto';
+                }
+            });
         }
     })
-    
-    elrecbtn.onclick = function(){
-        elpopup[3].classList.add("open");
-        document.body.style.overflow = 'hidden';
-        event.preventDefault();
-    
-        elclosebtn[3].onclick = function(){
-                elpopup[3].classList.remove("open");
-                document.body.style.overflow = 'auto';
-            }
-    }
+
 }
+
 
 
 
@@ -218,7 +233,7 @@ function safety(){
     
     // tab 메뉴 클릭 시 나타날 이벤트 함수.
     eltabBtn.forEach(function(btn, i){
-        btn.onclick = function(){
+        btn.onclick = function(event){
             // Add class of button
             if(!btn.classList.contains('active')){
                 eltabBtn.forEach(function(removeact){
