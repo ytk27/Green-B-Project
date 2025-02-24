@@ -33,10 +33,10 @@
 ## 🙌 담당 직무
 | 이름   | GitHub                              | 직무              |해당 |
 |:--------:|:---------------------------------------:|:-------------------:|:----:|
-| **김도연** | [dododoodo](https://github.com/tolix-a) | 팀장 |     |
-| 여태경 | [ytk27](https://github.com/pjiyeon90) | 개발 |   ✔   |
-| 천지호 | [jiho](https://github.com/0011git) | 디자인 |    |
-| 황수빈 | [subin75](https://github.com/Pon119) | 기획 |       |
+| **김도연** | [doyeon](https://github.com/dododo) | 팀장 |     |
+| 여태경 | [taekyung](https://github.com/ytk27) | 개발 |   ✔   |
+| 천지호 | [jiho](https://github.com/jiho8) | 디자인 |    |
+| 황수빈 | [subin](https://github.com/subin75) | 기획 |       |
 
 
 
