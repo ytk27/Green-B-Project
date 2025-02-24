@@ -1077,14 +1077,14 @@ header {
 .tab-con01 > b {
   margin-top: 90px;
   font-size: 40px;
-  font-family: "NanumGothicExtraBold";
+  font-family: "NanumGothicBold";
 }
 
 .tab-con01 > strong {
   font-size: 40px;
   color: white;
   background-color: #8CC63E;
-  font-family: "NanumGothicExtraBold";
+  font-family: "NanumGothicBold";
   margin-top: 90px;
 }
 
@@ -1260,6 +1260,12 @@ header {
 .tab-sub-head > p {
   font-family: "NanumGothicBold";
   border-bottom: 2px solid transparent;
+  padding: 5px 0;
+}
+
+.tab-sub-head p.active {
+  color: var(--color-green1); /* 원하는 색상으로 변경 */
+  font-weight: bold; /* 필요하면 글씨 굵게 */
 }
 
 .tab-sub-head > p:hover,

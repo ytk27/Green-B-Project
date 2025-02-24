@@ -1,22 +1,3 @@
-// const contents = document.querySelectorAll(".b");
-
-// const options = {
-//     root: null,
-//     rootMargin: "0px",
-//     threshold: 0.3,
-// };
-// const observer = new IntersectionObserver((entries, observer) => {
-//     entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//         entry.target.classList.add("show");
-//     }
-// });
-// }, options);
-
-// contents.forEach((content) => {
-//     observer.observe(content);
-// });
-
 const pElements = document.querySelectorAll(".p");
 const bElements = document.querySelectorAll(".b");
 
@@ -26,12 +7,6 @@ const options = {
     threshold: 0.3,
 };
 
-// .p가 화면에 나타나면 즉시 show 클래스 추가
-// pElements.forEach((p) => {
-//     p.classList.add("show");
-// });
-
-// .b는 스크롤해야만 나타남
 const observer2 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -44,7 +19,6 @@ const observer2 = new IntersectionObserver((entries) => {
 pElements.forEach((p) => {
     observer2.observe(p);
 });
-
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -125,7 +99,6 @@ swiperSlide2.forEach((slide,i) => {
     });
 });
 
-
 let slide2Con = [
     {url:'./img/company/history01_01.jpg',txt:'2003년 5월, 초등학교 대상 ‘생명의 텃밭’ 사업'},
     {url:'./img/company/history01_02.jpg',txt:'2005년 3월, 임직원 기아체험 행사'},
@@ -187,7 +160,6 @@ var swiper2 = new Swiper(".mySwiper2", {
         },
       },
 });
-
 
 //버튼 클릭시 해당페이지만 보이게 하고 다른페이지는 숨김
 const tabItems = document.querySelectorAll(".tab-sub-head p");
