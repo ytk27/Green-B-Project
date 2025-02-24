@@ -1,5 +1,35 @@
 
 // ************************
+// index 스크롤 탑&고객센터 팝업 버튼
+// ************************
+
+// 탑 버튼
+$(document).ready(function() {
+    $('.up-btn').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+    });
+});
+
+
+// 팝업 버튼
+$(document).ready(function () {
+    $('.call-btn').click(function () {
+        $('.call-popup').fadeToggle(200);
+    });
+
+    $('.close-popup').click(function () {
+        $('.call-popup').fadeOut(200);
+    });
+
+    $(document).mouseup(function (e) {
+        var popup = $(".call-popup");
+        if (!popup.is(e.target) && popup.has(e.target).length === 0 && !$('.call-btn').is(e.target)) {
+            popup.fadeOut(200);
+        }
+    });
+});
+
+// ************************
 // index 전체 마우스 휠 이벤트
 // ************************
 
