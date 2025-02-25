@@ -1,3 +1,4 @@
+![pulmuone_mockup_01](https://github.com/user-attachments/assets/82a84217-1451-4cce-b61d-cc91d60a788f)
 
 ## 🥬 소개
 기존의 **풀무원** 사이트를 리디자인 및 재구성한 리뉴얼 프로젝트입니다.
@@ -226,6 +227,6 @@
 
 ---
 ## 📱 스크린샷
-![pulmuone_mockup_01](https://github.com/user-attachments/assets/82a84217-1451-4cce-b61d-cc91d60a788f)
+
 ![pulmuone_mockup_02](https://github.com/user-attachments/assets/8cf42992-7847-495a-8225-2dbf7efa922b)
 
