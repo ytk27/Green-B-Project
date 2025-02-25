@@ -17,7 +17,7 @@
 
 ## 📑 요약
 ### 1. **주제**
-   - '풀무원'사이트 리뉴얼
+   - '풀무원' 브랜드 웹사이트 리뉴얼
      
 ### 2. **목표**
    - 중복되는 컨텐츠 정리 및 전체 비율 수정 등으로 사용자 만족도 향상 
@@ -30,25 +30,26 @@
 
 
 
-## 🙌 담당 직무
+## 🙌 담당 직무(개인수정)
 | 이름   | GitHub                              | 직무              |해당 |
 |:--------:|:---------------------------------------:|:-------------------:|:----:|
-| **김도연** | [doyeon](https://github.com/dododoodo) | 팀장 |     |
-| 여태경 | [taekyung](https://github.com/ytk27) | 개발 |   ✔   |
+| 김도연 | [doyeon](https://github.com/dododoodo) | 팀장 |     |
+| **여태경** | [taekyung](https://github.com/ytk27) | 개발 |   ✔   |
 | 천지호 | [jiho](https://github.com/jiho8) | 디자인 |    |
 | 황수빈 | [subin](https://github.com/subin75) | 기획 |       |
 
 
 
 ## 💡 주요 기능
-### 1. 이미지 변경 및 텍스트 변경
-   - swiper을 활용하여 선택한 이미지와 그에 맞는 텍스트로 변경
+### 1. 이미지 슬라이드 및 모달 팝업 창
+   - jQuery 라이브러리를 활용하여 슬라이드 또는 모달 팝업창 제작
+   - swiper 라이브러리를 활용하여 원하는 이미지와 텍스트로 변경
      
-### 2. 반응형 웹
-   - 모바일 스몰(~480px), 태블릿(~1024px), PC(1024&#126;1700px) 해상도 지원
+### 2. 반응형 웹 제작
+   - 모바일(~480px), 태블릿(~1024px), PC(1024&#126;1700px) 해상도 지원
      
-### 3. 해당 이미지 클릭시 외부사이트로 연결
-   - 해당 이미지에 링크를 걸어 클릭시 그 해당 사이트로 이동하게 지원
+### 3. 버튼 또는 이미지 클릭시 외부사이트로 연결
+   - 버튼이나 이미지에 링크를 걸어 클릭시 그 해당 사이트로 이동하게 지원
 
 
 ## 💼 폴더 구조
@@ -120,21 +121,24 @@
 
 ## 📚 참고 URL
 - 기획서 : 
-[Pulmuone Google Docs](<https://docs.google.com/presentation/d/1tlmfOmfyTzOd-6NjCS3rTwU-81MRL-_QRetkOH44cr4/edit#slide=id.p>)
+[Pulmuone Google Docs](<https://docs.google.com/presentation/d/e/2PACX-1vR5VPkQ1mR0KS6bb1eYuVnzi95pDo6kexc94bRYxFM4BBCfuYx11tBjU9lqW0g7zikAamNoRTxBID9V/pub?start=false&loop=false&delayms=3000>)
 - 화면 설계 : 
 [Pulmuone Figma](<https://www.figma.com/design/yvRbuH4Q8I5dwRoWZ62oT1/(B%EC%A1%B0)%EC%8A%A4%ED%86%A0%EB%A6%AC%EB%B3%B4%EB%93%9C?node-id=2741-4201&p=f&t=GGYomiavl7cKnkD6-0>)
-- ppt : 
+- 발표 자료 : 
 [Pulmuone Canva](https://www.canva.com/design/DAGf-bGIHP0/ht3xe4QL4MPhP579NkMXyg/edit)
-
+- 인터페이스 기능 보고서
+[Pulmuone Interface Report](https://docs.google.com/document/d/1yl6Vbl7dGo8s5foPjOdZ4UqANu66daBIyi4p8QQQ_RA/edit?usp=sharing)
+- 프로젝트 완료 보고서
+[Pulmuone Final report](https://docs.google.com/document/d/1aJEeiRj6KTTmHOR-td0581_aCYqC4mwfAMuKh7tZVO4/edit?usp=sharing)
 
 ---
-# 담당 개발 상세 : 
+# 담당 개발 상세 : (개인수정)
 
 ## 📑 요약
 
 - **담당 직무**
 
-   : 기획, 팀장
+   : 개발
   
 - **담당 페이지**
 
@@ -161,68 +165,24 @@
    
 
 
-## ✏ 기획
+## ✏ 기획(개인수정)
 - Postman으로 여러 경우의 수의 API 응답 데이터를 분석
 - xml형식으로 들어온 데이터를 json으로 변환할 방법을 서치, 패키지를 설치해 사용하기로 함
 - 이번주 공연, 공연 예정 등 컨텐츠별 데이터를 요청하는 로직 설계, API URL 작성 **(하단 추가 설명)**
-- [API 작업자용 구글 스프레드시트](https://docs.google.com/spreadsheets/d/1hunhgwcZAyoGM4le85ZqblnQ8PAMn-0ZT9beVzkbr7c/edit?gid=584743467#gid=584743467) 작성
-- 문서화 : [Seoul, W 기획서](https://docs.google.com/document/d/1Ieh-tqHfDDQsXYfCo3cP_YHhUgt8ATDOMHSVXXcL5fs/edit?tab=t.0)
+- 문서화 : [B)웹사이트_리뉴얼_기획서_풀무원](https://docs.google.com/presentation/d/e/2PACX-1vR5VPkQ1mR0KS6bb1eYuVnzi95pDo6kexc94bRYxFM4BBCfuYx11tBjU9lqW0g7zikAamNoRTxBID9V/pub?start=false&loop=false&delayms=3000)
 
 <details>
   <summary>$\bf{{\color{#0969DA}정보\ 설계:\ 구조}}$</summary>
   
-  ![seoulw_정보설계](https://github.com/user-attachments/assets/a2aac419-6649-4a1e-9212-3a64d2ccd293)
-</details>
-
-
-<details>
-<summary>$\bf{\rm{\color{#0969DA}추가\ 설명:\ API\ URL}}$</summary>
-	
-  ### < API URL >
-  #### 1. 공통
-  - **공연시작일**(stdate), **공연종료일**(eddate), **페이지**(cpage), **페이지당 데이터 개수**(rows)는 필수 쿼리 값
-  - 데이터 개수는 **20**으로 고정, 추가 데이터가 필요한 경우 **페이지** 값을 1씩 증가시켜 요청
-  - **지역**(signgucode)은 **서울**로 고정
-  - 각 페이지(메인, 카테고리, 검색, 디테일)에 맞게 기간을 변경하고 필요한 쿼리를 추가
-  
-  #### 2. 메인
-  - 1단위 요청 시 컨텐츠별로 묶어 **(이번주 공연, 공연 예정, 장르별)** 총 3그룹으로 나누어 API를 3번 요청
-  - 카테고리와 동일한 데이터를 사용하나, 카테고리 API 요청 함수를 사용하면 장르 8개×3그룹=총 24번의 요청이 필요해 **요청 횟수를 줄이기 위해 메인 전용 함수를 별도로 작성**함
-  - 메인 페이지로 돌아갈 때마다 반복적 API요청을 피하기 위해 메인 페이지 최초 접속 시에만 데이터를 요청할 수 있도록 **메인 데이터는 최초 접속 이후 store에 저장하여 관리**
-  - 1단위 요청에서 많은 데이터를 가져오므로 store에 데이터를 저장·관리 시 메인 페이지 로딩 대기 시간을 줄일 수 있는 추가적 이점이 있음
-  
-  #### 3. 카테고리
-  - **장르**(shcate) 선택 시 API 요청
-  - 장르 선택 후 하위 탭(**전체, 이번주, 공연중, 공연예정**) 선택 시, 각 항목에 맞는 쿼리를 추가해 API를 다시 요청
-  - 장르 선택값에서 필터링을 할 경우, 결과를 안정적으로 **20개**씩 표시하기 어려운 경우가 있어, 그때마다 API를 새로 요청
-  - 무한스크롤 방식으로 페이지 쿼리값을 **1씩 증가**시키며 API 요청. 결과가 없을 때까지 요청을 계속하며, 결과가 없으면 스크롤 종료
-  
-  - **기간 설정**:
-    - **이번주**: 접속일 기준 **오늘**부터 **가장 가까운 일요일**까지
-        - 예시: 접속일이 **2024.10.01**(화)이라면, **2024.10.01~2024.10.06**까지
-    - **공연중**: 접속일 기준 **어제~오늘**까지
-        - 공연 중인 행사에 대해서는 **공연중** 쿼리를 추가하여 **시작일**과 **종료일**에 관계없이 모두 출력. 이때, 응답 속도를 위해 범위를 좁혀 **어제~오늘**으로 설정
-    - **공연 예정**: 접속일 기준 **내일~내일+1년**까지
-        - 늦게 열릴 수 있는 콘서트 등을 고려해 최대 1년 후까지 공연 정보를 보여주도록 설정
-    - **전체**: 접속일 기준 **어제~내일+1년**까지 설정. 이 범위는 **이번주**, **공연중**, **공연 예정** 범위를 모두 포함
-  
-  #### 4. 검색
-  - 하나의 **검색 키워드**에 대해 **공연명**과 **공연장명** 두 가지 경우로 API 요청이 가능
-  - 검색 이벤트 발생 시 두 가지를 동시에 요청하여, 결과가 없더라도 **각각 20개**씩 요청하여 최대 **40개**의 결과를 한 번에 표시 가능
-  - 무한스크롤 방식으로 페이지 쿼리값을 **1씩 증가**시키며 결과가 없을 때까지 API를 요청하고, 결과가 없으면 스크롤 종료
-  
-  - **기간 설정**:
-    - 접속일 기준 **KOPIS 서비스 시작일 2014.01.01**부터 **내일 +1년**까지
-    - 시작일은 **KOPIS API Version 1.0** 배포일로 고정, 종료일은 카테고리에서 정한 범위 중 가장 늦은 **내일 +1년**까지 설정
-  
-  #### 5. 디테일
-  - **공연 정보**와 **공연장 정보**를 모두 표시하기 위해 총 **2번의 API 요청**이 필요
-  - 공연장 정보 요청을 위한 **공연장 ID** 값은 **공연 정보** 데이터에 포함되어 있으므로, 반드시 공연 정보 요청 후 공연장 정보를 요청
+  ![풀무원_정보설계구조](https://github.com/user-attachments/assets/335bf8a3-bb83-46f2-bf95-6ca56044bb0a)
 </details>
 
 
 
-## 🔧 초기 개발 환경 세팅
+
+
+
+## 🔧 초기 개발 환경 세팅(개인수정)
 ### 1. 프로젝트 생성
 - 페이지 라우팅 방식 선택
 
@@ -243,35 +203,7 @@
 - 4에서 생성한 파일을 기반으로 ```.module.scss``` 생성하고 각 파일에 import함
 
 
-
-## 🧩 공통 컴포넌트 제작
-: 기획 및 디자인 단계 이후 공통으로 사용할 컴포넌트를 구분해 제작
-
-### 1.  로딩 
-- [CSS Loaders](https://css-loaders.com/)에서 애니메이션 선택, ![FF4B77](https://github.com/user-attachments/assets/578b5d58-d2d8-4324-94f6-0be6ea7355fd)```#FFD4DF``` 테마색으로 변경
-
-### 2. 헤더, 푸터, 네비게이션 바
-- 라우팅에 따라 페이지별로 다르게 노출
-
-### 3. 장르 버튼
-- 메인, 카테고리 페이지에서 사용
-  
-### 4. 카드
-- 메인, 카테고리, 검색 페이지에서 사용
-
-
-![components_sjy](https://github.com/user-attachments/assets/2666c187-3aca-4a43-a3a2-c49d83f93930)
-
-
-
-## ❗ 이슈 발생 시 보조
-- xml 파싱 과정에서 값이 없는 태그와 값이 있는 태그가 서로 다른 형태로 변환되어 키값이 undefined되는 오류 발생
-
-	⇒ **해결 방법**: Postman으로 여러 건의 응답을 받아 항상 값이 있는 태그와 아닌 태그를 확인, 아닌 태그에 조건식 작성
-
-
-
-## 💥 트러블 슈팅
+## 💥 트러블 슈팅(개인수정)
 - 카테고리 페이지, 디테일 페이지에서 헤더와 네비바에 데이터를 넘겨줘야 하는 이슈
 
    : 헤더와 네비바는 최상위에 위치한 컴포넌트라 자식에서 부모로 props를 넘길 수 없는 이슈 발생
@@ -285,7 +217,7 @@
 
 
 
-## 💭 프로젝트를 통해 배운점
+## 💭 프로젝트를 통해 배운점(개인수정)
 모바일 환경에서의 헤더, 네비게이션 영역의 역할과 데이터 흐름 설계의 중요성을 배웠습니다.  
 
 모바일은 정보를 표시할 영역이 좁기 때문에 웹과 달리 헤더와 네비게이션이 페이지마다 동일하지 않고 그 공간까지 컨텐츠에 활용하고 있었습니다.
@@ -299,10 +231,3 @@
 ---
 ## 📱 스크린샷
 ![seoulw_thumbnail (1)](https://github.com/user-attachments/assets/57ce1039-c49c-47e9-8073-0af1299515f4)
-<!--
-<details>
-  <summary>$\bf{{\color{#0969DA}이미지}}$</summary>
-
-![t](https://github.com/user-attachments/assets/dd46735e-4f07-4ab9-9eb6-7377388ddaa3)
-</details>
--->
