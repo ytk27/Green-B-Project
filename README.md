@@ -230,4 +230,6 @@
 
 ---
 ## 📱 스크린샷
-![seoulw_thumbnail (1)](https://github.com/user-attachments/assets/57ce1039-c49c-47e9-8073-0af1299515f4)
+![pulmuone_mockup_01](https://github.com/user-attachments/assets/82a84217-1451-4cce-b61d-cc91d60a788f)
+![pulmuone_mockup_02](https://github.com/user-attachments/assets/8cf42992-7847-495a-8225-2dbf7efa922b)
+
