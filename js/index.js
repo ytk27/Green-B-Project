@@ -17,16 +17,19 @@ $(document).ready(function () {
         $('.call-popup').fadeToggle(200);
     });
 
-    $('.close-popup').click(function () {
+    $('.close-popup').click(function () {   
         $('.call-popup').fadeOut(200);
     });
 
     $(document).mouseup(function (e) {
         var popup = $(".call-popup");
-        if (!popup.is(e.target) && popup.has(e.target).length === 0 && !$('.call-btn').is(e.target)) {
-            popup.fadeOut(200);
-        }
-    });
+
+        if (!popup.is(e.target) &&
+        popup.has(e.target).length === 0 &&
+        !$('.call-btn').is(e.target))
+
+        {popup.fadeOut(200);}
+    }); 
 });
 
 // ************************
