@@ -60,7 +60,7 @@ input, textarea {
 }
 
 :root {
-  --color-white: #Ffffff;
+  --color-white: #f9f9f9;
   --color-gray: #F0F0F0;
   --color-black: #3C3C3C;
   --color-green1: #8CC63E;
@@ -520,6 +520,7 @@ header {
   margin: 0 auto;
   padding-bottom: 10px;
   padding-top: 170px;
+  background-color: var(--color-white);
 }
 .footer-up-menu .footer-privacy {
   width: 100%;

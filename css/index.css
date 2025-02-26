@@ -1736,6 +1736,15 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .sticky-btn {
+    z-index: 15;
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .sec1 {
     height: 100vh;
     display: flex;
@@ -3136,6 +3145,15 @@ body {
 @media (max-width: 480px) {
   body {
     overflow-x: hidden;
+  }
+  .sticky-btn {
+    z-index: 15;
+    position: fixed;
+    right: 25px;
+    bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .sec1 {
     height: 100vh;

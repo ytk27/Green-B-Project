@@ -20,6 +20,16 @@
     // ***********************
 
 
+    .sticky-btn {
+        z-index: 15;
+        position: fixed;
+        right: 50px;
+        bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     // section 1
 
     .sec1 {
@@ -1657,6 +1667,16 @@
     }
 
 
+
+    .sticky-btn {
+        z-index: 15;
+        position: fixed;
+        right: 25px;
+        bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     // ***********************
     // main ****************
